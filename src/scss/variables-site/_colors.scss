@@ -2,18 +2,23 @@
 // https://coolors.co/app/755c3b-fcfbe3-2f2504-1c7c54-19381f
 // https://coolors.co/app/755c3b-fcfbe3-2f2504-152614-19381f
 //                                                ^ only this one changed
+// https://coolors.co/app/755c3b-fcfbe3-808782-a6d3a0-d1ffd7 < greens & greys
+// https://coolors.co/app/755c3b-fcfbe3-fbfef9-0c6291-000004 < blue, black & paper white
 
 // Shades
 $color__black    : #152614; // Deep Green
-$color__white    : #FCFBE3; // Cream
+$color__white    : #FBFEF9; // Paper White
+$color__grey     : #808782; // Wet Cement
+$color__cream    : #FCFBE3; // Cream
 // Browns
-$color__brown    : #2F2504;
-$color__cocoa    : #755C3B;
+$color__brown    : #755C3B; // Milk Chocolate
+$color__darkbrown: #2F2504; // Dark Chocolate
 // Greens
-$color__pine     : #19381F;
-$color__plant    : #1C7C54;
+$color__pine     : #19381F; // Deep Pine Forest
+$color__plant    : #1C7C54; // Photosynthesis
+$color__heidi    : #A6D3A0; // Heidi Green
 // Blues
-$color__blue    : #1C7C54;
+$color__blue    : #0C6291; // Great on $color__cream
 
 
 $color__text-main: $color__black;
@@ -30,8 +35,8 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-$color__background-body: $color__white;
-$color__background-screen: $color__white;
+$color__background-body: $color__cream;
+$color__background-screen: $color__cream;
 $color__background-hr: $color__text-main;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
