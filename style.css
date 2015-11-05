@@ -43,6 +43,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+body {
+  text-align: center;
+}
+body .site {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

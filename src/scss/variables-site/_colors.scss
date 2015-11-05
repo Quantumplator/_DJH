@@ -42,4 +42,13 @@ $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
+body {
+  text-align: center;
+  .site {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto; 
+    text-align: left;   
+  } 
+}
 
