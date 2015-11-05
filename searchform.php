@@ -1,7 +1,12 @@
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-  <label>
-    <span class="screen-reader-text">Search for:</span>
-    <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
-  </label>
-  <input type="submit" class="search-submit" value="Search" />
+<?php
+/**
+ * default search form
+ */
+?>
+<form role="search" method="get" id="search-form" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <div class="search-wrap">
+      <label class="screen-reader-text" for="s"><?php _e( 'Search for:', 'presentation' ); ?></label>
+        <input type="search" placeholder="<?php echo esc_attr( 'Search…', 'presentation' ); ?>" name="s" id="search-input" class="search-field" value="<?php echo esc_attr( get_search_query() ); ?>" />
+        <input class="screen-reader-text" type="submit" id="search-submit" value="Search" />
+    </div>
 </form>
