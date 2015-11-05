@@ -84,22 +84,33 @@ $media-stack:
 }
 
 
-
 /** 
  * Height & Width Mixins
  *
  */
 
-// Rem height output with px fallback
+// Rem width output with px fallback
 @mixin width($sizeValue: 1) {
   width: ($sizeValue * 16) * 1px;
   width: $sizeValue * 1rem;
+}
+
+// Rem max-width output with px fallback
+@mixin max-width($sizeValue: 1) {
+  max-width: ($sizeValue * 16) * 1px;
+  max-width: $sizeValue * 1rem;
 }
 
 // Rem height output with px fallback
 @mixin height($sizeValue: 1) {
   height: ($sizeValue * 16) * 1px;
   height: $sizeValue * 1rem;
+}
+
+// Rem max-height output with px fallback
+@mixin max-height($sizeValue: 1) {
+  max-height: ($sizeValue * 16) * 1px;
+  max-height: $sizeValue * 1rem;
 }
 
 

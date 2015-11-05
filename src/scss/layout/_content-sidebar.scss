@@ -1,11 +1,9 @@
 body {
   text-align: center;
-  font-size: 20px;
-  line-height: 1.6;
   .site {
     width: 100%;
-    max-width: 1024px;
     margin: 0 auto; 
-    text-align: left;   
+    text-align: left;
+    @include max-width(64); // 1024px
   } 
 }
