@@ -32,14 +32,12 @@
 		</div>
 
 		<div class="site-branding">
-			<div class="site-contact">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> &mdash; <?php bloginfo( 'description' ); ?></a></h1>
-
-				<!-- email -->
-				<!-- phone -->
-			</div><!-- .site-branding -->
-		</div>
-
+			<div class="site-contact-bar">
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<p class="site-email">admin@dylanjharris.net</p>
+				<p class="site-phone">+1(509)123-4567</p>
+			</div>
+		</div><!-- .site-branding -->
 
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
