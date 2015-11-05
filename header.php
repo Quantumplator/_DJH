@@ -49,11 +49,11 @@
 			<div class="site-navigation-bar">
 				<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
 
-					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></button>
+					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span><i class="fa fa-bars"></i></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false"><?php esc_html_e( 'Search', '_djh' ); ?></button>
-					<?php get_search_form(); ?>
+					<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Search', '_djh' ); ?></span><i class="fa fa-search"></i></button>
+					<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
 
 				</nav><!-- .site-navigation -->
 
