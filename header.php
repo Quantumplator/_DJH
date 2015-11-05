@@ -53,7 +53,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 					<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false"><?php esc_html_e( 'Search', '_djh' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'social-menu' ) ); ?>
+					<?php get_search_form(); ?>
 
 				</nav><!-- .site-navigation -->
 
