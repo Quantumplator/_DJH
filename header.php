@@ -24,20 +24,37 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_djh' ); ?></a>
 
+  <!-- site-header -->
 	<header id="masthead" class="site-header" role="banner">
+
+		<!-- site-promo -->
+		<div class="site-promo">
+		</div>
+
 		<div class="site-branding">
-			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php endif; ?>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-		</div><!-- .site-branding -->
+			<div class="site-contact">
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> &mdash; <?php bloginfo( 'description' ); ?></a></h1>
+
+				<!-- email -->
+				<!-- phone -->
+			</div><!-- .site-branding -->
+		</div>
+
+
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
+		<div class="">
+		</div>
+
+
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+
+
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
