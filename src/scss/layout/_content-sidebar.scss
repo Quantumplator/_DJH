@@ -1,20 +1,11 @@
-// .content-area {
-// 	float: left;
-// 	margin: 0 (-$size__site-sidebar) 0 0;
-// 	width: $size__site-main;
-// }
-
-// .site-main {
-// 	margin: 0 $size__site-sidebar 0 0;
-// }
-
-// .site-content .widget-area {
-// 	float: right;
-// 	overflow: hidden;
-// 	width: $size__site-sidebar;
-// }
-
-// .site-footer {
-// 	clear: both;
-// 	width: $size__site-main;
-// }
+body {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  .site {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto; 
+    text-align: left;   
+  } 
+}
