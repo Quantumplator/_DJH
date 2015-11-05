@@ -123,7 +123,7 @@ add_action( 'save_post',     '_djh_category_transient_flusher' );
 
 
 /**
- * Social media icon menu as per http://justintadlock.com/archives/2013/08/14/social-nav-menus-part-2
+ * Social media icon menu inspired by http://justintadlock.com/archives/2013/08/14/social-nav-menus-part-2
  */
 function _djh_social_menu() {
     if ( has_nav_menu( 'social' ) ) {
@@ -145,7 +145,7 @@ function _djh_social_menu() {
 }
 
 /**
- * Same as above but only for .site-navigation-bar
+ * Same as above but specific to .site-header .site-navigation-bar
  */
 function _djh_site_social_menu() {
     if ( has_nav_menu( 'site-social' ) ) {
