@@ -143,3 +143,25 @@ function _djh_social_menu() {
 	);
     }
 }
+
+/**
+ * Same as above but only for .site-navigation-bar
+ */
+function _djh_site_social_menu() {
+    if ( has_nav_menu( 'site-social' ) ) {
+	wp_nav_menu(
+		array(
+			'theme_location'  => 'site-social',
+			'container'       => 'div',
+			'container_id'    => 'site-social',
+			'container_class' => 'menu-social',
+			'menu_id'         => 'site-social-items',
+			'menu_class'      => 'menu-items',
+			'depth'           => 1,
+			'link_before'			=> '<span class="screen-reader-text">',
+			'link_after'			=> '</span>',
+			'fallback_cb'     => '',
+		)
+	);
+    }
+}

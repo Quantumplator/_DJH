@@ -46,6 +46,7 @@ function _djh_setup() {
   register_nav_menus( array(
     'primary' => esc_html__( 'Primary Menu', '_djh' ),
     'social' => esc_html__( 'Social Menu', '_djh' ),
+    'site-social' => esc_html__( 'Header Social Menu', '_djh' ),
   ) );
 
   /*
