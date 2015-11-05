@@ -2942,7 +2942,7 @@ button,
 input,
 select,
 textarea {
-  color: #0A0A0A;
+  color: #152614;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -3017,7 +3017,7 @@ html {
 }
 
 body {
-  background: #FBFEF9;
+  background: #FCFBE3;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -3029,7 +3029,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 hr {
-  background-color: #0A0A0A;
+  background-color: #152614;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -3149,14 +3149,14 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #3568B5;
+  color: #1C7C54;
   text-decoration: none;
 }
 a:visited {
-  color: #3568B5;
+  color: #1C7C54;
 }
 a:hover, a:focus, a:active {
-  color: #0A0A0A;
+  color: #152614;
 }
 a:focus {
   outline: thin dotted;
@@ -3262,7 +3262,7 @@ a:hover, a:active {
 .menu-social a::before {
   vertical-align: top;
   font-family: 'Fontawesome';
-  color: #3568B5;
+  color: #1C7C54;
   -webkit-font-smoothing: antialiased;
   content: '\f0c0';
 }
@@ -3327,7 +3327,7 @@ a:hover, a:active {
   overflow: hidden;
 }
 .screen-reader-text:focus {
-  background-color: #93A3BC;
+  background-color: #FCFBE3;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
