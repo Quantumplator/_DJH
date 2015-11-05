@@ -24,35 +24,61 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_djh' ); ?></a>
 
-  <!-- site-header -->
+  <!-- #masthead -->
 	<header id="masthead" class="site-header" role="banner">
 
-		<!-- site-promo -->
-		<div class="site-promo">
-		</div>
+		<div id="site-branding" class="site-branding">
 
-		<div class="site-branding">
 			<div class="site-contact-bar">
+
+				<!-- Display site-title as h1 on front-page, p on others to allow article h1 -->
+				<?php if ( is_front_page() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<p class="site-email">admin@dylanjharris.net</p>
-				<p class="site-phone">+1(509)123-4567</p>
-			</div>
+				<?php else : ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php endif; ?>
+				      <!-- .site-title -->
+
+				<p class="site-contact-points">
+					<a href="mailto:admin@dylanjharris.net" class="site-email">admin@dylanjharris.net</a>
+					<a href="tel:+15091234567" class="site-phone">(509) 123&ndash;4567</a>
+				</p>  <!-- .site-contact-points -->
+
+			</div><!-- .site-contact-bar -->
+
+			<div class="site-navigation-bar">
+				<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
+
+					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+					<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false"><?php esc_html_e( 'Search', '_djh' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'social-menu' ) ); ?>
+
+				</nav><!-- .site-navigation -->
+
+				<div class="site-social">
+				</div><!-- .site-social -->
+
+			</div><!-- .site-navigation-bar -->
+			<div class="site-hero">
+				<h2></h2>
+				<p></p>
+				<a href=""></a>
+				<a href=""></a>
+			</div><!-- .site-hero -->
 		</div><!-- .site-branding -->
+	</header>
+	<!-- #masthead -->
 
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-
-		<div class="">
-		</div>
-
-
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+	<!-- .site-promo .promo-sidebar -->
+	<?php if ( is_active_sidebar( 'promo-sidebar' ) ) { ?>
+	<aside class="site-promo">
+		<?php dynamic_sidebar( 'promo-sidebar' ); ?>
+	</aside>
+	<?php } ?>
 
 
 
-	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
