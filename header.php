@@ -45,9 +45,6 @@
 
 					</div>
 
-
-
-				
 				</div>
 			</div><!-- .site-contact-bar -->
 			<div class="site-navigation-bar">
@@ -78,6 +75,7 @@
 				<a href=""></a>
 			</div><!-- .site-hero -->
 
+			<!-- PROMO -->
 			<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
 			<aside class="site-promo-bar">
 				<div class="site-promo-wrap">

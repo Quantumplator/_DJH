@@ -7,14 +7,6 @@
   flex-direction: row;
 }
 
-.col-row {
-  width: 100%;
-  flex-direction: column;
-  @include media(tablet, general) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .column {
   flex-direction: column;
 }
@@ -25,75 +17,21 @@
 .site-header {
   height: 88vh;
 //  background: image;
-  .site-branding { // flexbox
+  .branding {                    // flexbox
     height: 100%;
   }
 
-  .site-promo-bar {  // This gets pulled to top
+  .site-promo-bar {              // flex item
     background: $color__brown;
     order: -1;
   }
-  .site-contact-bar { background: $color__cream; }
-  .site-navigation-bar { background: $color__white; }
-  .site-hero-bar { background: $color__heidi; }
-
-  button,
-  .site-title {
-    margin: 0;
-    padding: 0;
-    @include width(4);
-    @include height(4);
-    @include padding(1);
-    @include font-size(2);
+  .site-contact-bar {            // flex item
+    background: $color__cream;
   }
-  .social-bar,
-  .site-social,
-  .contact-bar {
-    @include height(4);
+  .site-navigation-bar {         // flex item
+    background: $color__white;
   }
-  .site-social {
-    @include padding(1);
+  .site-hero-bar {               // flex item
+    background: $color__heidi;
   }
-
-  .site-contact-wrap {
-    flex-direction: row;
-    justify-content: space-between;
-    a {
-      display: block;
-    }
-    .site-title {
-      font-family: 'Open Sans';
-      @include font-size(1.25);
-      a::before {
-        content: 'djh';
-        display: block;
-        text-indent: 0;
-      }
-    }
-    .site-email, 
-    .site-phone, 
-    .site-social {
-      display: inline-block;
-      font-size: 0;
-      @include media(tablet, general) {
-        font-size: inherit;
-        text-indent: 0;
-        @include padding(1);
-      }
-    }
-  }
-  .site-navigation-wrap {
-    .nav-toggle-bar {
-      flex-direction: row;
-      justify-content: space-between;
-      .search-toggle {
-        order: 1;
-      }
-    }
-    .nav-item-bar {
-      flex-direction: column;
-    }
-  }
-  .site-hero-wrap {  }
-  .site-promo-wrap {  }
 }

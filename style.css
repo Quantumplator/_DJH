@@ -3455,23 +3455,6 @@ a:hover, a:active {
           flex-direction: row;
 }
 
-.col-row {
-  width: 100%;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media only screen and (min-width: 800px) {
-  .col-row {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .column {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -3481,7 +3464,7 @@ a:hover, a:active {
 .site-header {
   height: 88vh;
 }
-.site-header .site-branding {
+.site-header .branding {
   height: 100%;
 }
 .site-header .site-promo-bar {
@@ -3498,84 +3481,6 @@ a:hover, a:active {
 }
 .site-header .site-hero-bar {
   background: #A6D3A0;
-}
-.site-header button,
-.site-header .site-title {
-  margin: 0;
-  padding: 0;
-  width: 64px;
-  width: 4rem;
-  height: 64px;
-  height: 4rem;
-  padding: 16px;
-  padding: 1rem;
-  font-size: 32px;
-  font-size: 2rem;
-}
-.site-header .social-bar,
-.site-header .site-social,
-.site-header .contact-bar {
-  height: 64px;
-  height: 4rem;
-}
-.site-header .site-social {
-  padding: 16px;
-  padding: 1rem;
-}
-.site-header .site-contact-wrap {
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.site-header .site-contact-wrap a {
-  display: block;
-}
-.site-header .site-contact-wrap .site-title {
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-.site-header .site-contact-wrap .site-title a::before {
-  content: 'djh';
-  display: block;
-  text-indent: 0;
-}
-.site-header .site-contact-wrap .site-email,
-.site-header .site-contact-wrap .site-phone,
-.site-header .site-contact-wrap .site-social {
-  display: inline-block;
-  font-size: 0;
-}
-@media only screen and (min-width: 800px) {
-  .site-header .site-contact-wrap .site-email,
-  .site-header .site-contact-wrap .site-phone,
-  .site-header .site-contact-wrap .site-social {
-    font-size: inherit;
-    text-indent: 0;
-    padding: 16px;
-    padding: 1rem;
-  }
-}
-.site-header .site-navigation-wrap .nav-toggle-bar {
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.site-header .site-navigation-wrap .nav-toggle-bar .search-toggle {
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-}
-.site-header .site-navigation-wrap .nav-item-bar {
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 /*--------------------------------------------------------------
