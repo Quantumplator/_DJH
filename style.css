@@ -2785,7 +2785,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 mark {
@@ -2955,7 +2955,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.6em;
 }
 
 dfn, cite, em, i {
@@ -3438,13 +3438,19 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header .site-contact-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .site-header .site-contact-bar .site-title,
 .site-header .site-contact-bar .site-contact-points {
-  display: inline-block;
-  clear: none;
+  margin: 0;
 }
 .site-header .site-contact-bar .site-title {
   font-size: inherit;
+  font-family: 'Open Sans';
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------
