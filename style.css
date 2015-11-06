@@ -3447,6 +3447,11 @@ a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.site-header .site-branding {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
 
 /*--------------------------------------------------------------
 ## Posts and pages
