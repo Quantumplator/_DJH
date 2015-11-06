@@ -1,33 +1,11 @@
 .site-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   .site-branding {
-  }
-
-  // site-contact-bar
-  .site-contact-bar {
-    display: flex;
-    .site-title,
-    .site-contact-points {
-      margin: 0;
-    }
-    .site-title {
-      font-size: inherit;
-      font-family: 'Open Sans';
-      display: inline-block;
-    }
-    .site-contact-points {
-
-    }
 
   }
-
-  // site-navigation-bar
-  .site-navigation-bar {
+  .site-promo {
 
   }
-
-  // site-hero
-  .site-hero {
-
-  }
-
 }

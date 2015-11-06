@@ -79,9 +79,9 @@
 
 		</div><!-- .site-branding -->
 
-		<?php if ( is_active_sidebar( 'promo-sidebar' ) ) { ?>
+		<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
 		<aside class="site-promo-bar">
-			<?php dynamic_sidebar( 'promo-sidebar' ); ?>
+			<?php dynamic_sidebar( 'sidebar-promo' ); ?>
 		</aside>
 		<?php } ?>
 		      <!-- .site-promo -->

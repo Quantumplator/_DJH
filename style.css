@@ -3438,19 +3438,14 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header .site-contact-bar {
+.site-header {
+  height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-.site-header .site-contact-bar .site-title,
-.site-header .site-contact-bar .site-contact-points {
-  margin: 0;
-}
-.site-header .site-contact-bar .site-title {
-  font-size: inherit;
-  font-family: 'Open Sans';
-  display: inline-block;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*--------------------------------------------------------------
