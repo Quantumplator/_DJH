@@ -17,21 +17,69 @@
 .site-header {
   height: 88vh;
 //  background: image;
-  .branding {                    // flexbox
+  .site-branding {               // flexbox
     height: 100%;
   }
-
-  .site-promo-bar {              // flex item
+  .site-contact-bar {              // flex item
+    background: $color__cream;
+  }
+  .site-navigation-bar {           // flex item
+    background: $color__white;
+  }
+  .site-hero-bar {                 // flex item
+    background: $color__heidi;
+  }
+  .site-promo-bar {                // flex item
     background: $color__brown;
     order: -1;
   }
-  .site-contact-bar {            // flex item
-    background: $color__cream;
+
+  .contact-bar-inner {
+    .site-title {
+      a::before {
+        content: 'djh';
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        @include font-size(1.25);
+      }
+    }
+    .contact-point {
+      display: block;
+      text-indent: -9999em;
+      width: 0;
+      height: 0;
+      @include media(tablet, general) {
+        text-indent: 0;
+        width: auto;
+        height: auto;
+      }
+    }
   }
-  .site-navigation-bar {         // flex item
-    background: $color__white;
+
+  .contact-bar-inner,
+  .navigation-bar-inner {           // flexboxes
+    a, i {
+      display: block;
+    }
+    i {
+      @include font-size(2);
+    }
   }
-  .site-hero-bar {               // flex item
-    background: $color__heidi;
+
+  .navigation-items-inner {        // flexbox
+    ul {
+      list-style: none;
+      li {
+
+      }
+    }
   }
+  .hero-bar-inner {              // flexbox
+    
+  }
+  .promo-bar-inner {             // flexbox
+    
+  }
+
+
 }

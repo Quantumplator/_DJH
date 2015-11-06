@@ -30,50 +30,88 @@
 		<div id="site-branding" class="site-branding flexbox column">
 
 			<div class="site-contact-bar">
-				<div class="site-contact-wrap flexbox row">
-					<!-- Display site-title as h1 on front-page, p on others to allow article h1 -->
-					<?php if ( is_front_page() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></a></h1>
-					<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif; ?><!-- .site-title -->
+				<div class="contact-bar-inner flexbox row">
 
-					<div class="contact-bar">
-						<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" id="primary-email" class="site-email"><button id="site-email-toggle" class="menu-toggle" aria-controls="primary-email" aria-expanded="false" aria-hidden="false"><i class="fa fa-envelope"></i></button>admin@dylanjharris.net</a>' ); ?>					
-						<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone"><button id="site-phone-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="false"><i class="fa fa-phone"></i></button>(509) 123&ndash;4567</a>' ); ?>
-						<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="" class="site-social"><button id="site-social-toggle" class="menu-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="false"><i class="fa fa-phone"></i>Social</button></a>' ); ?>
+					<?php // printf( esc_html__( '%1$s', '_djh' ), 'html' ); ?>
 
+					<div class="site-title nav-control">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<?php if ( is_front_page() ) : ?>
+							<h1 id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></h1>
+							<?php else : ?>
+							<p id="site-title"><?php bloginfo( 'name' ); ?></p>
+							<?php endif; ?>
+						</a>
+					</div>
+
+					<div class="site-email nav-control">
+						<a href="mailto:admin@dylanjharris.net">
+							<button class="menu-toggle" aria-hidden="true">
+								<i class="fa fa-envelope"></i>
+								Email
+							</button>
+							<span class="contact-point">admin@dylanjharris.net</span>
+						</a>
+					</div>
+
+					<div class="site-phone nav-control">
+						<a href="tel:+15091234567">
+							<button class="menu-toggle" aria-hidden="true">
+								<i class="fa fa-phone"></i>
+								<span>Call</span>
+							</button>
+							<span class="contact-point">(509) 123&ndash;4567</span>
+						</a>
+					</div>
+
+				</div><!-- .contact-bar-inner -->
+			</div><!-- .site-contact-bar -->
+
+			<div class="site-navigation-bar">
+				<div class="navigation-bar-inner flexbox row">
+
+					<div class="site-connect nav-control">
+						<button class="menu-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="true">
+							<i class="fa fa-thumbs-o-up"></i>
+							<span>Connect</span>
+						</button>
+					</div>
+
+					<div class="site-menu nav-control">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true">
+							<i class="fa fa-bars"></i>
+							<span>Menu</span>
+						</button>
+					</div>
+
+					<div class="site-search nav-control">
+						<button class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
+							<i class="fa fa-search"></i>
+							<span>Search</span>
+						</button>
 					</div>
 
 				</div>
-			</div><!-- .site-contact-bar -->
-			<div class="site-navigation-bar">
+			</div>
 
-				<nav id="site-navigation" class="site-navigation-wrap" role="navigation">
-					<div id="nav-toggles" class="nav-toggle-bar flexbox row">
-						<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true"><i class="fa fa-bars"></i></button>
-						<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true"><i class="fa fa-search"></i></button>
-					</div>
-					<div id="nav-items" class="nav-item-bar flexbox col-row">
-						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
-						<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
-
-
-					</div>
-
-				</nav><!-- .site-navigation  -->
-
+			<div class="site-navigation-items">
+				<nav id="site-navigation" class="navigation-items-inner flexbox column" role="navigation">
+					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
+					<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
+					<?php _djh_site_social_menu(); ?>
+				</nav><!-- .navigation-bar-inner  -->
 			</div><!-- .site-navigation-bar -->
 			
 			<div class="site-hero-bar">
-				<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
-				<p></p>
-				<a href=""></a>
-				<a href=""></a>
-			</div><!-- .site-hero -->
+				<div class="hero-bar-inner">
+					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
+					<p></p>
+					<a href=""></a>
+					<a href=""></a>
+				</div><!-- .hero-bar-inner -->
+			</div><!-- .site-hero-bar -->
 
 			<!-- PROMO -->
 			<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
