@@ -3474,12 +3474,76 @@ a:hover, a:active {
       -ms-flex-order: -1;
           order: -1;
 }
-.site-header .contact-bar-inner .site-title a::before {
-  content: 'djh';
+.site-header .contact-bar-inner,
+.site-header .navigation-bar-inner {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.site-header .contact-bar-inner .nav-control,
+.site-header .navigation-bar-inner .nav-control {
+  width: 64px;
+  width: 4rem;
+  height: 64px;
+  height: 4rem;
+}
+@media only screen and (min-width: 800px) {
+  .site-header .contact-bar-inner .nav-control,
+  .site-header .navigation-bar-inner .nav-control {
+    width: auto;
+    height: auto;
+  }
+}
+.site-header .contact-bar-inner .nav-control a, .site-header .contact-bar-inner .nav-control i,
+.site-header .navigation-bar-inner .nav-control a,
+.site-header .navigation-bar-inner .nav-control i {
   display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+}
+.site-header .contact-bar-inner .nav-control a, .site-header .contact-bar-inner .nav-control button,
+.site-header .navigation-bar-inner .nav-control a,
+.site-header .navigation-bar-inner .nav-control button {
+  width: 100%;
+  height: 100%;
+}
+.site-header .contact-bar-inner .nav-control i,
+.site-header .navigation-bar-inner .nav-control i {
+  font-size: 32px;
+  font-size: 2rem;
+}
+.site-header .contact-bar-inner .nav-control button,
+.site-header .navigation-bar-inner .nav-control button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  text-align: center;
+}
+.site-header .contact-bar-inner .nav-control button, .site-header .contact-bar-inner .nav-control button:hover, .site-header .contact-bar-inner .nav-control button:active, .site-header .contact-bar-inner .nav-control button:focus,
+.site-header .navigation-bar-inner .nav-control button,
+.site-header .navigation-bar-inner .nav-control button:hover,
+.site-header .navigation-bar-inner .nav-control button:active,
+.site-header .navigation-bar-inner .nav-control button:focus {
+  box-shadow: none;
+}
+.site-header .contact-bar-inner .site-menu,
+.site-header .navigation-bar-inner .site-menu {
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.site-header .contact-bar-inner .site-connect,
+.site-header .navigation-bar-inner .site-connect {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media only screen and (min-width: 800px) {
+  .site-header .contact-bar-inner .site-search,
+  .site-header .navigation-bar-inner .site-search {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 .site-header .contact-bar-inner .contact-point {
   display: block;
@@ -3494,15 +3558,17 @@ a:hover, a:active {
     height: auto;
   }
 }
-.site-header .contact-bar-inner a, .site-header .contact-bar-inner i,
-.site-header .navigation-bar-inner a,
-.site-header .navigation-bar-inner i {
-  display: block;
-}
-.site-header .contact-bar-inner i,
-.site-header .navigation-bar-inner i {
-  font-size: 32px;
-  font-size: 2rem;
+@media only screen and (min-width: 800px) {
+  .site-header .contact-bar-inner .nav-control {
+    width: 33.33333%;
+  }
+  .site-header .contact-bar-inner .site-title {
+    text-align: left;
+  }
+  .site-header .contact-bar-inner .site-email,
+  .site-header .contact-bar-inner .site-phone {
+    text-align: right;
+  }
 }
 .site-header .navigation-items-inner ul {
   list-style: none;

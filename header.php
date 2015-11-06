@@ -41,6 +41,7 @@
 							<?php else : ?>
 							<p id="site-title"><?php bloginfo( 'name' ); ?></p>
 							<?php endif; ?>
+							<span>djh</span>
 						</a>
 					</div>
 
