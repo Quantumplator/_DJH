@@ -1,5 +1,6 @@
 .site-header {
   height: 88vh;
+//  background: image;
   .flexbox {
     display: flex;
   }
@@ -7,6 +8,7 @@
     flex-direction: column;
     @include media(tablet, general) {
       flex-direction: row;
+      align-content: baseline;
     }
   }
   .column {
@@ -18,11 +20,25 @@
   }
   .site-contact-bar { background: $color__cream; }
   .site-navigation-bar { background: $color__white; }
-  .site-hero-bar {  }
+  .site-hero-bar { background: $color__heidi; }
 
-  .site-contact-wrap {  }
+  .site-contact-wrap {
+    a {
+      display: inline-block;
+    }
+  }
   .site-navigation-wrap {  }
   .site-hero-wrap {  }
   .site-promo-wrap {  }
+
+  .site-title {
+    font-family: 'Open Sans';
+    @include font-size(1.25);
+    &::before {
+      content: 'djh';
+      display: inline-block;
+      text-indent: 0;
+    }
+  }
 
 }

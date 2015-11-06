@@ -3456,6 +3456,9 @@ a:hover, a:active {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-align-content: baseline;
+        -ms-flex-line-pack: baseline;
+            align-content: baseline;
   }
 }
 .site-header .column {
@@ -3473,6 +3476,22 @@ a:hover, a:active {
 }
 .site-header .site-navigation-bar {
   background: #FBFEF9;
+}
+.site-header .site-hero-bar {
+  background: #A6D3A0;
+}
+.site-header .site-contact-wrap a {
+  display: inline-block;
+}
+.site-header .site-title {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.site-header .site-title::before {
+  content: 'djh';
+  display: inline-block;
+  text-indent: 0;
 }
 
 /*--------------------------------------------------------------
