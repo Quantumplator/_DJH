@@ -28,23 +28,25 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<div id="site-branding" class="site-branding">
-
 			<div class="site-branding-wrap">
 
 				<div class="site-contact-bar">
+					<div class="site-contact-barwrap">
 
-					<!-- Display site-title as h1 on front-page, p on others to allow article h1 -->
-					<?php if ( is_front_page() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif; ?>
-					      <!-- .site-title -->
+						<!-- Display site-title as h1 on front-page, p on others to allow article h1 -->
+						<?php if ( is_front_page() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php endif; ?>
+						      <!-- .site-title -->
 
-					<p class="site-contact-points">
-	      		<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" class="site-email">admin@dylanjharris.net</a>' ); ?>
-	      		<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone">(509) 123&ndash;4567</a>' ); ?>
-					</p>  <!-- .site-contact-points -->
+						<p class="site-contact-points">
+		      		<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" class="site-email">admin@dylanjharris.net</a>' ); ?>
+		      		<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone">(509) 123&ndash;4567</a>' ); ?>
+						</p>  <!-- .site-contact-points -->
+
+					</div>
 
 				</div><!-- .site-contact-bar -->
 
@@ -81,7 +83,9 @@
 
 		<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
 		<aside class="site-promo">
-			<?php dynamic_sidebar( 'sidebar-promo' ); ?>
+			<div class="site-promo-wrap">
+				<?php dynamic_sidebar( 'sidebar-promo' ); ?>				
+			</div>
 		</aside>
 		<?php } ?>
 		      <!-- .site-promo -->

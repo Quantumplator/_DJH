@@ -3420,7 +3420,7 @@ a:hover, a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
@@ -3450,27 +3450,17 @@ a:hover, a:active {
       -ms-flex-line-pack: end;
           align-content: end;
 }
-.site-header .site-branding {
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-}
-.site-header .site-branding .site-contact-bar,
-.site-header .site-branding .site-navigation-bar,
-.site-header .site-branding .site-hero-bar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
 .site-header .site-promo {
   background: #755C3B;
-  color: #FCFBE3;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.site-header .site-branding {
+  background: #FCFBE3;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 /*--------------------------------------------------------------
