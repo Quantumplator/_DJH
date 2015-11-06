@@ -97,19 +97,19 @@
 	}
 }
 
-
-/* Social menu. */
-.site-social,
-.menu-social {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
+/* All Menus */
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	li {
 		display: inline-block;
 		@include padding-sides(0.5);
 	}
+}
+
+/* Social menus. */
+.social-menu {
   a::before {
     // display: inline-block;
     vertical-align: top;

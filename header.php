@@ -29,7 +29,7 @@
 
 		<div id="site-branding" class="site-branding flexbox column">
 
-			<div class="site-contact-bar">
+			<div class="site-contact-bar flex-item">
 				<div class="contact-bar-inner flexbox row">
 
 					<?php // printf( esc_html__( '%1$s', '_djh' ), 'html' ); ?>
@@ -96,12 +96,22 @@
 			</div>
 
 			<div class="site-navigation-items">
-				<nav id="site-navigation" class="navigation-items-inner flexbox column" role="navigation">
-					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
-					<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
-					<?php _djh_site_social_menu(); ?>
+				<nav class="navigation-items-inner flexbox col-row" role="navigation">
+
+					<div class="navigation-item nav-menu">
+						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</div>
+
+					<div class="navigation-item nav-search">
+						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
+						<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
+					</div>
+
+					<div class="navigation-item nav-social">
+						<?php _djh_site_social_menu(); ?>
+					</div>
+
 				</nav><!-- .navigation-bar-inner  -->
 			</div><!-- .site-navigation-bar -->
 			
