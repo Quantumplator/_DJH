@@ -40,8 +40,8 @@
 				      <!-- .site-title -->
 
 				<p class="site-contact-points">
-					<a href="mailto:admin@dylanjharris.net" class="site-email">admin@dylanjharris.net</a>
-					<a href="tel:+15091234567" class="site-phone">(509) 123&ndash;4567</a>
+      		<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" class="site-email">admin@dylanjharris.net</a>' ); ?>
+      		<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone">(509) 123&ndash;4567</a>' ); ?>					
 				</p>  <!-- .site-contact-points -->
 
 			</div><!-- .site-contact-bar -->
