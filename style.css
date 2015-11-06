@@ -3516,6 +3516,23 @@ a:hover, a:active {
     padding-left: 1rem;
   }
 }
+.site-header .contact-bar-inner .site-email .contact-point::before,
+.site-header .contact-bar-inner .site-phone .contact-point::before,
+.site-header .navigation-bar-inner .site-email .contact-point::before,
+.site-header .navigation-bar-inner .site-phone .contact-point::before {
+  display: inline-block;
+  font-family: "Fontawesome";
+  padding-right: 8px;
+  padding-right: 0.5rem;
+}
+.site-header .contact-bar-inner .site-email .contact-point::before,
+.site-header .navigation-bar-inner .site-email .contact-point::before {
+  content: '\f199';
+}
+.site-header .contact-bar-inner .site-phone .contact-point::before,
+.site-header .navigation-bar-inner .site-phone .contact-point::before {
+  content: '\f098';
+}
 .site-header .contact-bar-inner .nav-control,
 .site-header .navigation-bar-inner .nav-control {
   width: 64px;
