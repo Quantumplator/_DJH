@@ -80,7 +80,7 @@
 		</div><!-- .site-branding -->
 
 		<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
-		<aside class="site-promo-bar">
+		<aside class="site-promo">
 			<?php dynamic_sidebar( 'sidebar-promo' ); ?>
 		</aside>
 		<?php } ?>

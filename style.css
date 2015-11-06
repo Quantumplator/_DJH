@@ -3446,11 +3446,31 @@ a:hover, a:active {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-align-content: end;
+      -ms-flex-line-pack: end;
+          align-content: end;
 }
 .site-header .site-branding {
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
+}
+.site-header .site-branding .site-contact-bar,
+.site-header .site-branding .site-navigation-bar,
+.site-header .site-branding .site-hero-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.site-header .site-promo {
+  background: #755C3B;
+  color: #FCFBE3;
 }
 
 /*--------------------------------------------------------------
@@ -3507,17 +3527,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
-body {
-  text-align: center;
-}
-body .site {
-  width: 100%;
-  margin: 0 auto;
-  text-align: left;
-  max-width: 1024px;
-  max-width: 64rem;
-}
-
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/

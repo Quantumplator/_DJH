@@ -2,10 +2,26 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-content: end;
   .site-branding {
     order: 1;
+    .site-contact-bar,
+    .site-navigation-bar,
+    .site-hero-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .site-contact-bar {
+    }
+    .site-navigation-bar {
+    }
+    .site-hero-bar {
+    }
   }
   .site-promo {
+    background: $color__brown;
+    color: $color__cream;
 
   }
 }
