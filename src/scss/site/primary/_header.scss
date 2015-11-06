@@ -8,7 +8,7 @@
     flex-direction: column;
     @include media(tablet, general) {
       flex-direction: row;
-      align-content: baseline;
+      justify-content: space-between;
     }
   }
   .column {
@@ -24,7 +24,7 @@
 
   .site-contact-wrap {
     a {
-      display: inline-block;
+      display: block;
     }
   }
   .site-navigation-wrap {  }
@@ -34,9 +34,9 @@
   .site-title {
     font-family: 'Open Sans';
     @include font-size(1.25);
-    &::before {
+    a::before {
       content: 'djh';
-      display: inline-block;
+      display: block;
       text-indent: 0;
     }
   }

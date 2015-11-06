@@ -3339,11 +3339,13 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
+  clip: rect 1px 1px 1px 1px;
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden;
+  right: 0;
 }
 .screen-reader-text:focus {
   background-color: #FCFBE3;
@@ -3456,9 +3458,9 @@ a:hover, a:active {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-align-content: baseline;
-        -ms-flex-line-pack: baseline;
-            align-content: baseline;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .site-header .column {
@@ -3481,16 +3483,16 @@ a:hover, a:active {
   background: #A6D3A0;
 }
 .site-header .site-contact-wrap a {
-  display: inline-block;
+  display: block;
 }
 .site-header .site-title {
   font-family: 'Open Sans';
   font-size: 20px;
   font-size: 1.25rem;
 }
-.site-header .site-title::before {
+.site-header .site-title a::before {
   content: 'djh';
-  display: inline-block;
+  display: block;
   text-indent: 0;
 }
 

@@ -33,10 +33,13 @@
 				<div class="site-contact-wrap flexbox row">
 					<!-- Display site-title as h1 on front-page, p on others to allow article h1 -->
 					<?php if ( is_front_page() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></a></h1>
 					<?php else : ?>
 					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php endif; ?><!-- .site-title -->
+
+					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true"><i class="fa fa-bars"></i></button>
+					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true"><i class="fa fa-bars"></i></button>
 	      	<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" class="site-email">admin@dylanjharris.net</a>' ); ?>
 	      	<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone">(509) 123&ndash;4567</a>' ); ?>
 				</div>
