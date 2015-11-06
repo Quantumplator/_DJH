@@ -24,8 +24,9 @@
 
 // Header Styles
 .site-header {
-  height: 88vh;
 //  background: image;
+  height: 88vh;
+  @include min-height(31.25); // 500px
   .site-branding {               // flexbox column
     height: 100%;
   }
