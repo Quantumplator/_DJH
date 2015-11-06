@@ -86,7 +86,7 @@
 					</div>
 
 					<div class="site-search nav-control">
-						<button class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
+						<button class="menu-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
 							<i class="fa fa-search"></i>
 							<span>Search</span>
 						</button>
@@ -100,7 +100,12 @@
 
 					<div class="navigation-item nav-menu">
 						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<div class="primary-menu-wraper">
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						</div>
+						<a class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
+							<i class="fa fa-search"></i>
+						</a>
 					</div>
 
 					<div class="navigation-item nav-search">

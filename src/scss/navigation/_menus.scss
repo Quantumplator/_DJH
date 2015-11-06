@@ -75,6 +75,14 @@
 	}
 }
 
+/* Search Toggle */
+.search-toggle {
+	display: none;
+	@include media(tablet, general) {
+		display: inline-block;
+	}
+}
+
 
 .comment-navigation,
 .posts-navigation,
@@ -104,7 +112,6 @@
 	list-style: none;
 	li {
 		display: inline-block;
-		@include padding-sides(0.5);
 	}
 }
 
