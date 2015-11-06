@@ -1,14 +1,28 @@
 .site-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-content: end;
-  .site-promo {      // Pulled above branding
-    background: $color__brown;
+  height: 88vh;
+  .flexbox {
+    display: flex;
+  }
+  .row {
+    flex-direction: column;
+    @include media(tablet, general) {
+      flex-direction: row;
+    }
+  }
+  .column {
+    flex-direction: column;
+  }
+
+  .site-promo-bar {  // This gets pulled to top
     order: -1;
   }
-  .site-branding {
-    background: $color__cream;
-    order: 0;
-  }
+  .site-contact-bar { background: $color__cream; }
+  .site-navigation-bar { background: $color__white; }
+  .site-hero-bar {  }
+
+  .site-contact-wrap {  }
+  .site-navigation-wrap {  }
+  .site-hero-wrap {  }
+  .site-promo-wrap {  }
+
 }
