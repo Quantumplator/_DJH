@@ -4,6 +4,10 @@
   display: flex;
 }
 .row {
+  flex-direction: row;
+}
+
+.col-row {
   width: 100%;
   flex-direction: column;
   @include media(tablet, general) {
@@ -33,6 +37,24 @@
   .site-navigation-bar { background: $color__white; }
   .site-hero-bar { background: $color__heidi; }
 
+  button,
+  .site-title {
+    margin: 0;
+    padding: 0;
+    @include width(4);
+    @include height(4);
+    @include padding(1);
+    @include font-size(2);
+  }
+  .social-bar,
+  .site-social,
+  .contact-bar {
+    @include height(4);
+  }
+  .site-social {
+    @include padding(1);
+  }
+
   .site-contact-wrap {
     flex-direction: row;
     justify-content: space-between;
@@ -48,15 +70,30 @@
         text-indent: 0;
       }
     }
-    .site-email, .site-phone {
+    .site-email, 
+    .site-phone, 
+    .site-social {
+      display: inline-block;
       font-size: 0;
       @include media(tablet, general) {
         font-size: inherit;
         text-indent: 0;
+        @include padding(1);
       }
     }
   }
-  .site-navigation-wrap {  }
+  .site-navigation-wrap {
+    .nav-toggle-bar {
+      flex-direction: row;
+      justify-content: space-between;
+      .search-toggle {
+        order: 1;
+      }
+    }
+    .nav-item-bar {
+      flex-direction: column;
+    }
+  }
   .site-hero-wrap {  }
   .site-promo-wrap {  }
 }

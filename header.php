@@ -38,29 +38,34 @@
 					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php endif; ?><!-- .site-title -->
 
-					
-					<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" class="site-email"><button id="site-email-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="false"><i class="fa fa-envelope"></i></button>admin@dylanjharris.net</a>' ); ?>
-					
-					<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone"><button id="site-phone-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="false"><i class="fa fa-phone"></i></button>(509) 123&ndash;4567</a>' ); ?>
+					<div class="contact-bar">
+						<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="mailto:admin@dylanjharris.net" id="primary-email" class="site-email"><button id="site-email-toggle" class="menu-toggle" aria-controls="primary-email" aria-expanded="false" aria-hidden="false"><i class="fa fa-envelope"></i></button>admin@dylanjharris.net</a>' ); ?>					
+						<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="tel:+15091234567" class="site-phone"><button id="site-phone-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="false"><i class="fa fa-phone"></i></button>(509) 123&ndash;4567</a>' ); ?>
+						<?php printf( esc_html__( '%1$s', '_djh' ), '<a href="" class="site-social"><button id="site-social-toggle" class="menu-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="false"><i class="fa fa-phone"></i>Social</button></a>' ); ?>
+
+					</div>
+
+
+
 				
 				</div>
 			</div><!-- .site-contact-bar -->
 			<div class="site-navigation-bar">
 
-				<nav id="site-navigation" class="site-navigation-wrap flexbox row" role="navigation">
+				<nav id="site-navigation" class="site-navigation-wrap" role="navigation">
+					<div id="nav-toggles" class="nav-toggle-bar flexbox row">
+						<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true"><i class="fa fa-bars"></i></button>
+						<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true"><i class="fa fa-search"></i></button>
+					</div>
+					<div id="nav-items" class="nav-item-bar flexbox col-row">
+						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true"><i class="fa fa-bars"></i></button>
-					<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true"><i class="fa fa-search"></i></button>
-					<button id="site-social-toggle" class="social-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="true"><i class="fa fa-thumbs-o-up"></i></button>
+						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
+						<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
 
-					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
-					<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
-
-					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Join Us', '_djh' ); ?></span>
-					<div id="primary-social" class="site-social"><?php _djh_site_social_menu(); ?></div>
+					</div>
 
 				</nav><!-- .site-navigation  -->
 
