@@ -52,7 +52,7 @@
 					<button id="site-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true"><i class="fa fa-bars"></i></button>
 					<button id="site-search-toggle" class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true"><i class="fa fa-search"></i></button>
 					<button id="site-social-toggle" class="social-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="true"><i class="fa fa-thumbs-o-up"></i></button>
-					
+
 					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
@@ -66,7 +66,7 @@
 
 			</div><!-- .site-navigation-bar -->
 			<div class="site-hero">
-				<h2><span></span></h2>
+				<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
 				<p></p>
 				<a href=""></a>
 				<a href=""></a>
