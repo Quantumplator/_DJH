@@ -28,6 +28,7 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<div id="site-branding" class="site-branding">
+
 			<div class="site-branding-wrap">
 
 				<div class="site-contact-bar">
@@ -67,21 +68,23 @@
 
 				</div><!-- .site-navigation-bar -->
 				
-				<div class="site-hero">
+				<div class="site-hero-bar">
 					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
 					<p></p>
 					<a href=""></a>
 					<a href=""></a>
 				</div><!-- .site-hero -->
 
-			</div>
+			</div><!-- .site-branding-wrap -->
+
 		</div><!-- .site-branding -->
-		<!-- .site-promo .promo-sidebar -->
+
 		<?php if ( is_active_sidebar( 'promo-sidebar' ) ) { ?>
-		<aside class="site-promo">
+		<aside class="site-promo-bar">
 			<?php dynamic_sidebar( 'promo-sidebar' ); ?>
 		</aside>
 		<?php } ?>
+		      <!-- .site-promo -->
 	</header>
 	<!-- #masthead -->
 
