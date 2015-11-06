@@ -3438,6 +3438,15 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header .site-contact-bar .site-title,
+.site-header .site-contact-bar .site-contact-points {
+  display: inline-block;
+  clear: none;
+}
+.site-header .site-contact-bar .site-title {
+  font-size: inherit;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

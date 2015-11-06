@@ -2,7 +2,14 @@
 
   // site-contact-bar
   .site-contact-bar {
+    // display: flex;
+    .site-title,
+    .site-contact-points {
+      display: inline-block;
+      clear: none;
+    }
     .site-title {
+      font-size: inherit;
 
     }
     .site-contact-points {
