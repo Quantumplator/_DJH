@@ -1,21 +1,32 @@
+// Relocate these styles when finished
+
+.flexbox {
+  display: flex;
+}
+.row {
+  width: 100%;
+  flex-direction: column;
+  @include media(tablet, general) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.column {
+  flex-direction: column;
+}
+
+
+
+// Header Styles
 .site-header {
   height: 88vh;
 //  background: image;
-  .flexbox {
-    display: flex;
-  }
-  .row {
-    flex-direction: column;
-    @include media(tablet, general) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-  .column {
-    flex-direction: column;
+  .site-branding { // flexbox
+    height: 100%;
   }
 
   .site-promo-bar {  // This gets pulled to top
+    background: $color__brown;
     order: -1;
   }
   .site-contact-bar { background: $color__cream; }
@@ -23,22 +34,29 @@
   .site-hero-bar { background: $color__heidi; }
 
   .site-contact-wrap {
+    flex-direction: row;
+    justify-content: space-between;
     a {
       display: block;
+    }
+    .site-title {
+      font-family: 'Open Sans';
+      @include font-size(1.25);
+      a::before {
+        content: 'djh';
+        display: block;
+        text-indent: 0;
+      }
+    }
+    .site-email, .site-phone {
+      font-size: 0;
+      @include media(tablet, general) {
+        font-size: inherit;
+        text-indent: 0;
+      }
     }
   }
   .site-navigation-wrap {  }
   .site-hero-wrap {  }
   .site-promo-wrap {  }
-
-  .site-title {
-    font-family: 'Open Sans';
-    @include font-size(1.25);
-    a::before {
-      content: 'djh';
-      display: block;
-      text-indent: 0;
-    }
-  }
-
 }

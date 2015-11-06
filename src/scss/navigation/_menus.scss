@@ -68,19 +68,21 @@
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
 	display: block;
+	height: 100%;
 }
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
+.menu-toggle {
+	@include media(tablet, general) {
 		display: none;
 	}
-	.main-navigation ul {
+}
+.site-navigation-wrap ul {
+	@include media(tablet, general) {
 		display: block;
 	}
 }
+
 
 .comment-navigation,
 .posts-navigation,

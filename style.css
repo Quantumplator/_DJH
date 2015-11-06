@@ -3212,20 +3212,23 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
   display: block;
+  height: 100%;
 }
 
-@media screen and (min-width: 37.5em) {
+@media only screen and (min-width: 800px) {
   .menu-toggle {
     display: none;
   }
+}
 
-  .main-navigation ul {
+@media only screen and (min-width: 800px) {
+  .site-navigation-wrap ul {
     display: block;
   }
 }
+
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -3440,21 +3443,20 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header {
-  height: 88vh;
-}
-.site-header .flexbox {
+.flexbox {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-.site-header .row {
+
+.row {
+  width: 100%;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 @media only screen and (min-width: 800px) {
-  .site-header .row {
+  .row {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
@@ -3463,12 +3465,21 @@ a:hover, a:active {
             justify-content: space-between;
   }
 }
-.site-header .column {
+
+.column {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.site-header {
+  height: 88vh;
+}
+.site-header .site-branding {
+  height: 100%;
+}
 .site-header .site-promo-bar {
+  background: #755C3B;
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
@@ -3482,18 +3493,35 @@ a:hover, a:active {
 .site-header .site-hero-bar {
   background: #A6D3A0;
 }
+.site-header .site-contact-wrap {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .site-header .site-contact-wrap a {
   display: block;
 }
-.site-header .site-title {
+.site-header .site-contact-wrap .site-title {
   font-family: 'Open Sans';
   font-size: 20px;
   font-size: 1.25rem;
 }
-.site-header .site-title a::before {
+.site-header .site-contact-wrap .site-title a::before {
   content: 'djh';
   display: block;
   text-indent: 0;
+}
+.site-header .site-contact-wrap .site-email, .site-header .site-contact-wrap .site-phone {
+  font-size: 0;
+}
+@media only screen and (min-width: 800px) {
+  .site-header .site-contact-wrap .site-email, .site-header .site-contact-wrap .site-phone {
+    font-size: inherit;
+    text-indent: 0;
+  }
 }
 
 /*--------------------------------------------------------------
