@@ -66,7 +66,7 @@
 
 			</div><!-- .site-navigation-bar -->
 			<div class="site-hero">
-				<h2></h2>
+				<h2><span></span></h2>
 				<p></p>
 				<a href=""></a>
 				<a href=""></a>
