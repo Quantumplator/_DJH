@@ -62,7 +62,7 @@
 					<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Join Us', '_djh' ); ?></span>
 					<div id="primary-social" class="site-social"><?php _djh_site_social_menu(); ?></div>
 
-				</nav><!-- .site-navigation -->
+				</nav><!-- .site-navigation  -->
 
 			</div><!-- .site-navigation-bar -->
 			<div class="site-hero">
