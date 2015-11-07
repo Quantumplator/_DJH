@@ -103,9 +103,9 @@
 						<div id="primary-menu-wrapper" class="primary-menu-wrapper">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</div>
-						<a class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
-							<i class="fa fa-search"></i>
-						</a>
+							<a id="full-site-search" class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
+								<i class="fa fa-search"></i>
+							</a>
 					</div>
 
 					<div id="nav-search" class="navigation-item nav-search">

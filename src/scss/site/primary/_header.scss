@@ -36,23 +36,19 @@
     height: 100%;
   }
   .site-contact-bar {              // flex item
-    background: $color__cream;
     @include media(tablet, general) {
       @include padding(.5);
     }
   }
   .site-navigation-bar {           // flex item
-    background: $color__white;
   }
   .site-navigation-items {           // flex item
-    background: $color__heidi;
     @include media(tablet, general) {
       @include padding-top(.5);
       @include padding-sides(.5);
     }
   }
   .site-hero-bar {                 // flex item
-    background: $color__heidi;
     @include media(mobile, general) {
       @include margin-top(.25);
     }
@@ -266,7 +262,7 @@
       }
     }
     .search-form-wrapper {
-      @include margin-bottom(.375);
+      @include margin-ends(.375);
       @include media(tablet, general) {
         @include margin-ends(.375); // 6px to account for 2px border-bottom of .menu items
       }
