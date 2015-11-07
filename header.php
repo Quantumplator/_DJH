@@ -35,7 +35,7 @@
 					<?php // printf( esc_html__( '%1$s', '_djh' ), 'html' ); ?>
 
 					<div class="site-title nav-control">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<?php if ( is_front_page() ) : ?>
 							<h1 id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></h1>
 							<?php else : ?>

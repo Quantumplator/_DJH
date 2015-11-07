@@ -20,7 +20,9 @@
   }
 }
 .flex-bar {
-  @include min-height(4);
+  @include media(mobile, general) {
+    @include min-height(4);    
+  }
 }
 
 
@@ -60,6 +62,13 @@
       @include media(tablet, general) {
         flex-grow: 1;
       }
+      #site-title {
+        @include media(mobile, general) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
     .site-email,
     .site-phone {
@@ -92,6 +101,7 @@
       a, button {
         width: 100%;
         height: 100%;
+        background: transparent;
         @include media(tablet, general) {
           width: auto;
         }
@@ -110,6 +120,18 @@
           box-shadow: none;
         }
       }
+    }
+  }
+
+  .navigation-bar-inner {
+    .site-connect {
+      order: 2;
+    }
+    .site-menu {
+      order: 1;
+    }
+    .site-search {
+      order: 3;
     }
   }
 
@@ -145,7 +167,7 @@
         @include media(tablet, general) {
           padding: 0;
           display: inline-block;
-          @include padding-left(1);
+          @include padding-right(1);
         }
       }
     }
@@ -184,9 +206,9 @@
           @include media(mobile, general) {
             display: block;
             text-align: center;
-            background: grey;
             @include width(4);
             @include height(4);
+            @include padding-top(.5);
             @include font-size(2);
           }
         }
