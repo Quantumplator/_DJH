@@ -3257,10 +3257,8 @@ a:hover, a:active {
   padding: 0;
   list-style: none;
 }
-@media only screen and (min-width: 800px) {
-  .menu li {
-    display: inline-block;
-  }
+.menu li:hover, .menu li:active, .menu li:focus {
+  background: #FCFBE3;
 }
 
 /* Social menus. */
@@ -3480,14 +3478,38 @@ a:hover, a:active {
 .site-header .site-contact-bar {
   background: #FCFBE3;
 }
+@media only screen and (min-width: 800px) {
+  .site-header .site-contact-bar {
+    padding: 8px;
+    padding: 0.5rem;
+  }
+}
 .site-header .site-navigation-bar {
   background: #FBFEF9;
 }
 .site-header .site-navigation-items {
-  background: #19381F;
+  background: #A6D3A0;
+}
+@media only screen and (min-width: 800px) {
+  .site-header .site-navigation-items {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+    padding-left: 8px;
+    padding-left: 0.5rem;
+    padding-right: 8px;
+    padding-right: 0.5rem;
+  }
 }
 .site-header .site-hero-bar {
   background: #A6D3A0;
+}
+@media only screen and (min-width: 800px) {
+  .site-header .site-hero-bar {
+    padding-left: 8px;
+    padding-left: 0.5rem;
+    padding-right: 8px;
+    padding-right: 0.5rem;
+  }
 }
 .site-header .site-promo-bar {
   background: #755C3B;
@@ -3745,10 +3767,20 @@ a:hover, a:active {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 800px) {
+  .site-header .navigation-items-inner .search-form-wrapper {
+    margin-top: 8px;
+    margin-top: 0.5rem;
+  }
+}
 .site-header .hero-bar-inner {
   margin: 0 auto;
   max-width: 1024px;
   max-width: 64rem;
+}
+.site-header .promo-bar-inner {
+  min-height: 64px;
+  min-height: 4rem;
 }
 
 /*--------------------------------------------------------------

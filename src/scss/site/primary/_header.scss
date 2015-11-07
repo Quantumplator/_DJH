@@ -37,15 +37,25 @@
   }
   .site-contact-bar {              // flex item
     background: $color__cream;
+    @include media(tablet, general) {
+      @include padding(.5);
+    }
   }
   .site-navigation-bar {           // flex item
     background: $color__white;
   }
   .site-navigation-items {           // flex item
-    background: $color__pine;
+    background: $color__heidi;
+    @include media(tablet, general) {
+      @include padding-top(.5);
+      @include padding-sides(.5);
+    }
   }
   .site-hero-bar {                 // flex item
     background: $color__heidi;
+    @include media(tablet, general) {
+      @include padding-sides(.5);
+    }
   }
   .site-promo-bar {                // flex item
     background: $color__brown;
@@ -219,6 +229,11 @@
         display: inline-block;
       }
     }
+    .search-form-wrapper {
+      @include media(tablet, general) {
+        @include margin-top(.5);
+      }
+    }
 
   }
   .hero-bar-inner {              // flexbox
@@ -227,8 +242,7 @@
     
   }
   .promo-bar-inner {             // flexbox
-    
+    @include min-height(4);
   }
-
 
 }

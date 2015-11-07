@@ -132,7 +132,7 @@
 			<!-- PROMO -->
 			<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
 			<aside class="site-promo-bar flex-bar">
-				<div class="site-promo-wrap">
+				<div class="promo-bar-inner flexbox row">
 					<?php dynamic_sidebar( 'sidebar-promo' ); ?>				
 				</div>
 			</aside><!-- .site-promo -->

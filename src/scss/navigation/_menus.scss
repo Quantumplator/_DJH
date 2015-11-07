@@ -111,8 +111,11 @@
 	padding: 0;
 	list-style: none;
 	li {
+		&:hover, &:active, &:focus {
+			background: $color__cream;
+		}
 		@include media(tablet, general) {
-			display: inline-block;
+			// display: inline-block;
 		}
 	}
 }
