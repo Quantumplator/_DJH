@@ -123,7 +123,7 @@
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
 					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
-					<p>Better ideas. Bigger results. Happier humans.</p>
+					<p>Healthy ideas. Wealthy results. Happy humans.</p>
 					<a href="">Let's get started.</a>
 					<a href=""><i class="fa fa-angle-double-down"></i></a>
 				</div><!-- .hero-bar-inner -->

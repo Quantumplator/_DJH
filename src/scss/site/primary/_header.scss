@@ -211,7 +211,8 @@
         order: 1;
         flex-grow: 1;
       }
-      #site-social-items {
+      #site-social-items,
+      #menu-social-items {
         @include media(mobile, general) {
           display: flex;
           justify-content: space-between;
@@ -219,8 +220,8 @@
       }
       li {
         @include media(tablet, general) {
-          display: inline-block;
-          @include margin-right(1);
+          // display: inline-block;
+          // @include margin-right(1);
         }
         a {
           @include media(mobile, general) {
