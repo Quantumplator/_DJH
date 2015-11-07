@@ -39,7 +39,7 @@
 							<?php if ( is_front_page() ) : ?>
 							<h1 id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></h1>
 							<?php else : ?>
-							<p id="site-title"><?php bloginfo( 'name' ); ?></p>
+							<p id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></p>
 							<?php endif; ?>
 							<span>djh</span>
 						</a>

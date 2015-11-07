@@ -3257,8 +3257,18 @@ a:hover, a:active {
   padding: 0;
   list-style: none;
 }
-.menu li:hover, .menu li:active, .menu li:focus {
-  background: #FCFBE3;
+.menu li {
+  border-bottom: 2px solid transparent;
+}
+@media only screen and (max-width: 799.9px) {
+  .menu li:hover, .menu li:active, .menu li:focus {
+    background: #FBFEF9;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu li:hover, .menu li:active, .menu li:focus {
+    border-bottom: 2px solid #FBFEF9;
+  }
 }
 
 /* Social menus. */
@@ -3539,6 +3549,10 @@ a:hover, a:active {
             flex-grow: 1;
   }
 }
+.site-header .contact-bar-inner .site-title #site-title,
+.site-header .navigation-bar-inner .site-title #site-title {
+  margin: 0;
+}
 @media only screen and (max-width: 799.9px) {
   .site-header .contact-bar-inner .site-title #site-title,
   .site-header .navigation-bar-inner .site-title #site-title {
@@ -3684,15 +3698,24 @@ a:hover, a:active {
 }
 .site-header .navigation-items-inner .nav-menu li {
   display: block;
-  padding: 16px;
-  padding: 1rem;
 }
 @media only screen and (min-width: 800px) {
   .site-header .navigation-items-inner .nav-menu li {
     padding: 0;
     display: inline-block;
-    padding-right: 16px;
-    padding-right: 1rem;
+    margin-right: 16px;
+    margin-right: 1rem;
+  }
+}
+.site-header .navigation-items-inner .nav-menu li a {
+  display: block;
+  padding: 16px;
+  padding: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .site-header .navigation-items-inner .nav-menu li a {
+    display: inline;
+    padding: 0;
   }
 }
 .site-header .navigation-items-inner .nav-search {
@@ -3744,8 +3767,8 @@ a:hover, a:active {
 @media only screen and (min-width: 800px) {
   .site-header .navigation-items-inner .nav-social li {
     display: inline-block;
-    padding-right: 16px;
-    padding-right: 1rem;
+    margin-right: 16px;
+    margin-right: 1rem;
   }
 }
 @media only screen and (max-width: 799.9px) {
@@ -3769,8 +3792,8 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 800px) {
   .site-header .navigation-items-inner .search-form-wrapper {
-    margin-top: 8px;
-    margin-top: 0.5rem;
+    margin-top: 6px;
+    margin-top: 0.375rem;
   }
 }
 .site-header .hero-bar-inner {

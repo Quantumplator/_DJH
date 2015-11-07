@@ -73,6 +73,7 @@
         flex-grow: 1;
       }
       #site-title {
+        margin: 0;
         @include media(mobile, general) {
           display: flex;
           justify-content: center;
@@ -173,11 +174,19 @@
       }
       li {
         display: block;
-        @include padding(1);
+        // @include padding(1);
         @include media(tablet, general) {
           padding: 0;
           display: inline-block;
-          @include padding-right(1);
+          @include margin-right(1);
+        }
+        a {
+          display: block;
+          @include padding(1);
+          @include media(tablet, general) {
+            display: inline;
+            padding: 0;
+          }
         }
       }
     }
@@ -210,7 +219,7 @@
       li {
         @include media(tablet, general) {
           display: inline-block;
-          @include padding-right(1);
+          @include margin-right(1);
         }
         a {
           @include media(mobile, general) {
@@ -231,7 +240,7 @@
     }
     .search-form-wrapper {
       @include media(tablet, general) {
-        @include margin-top(.5);
+        @include margin-top(.375); // 6px to account for 2px border-bottom of .menu items
       }
     }
 

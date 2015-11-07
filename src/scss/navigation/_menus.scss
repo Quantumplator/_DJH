@@ -111,8 +111,14 @@
 	padding: 0;
 	list-style: none;
 	li {
+		border-bottom: 2px solid transparent;
 		&:hover, &:active, &:focus {
-			background: $color__cream;
+			@include media(mobile, general) {
+				background: $color__white;
+			}
+			@include media(tablet, general) {
+				border-bottom: 2px solid $color__white;
+			}
 		}
 		@include media(tablet, general) {
 			// display: inline-block;
