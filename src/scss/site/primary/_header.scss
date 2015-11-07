@@ -53,6 +53,9 @@
   }
   .site-hero-bar {                 // flex item
     background: $color__heidi;
+    @include media(mobile, general) {
+      @include margin-top(.25);
+    }
     @include media(tablet, general) {
       @include padding-sides(.5);
     }
@@ -255,7 +258,6 @@
             left: 0;
           }
         }
-
       }
     }
     .primary-menu-wrapper {
@@ -269,12 +271,13 @@
         @include margin-ends(.375); // 6px to account for 2px border-bottom of .menu items
       }
     }
-
   }
   .hero-bar-inner {              // flexbox
     margin: 0 auto;
     @include max-width(64);
-    
+    .site-more {
+      text-align: center;
+    }
   }
   .promo-bar-inner {             // flexbox
     @include min-height(4);

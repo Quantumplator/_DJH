@@ -125,7 +125,7 @@
 					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
 					<p>Good Ideas. Great Results. Better World.</p>
 					<a href="">Let's get started.</a>
-					<a href=""><i class="fa fa-angle-double-down"></i></a>
+					<a href="" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->
 

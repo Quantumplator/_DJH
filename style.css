@@ -3546,6 +3546,12 @@ a:hover, a:active {
 .site-header .site-hero-bar {
   background: #A6D3A0;
 }
+@media only screen and (max-width: 799.9px) {
+  .site-header .site-hero-bar {
+    margin-top: 4px;
+    margin-top: 0.25rem;
+  }
+}
 @media only screen and (min-width: 800px) {
   .site-header .site-hero-bar {
     padding-left: 8px;
@@ -3855,6 +3861,9 @@ a:hover, a:active {
   margin: 0 auto;
   max-width: 1024px;
   max-width: 64rem;
+}
+.site-header .hero-bar-inner .site-more {
+  text-align: center;
 }
 .site-header .promo-bar-inner {
   min-height: 64px;
