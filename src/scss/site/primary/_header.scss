@@ -27,7 +27,7 @@
 
 // Header Styles
 .site-content {
-  // background: rgba(255,255,255,0.7);
+  background: $color__overlay;
 }
 .site-header {
   background-image: url('img/ready.JPG');
@@ -44,7 +44,7 @@
     }
   }
   .site-branding {               // flexbox column
-    background: rgba(25,56,31,0.8);
+    background: $color__overlay;
     height: 88vh;
     min-height: 88vh;
 

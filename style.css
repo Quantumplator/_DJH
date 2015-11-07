@@ -3514,6 +3514,10 @@ a:hover, a:active {
   }
 }
 
+.site-content {
+  background: rgba(25, 56, 31, 0.8);
+}
+
 .site-header {
   background-image: url("img/ready.JPG");
   background-size: cover;
