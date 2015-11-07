@@ -38,6 +38,12 @@
   background-position: center -50px;
   min-height: 500px;
   min-height: 88vh;
+  a {
+    color: $color__text-main;
+    &:hover, &:active, &:focus {
+      color: $color__cream;
+    }
+  }
   .site-branding {               // flexbox column
     background: rgba(255,255,255,0.7);
     background: rgba(166,211,160, 0.7);
