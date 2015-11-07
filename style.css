@@ -3535,7 +3535,6 @@ a:hover, a:active {
 }
 .site-header .site-branding {
   background: rgba(25, 56, 31, 0.8);
-  height: 88vh;
   min-height: 88vh;
 }
 @media only screen and (min-width: 800px) {
