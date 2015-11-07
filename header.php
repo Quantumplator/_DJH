@@ -71,21 +71,21 @@
 			<div class="site-navigation-bar flex-bar">
 				<div class="navigation-bar-inner flexbox row">
 
-					<div class="site-connect nav-control">
-						<button class="menu-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="true">
+					<div id="site-connect" class="site-connect nav-control">
+						<button id="menu-button" class="menu-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="true">
 							<i class="fa fa-thumbs-o-up"></i>
 							<span>Connect</span>
 						</button>
 					</div>
 
-					<div class="site-menu nav-control">
+					<div id="site-menu" class="site-menu nav-control">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-hidden="true">
 							<i class="fa fa-bars"></i>
 							<span>Menu</span>
 						</button>
 					</div>
 
-					<div class="site-search nav-control">
+					<div id="site-search" class="site-search nav-control">
 						<button class="menu-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
 							<i class="fa fa-search"></i>
 							<span>Search</span>
