@@ -29,7 +29,9 @@
 
 // Header Styles
 .site-header {
-//  background: image;
+  background-image: url('img/ready.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 500px;
   min-height: 88vh;
   .site-branding {               // flexbox column
