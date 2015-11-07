@@ -156,6 +156,14 @@ $media-stack:
   padding-left: $sizeValue * 1rem;
 }
 
+// Rem padding ends output with px fallback
+@mixin padding-ends($sizeValue: 1) {
+  padding-top: ($sizeValue * 16) * 1px;
+  padding-top: $sizeValue * 1rem;
+  padding-bottom: ($sizeValue * 16) * 1px;
+  padding-bottom: $sizeValue * 1rem;
+}
+
 // Rem padding sides output with px fallback
 @mixin padding-sides($sizeValue: 1) {
   padding-left: ($sizeValue * 16) * 1px;
@@ -169,7 +177,6 @@ $media-stack:
   padding: ($sizeValue * 16) * 1px;
   padding: $sizeValue * 1rem;
 }
-
 
 // Rem margin top output with px fallback
 @mixin margin-top($sizeValue: 1) {
@@ -193,6 +200,14 @@ $media-stack:
 @mixin margin-left($sizeValue: 1) {
   margin-left: ($sizeValue * 16) * 1px;
   margin-left: $sizeValue * 1rem;
+}
+
+// Rem margin ends output with px fallback
+@mixin margin-ends($sizeValue: 1) {
+  margin-top: ($sizeValue * 16) * 1px;
+  margin-top: $sizeValue * 1rem;
+  margin-bottom: ($sizeValue * 16) * 1px;
+  margin-bottom: $sizeValue * 1rem;
 }
 
 // Rem margin sides output with px fallback
