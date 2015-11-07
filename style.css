@@ -3885,6 +3885,15 @@ a:hover, a:active {
 .site-header .hero-bar-inner .hero-bar {
   display: block;
 }
+.site-header .hero-bar-inner .design {
+  font-family: 'Kaushan Script', serif;
+}
+.site-header .hero-bar-inner .dev {
+  font-family: 'Source Code Pro', sans-serif;
+}
+.site-header .hero-bar-inner .creatives {
+  font-family: 'Playfair Display', sans-serif;
+}
 .site-header .promo-bar-inner {
   min-height: 64px;
   min-height: 4rem;
