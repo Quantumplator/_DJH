@@ -3522,7 +3522,7 @@ a:hover, a:active {
   background-image: url("https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
+  background-position: center center;
   min-height: 100vh;
   color: #FBFEF9;
   text-shadow: none;
@@ -3684,6 +3684,7 @@ a:hover, a:active {
   padding: 0;
   border-radius: 0;
   text-align: center;
+  text-shadow: none;
 }
 .site-header .contact-bar-inner .nav-control button, .site-header .contact-bar-inner .nav-control button:hover, .site-header .contact-bar-inner .nav-control button:active, .site-header .contact-bar-inner .nav-control button:focus,
 .site-header .navigation-bar-inner .nav-control button,
@@ -3691,6 +3692,10 @@ a:hover, a:active {
 .site-header .navigation-bar-inner .nav-control button:active,
 .site-header .navigation-bar-inner .nav-control button:focus {
   box-shadow: none;
+}
+.site-header .contact-bar-inner .nav-control button span,
+.site-header .navigation-bar-inner .nav-control button span {
+  line-height: 1.6;
 }
 .site-header .navigation-bar-inner .site-connect {
   -webkit-order: 3;
@@ -3878,9 +3883,8 @@ a:hover, a:active {
           user-select: none;
   max-width: 1024px;
   max-width: 64rem;
-}
-.site-header .hero-bar-inner .site-more {
-  text-align: center;
+  padding-top: 48px;
+  padding-top: 3rem;
 }
 .site-header .hero-bar-inner .hero-bar {
   display: block;
@@ -3889,28 +3893,71 @@ a:hover, a:active {
 }
 .site-header .hero-bar-inner .design {
   font-family: 'Kaushan Script', serif;
-  font-size: 40px;
-  font-size: 2.5rem;
-}
-.site-header .hero-bar-inner .dev {
   font-size: 32px;
   font-size: 2rem;
 }
+@media only screen and (min-width: 568.1px) {
+  .site-header .hero-bar-inner .design {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .site-header .hero-bar-inner .design {
+    font-size: 64px;
+    font-size: 4rem;
+  }
+}
 .site-header .hero-bar-inner .dev {
   font-family: 'Source Code Pro', sans-serif;
-}
-.site-header .hero-bar-inner .tagline {
-  font-family: 'Playfair Display', serif;
-  font-size: 0px;
-  font-size: 0rem;
-}
-.site-header .hero-bar-inner .creatives {
   font-size: 28.8px;
   font-size: 1.8rem;
 }
+@media only screen and (min-width: 568.1px) {
+  .site-header .hero-bar-inner .dev {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .site-header .hero-bar-inner .dev {
+    font-size: 64px;
+    font-size: 4rem;
+  }
+}
 .site-header .hero-bar-inner .creatives,
-.site-header .hero-bar-inner .start {
-  font-family: 'Playfair Display', sans-serif;
+.site-header .hero-bar-inner .ampersand {
+  font-family: 'Playfair Display', serif;
+}
+.site-header .hero-bar-inner .creatives {
+  font-size: 33.6px;
+  font-size: 2.1rem;
+}
+@media only screen and (min-width: 568.1px) {
+  .site-header .hero-bar-inner .creatives {
+    font-size: 64px;
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .site-header .hero-bar-inner .creatives {
+    font-size: 80px;
+    font-size: 5rem;
+  }
+}
+.site-header .hero-bar-inner .tagline {
+  margin: 0;
+  font-size: 32px;
+  font-size: 2rem;
+}
+.site-header .hero-bar-inner .site-more {
+  display: block;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  font-size: 48px;
+  font-size: 3rem;
 }
 .site-header .promo-bar-inner {
   min-height: 64px;

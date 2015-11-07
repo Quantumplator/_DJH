@@ -33,7 +33,7 @@
   background-image: url('https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
+  background-position: center center;
   min-height: 100vh;
   color: $color__white;
   text-shadow: none;
@@ -140,8 +140,12 @@
         // background: transparent;
         border-radius: 0;
         text-align: center;
+        text-shadow: none;
         &, &:hover, &:active, &:focus {
           box-shadow: none;
+        }
+        span {
+          line-height: 1.6;
         }
       }
     }
@@ -290,38 +294,57 @@
     margin: 0 auto;
     user-select: none;
     @include max-width(64);
-    .site-more {
-      text-align: center;
-    }
+    @include padding-top(3);
     .hero-bar {
       display: block;
       @include font-size(2);
-      @include media(tablet, general) {
-        // @include font-size(6);
-      }
+    }
+    .design,
+    .dev,
+    .creatives {
     }
     .design {
       font-family: 'Kaushan Script', serif;
-      @include font-size(2.5);
+      @include font-size(2);
+      @include media(iphoneUp, general) {
+        @include font-size(3);
+      }
+      @include media(tablet, general) {
+        @include font-size(4);
+      }
     }
     .dev  {
-      @include font-size(2);
-    }
-    .dev {
       font-family: 'Source Code Pro', sans-serif;
-    }
-    .tagline {
-      font-family: 'Playfair Display', serif;
-      @include font-size(0);
-    }
-    .creatives {
       @include font-size(1.8);
+      @include media(iphoneUp, general) {
+        @include font-size(3);
+      }
+      @include media(tablet, general) {
+        @include font-size(4);
+      }
     }
     .creatives,
-    .start {
-      font-family: 'Playfair Display', sans-serif;
+    .ampersand {
+      font-family: 'Playfair Display', serif;
+    }
+    .creatives {
+      @include font-size(2.1);
+      @include media(iphoneUp, general) {
+        @include font-size(4);
+      }
+      @include media(tablet, general) {
+        @include font-size(5);
+      }      
     }
     .tagline {
+      margin: 0;
+      @include font-size(2);
+    }
+    .site-more {
+      display: block;
+      flex-grow: 1;
+      text-align: center;
+      @include font-size(3);
     }
   }
   .promo-bar-inner {             // flexbox

@@ -122,10 +122,12 @@
 			
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
-					<h2><span class="design hero-bar">Design, </span><span class="dev hero-bar">Development, </span><span class="creatives hero-bar">&amp; Creative Services.</span></h2>
-					<p class="tagline">Healthy, wealthy, wise.</p>
-					<a class="start" href="">Let's work together.</a>
-					<a href="" class="site-more"><i class="fa fa-angle-double-down"></i></a>
+					<h2><span class="design hero-bar">Design, </span><span class="dev hero-bar">Development <span class="ampersand">&amp;</span> </span><span class="creatives hero-bar">Creative Services.</span></h2>
+<!-- 					<p class="tagline">(we build websites)</p> -->
+					<p class="start">
+						<a href="">{Let's get started.}</a>
+						<a href="" class="site-more"><i class="fa fa-angle-double-down"></i></a>
+					</p>
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->
 
