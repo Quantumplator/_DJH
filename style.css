@@ -3523,6 +3523,7 @@ a:hover, a:active {
 }
 .site-header .site-promo-bar {
   background: #755C3B;
+  background: rgba(117, 92, 59, 0.5);
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
