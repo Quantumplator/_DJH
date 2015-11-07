@@ -101,6 +101,13 @@ $media-stack:
   max-width: $sizeValue * 1rem;
 }
 
+// Rem min-width output with px fallback
+@mixin min-width($sizeValue: 1) {
+  min-width: ($sizeValue * 16) * 1px;
+  min-width: $sizeValue * 1rem;
+}
+
+
 // Rem height output with px fallback
 @mixin height($sizeValue: 1) {
   height: ($sizeValue * 16) * 1px;
@@ -111,6 +118,12 @@ $media-stack:
 @mixin max-height($sizeValue: 1) {
   max-height: ($sizeValue * 16) * 1px;
   max-height: $sizeValue * 1rem;
+}
+
+// Rem min-height output with px fallback
+@mixin min-height($sizeValue: 1) {
+  min-height: ($sizeValue * 16) * 1px;
+  min-height: $sizeValue * 1rem;
 }
 
 
