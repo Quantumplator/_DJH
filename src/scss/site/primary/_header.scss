@@ -28,14 +28,21 @@
 
 
 // Header Styles
+.site-content {
+  background: rgba(255,255,255,0.7);
+}
 .site-header {
   background-image: url('img/ready.JPG');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center left;
   min-height: 500px;
   min-height: 88vh;
   .site-branding {               // flexbox column
+    background: rgba(255,255,255,0.7);
     height: 100%;
+    min-height: 88vh;
+
   }
   .site-contact-bar {              // flex item
     @include media(tablet, general) {
@@ -51,8 +58,8 @@
     }
   }
   .site-hero-bar {                 // flex item
+    flex-grow: 1;
     @include media(mobile, general) {
-      @include margin-top(.25);
     }
     @include media(tablet, general) {
       @include padding-sides(.5);
@@ -272,6 +279,7 @@
   }
   .hero-bar-inner {              // flexbox
     margin: 0 auto;
+    user-select: none;
     @include max-width(64);
     .site-more {
       text-align: center;

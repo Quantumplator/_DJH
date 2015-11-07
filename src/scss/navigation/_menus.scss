@@ -16,7 +16,7 @@
 	}
 	&:hover {
 		@include media(tablet, general) {
-			border-bottom: 2px solid $color__white;
+			border-bottom: 2px solid $color__link;
 		}
 	}
 }
