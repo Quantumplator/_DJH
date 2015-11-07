@@ -19,14 +19,17 @@
     @include max-width(64);
   }
 }
+.flex-bar {
+  @include min-height(4);
+}
 
 
 
 // Header Styles
 .site-header {
 //  background: image;
-  height: 88vh;
-  @include min-height(31.25); // 500px
+  min-height: 500px;
+  min-height: 88vh;
   .site-branding {               // flexbox column
     height: 100%;
   }
@@ -111,6 +114,8 @@
   }
 
   .contact-bar-inner {
+    @include height(4);
+    height: auto;
     .contact-point {
       display: block;
       text-indent: -9999em;
@@ -134,9 +139,18 @@
       @include media(tablet, general) {
         order: 2;
       }
+      li {
+        display: block;
+        @include padding(1);
+        @include media(tablet, general) {
+          padding: 0;
+          display: inline-block;
+          @include padding-left(1);
+        }
+      }
     }
     .nav-search {
-      order: 1;
+      order: 2;
       @include media(tablet, general) {
         order: 3;
         width: 100%;
@@ -144,13 +158,38 @@
       #search-input {
         width: 100%;
         box-sizing: inherit;
+        border-radius: 0;
+        -webkit-appearance: none;
+        @include padding(1);
       }
     }
     .nav-social {
-      order: 2;
+      order: 1;
       @include media(tablet, general) {
         order: 1;
         flex-grow: 1;
+      }
+      #site-social-items {
+        @include media(mobile, general) {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      li {
+        @include media(tablet, general) {
+          display: inline-block;
+          @include padding-right(1);
+        }
+        a {
+          @include media(mobile, general) {
+            display: block;
+            text-align: center;
+            background: grey;
+            @include width(4);
+            @include height(4);
+            @include font-size(2);
+          }
+        }
       }
     }
     .primary-menu-wrapper {
@@ -161,6 +200,8 @@
 
   }
   .hero-bar-inner {              // flexbox
+    margin: 0 auto;
+    @include max-width(64);
     
   }
   .promo-bar-inner {             // flexbox

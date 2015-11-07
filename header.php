@@ -29,7 +29,7 @@
 
 		<div id="site-branding" class="site-branding flexbox column">
 
-			<div class="site-contact-bar flex-item">
+			<div class="site-contact-bar flex-bar">
 				<div class="contact-bar-inner flexbox row">
 
 					<?php // printf( esc_html__( '%1$s', '_djh' ), 'html' ); ?>
@@ -68,7 +68,7 @@
 				</div><!-- .contact-bar-inner -->
 			</div><!-- .site-contact-bar -->
 
-			<div class="site-navigation-bar">
+			<div class="site-navigation-bar flex-bar">
 				<div class="navigation-bar-inner flexbox row">
 
 					<div class="site-connect nav-control">
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 
-			<div class="site-navigation-items">
+			<div class="site-navigation-items flex-bar">
 				<nav class="navigation-items-inner flexbox col-row" role="navigation">
 
 					<div class="navigation-item nav-menu">
@@ -120,18 +120,18 @@
 				</nav><!-- .navigation-bar-inner  -->
 			</div><!-- .site-navigation-bar -->
 			
-			<div class="site-hero-bar">
-				<div class="hero-bar-inner">
+			<div class="site-hero-bar flex-bar">
+				<div class="hero-bar-inner flexbox column">
 					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
-					<p></p>
-					<a href=""></a>
-					<a href=""></a>
+					<p>Better ideas. Greater results. Happier humans.</p>
+					<a href="">Let's get started.</a>
+					<a href=""><i class="fa fa-angle-double-down"></i></a>
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->
 
 			<!-- PROMO -->
 			<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
-			<aside class="site-promo-bar">
+			<aside class="site-promo-bar flex-bar">
 				<div class="site-promo-wrap">
 					<?php dynamic_sidebar( 'sidebar-promo' ); ?>				
 				</div>

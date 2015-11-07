@@ -111,7 +111,9 @@
 	padding: 0;
 	list-style: none;
 	li {
-		display: inline-block;
+		@include media(tablet, general) {
+			display: inline-block;
+		}
 	}
 }
 
