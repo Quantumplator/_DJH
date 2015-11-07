@@ -207,6 +207,17 @@
         -webkit-appearance: none;
         @include padding(1);
       }
+      .search-form-wrapper {
+        position: absolute;
+        left: -9999em;
+      }
+      &.toggled {
+        .search-form-wrapper {
+          position: static;
+          left: 0;
+        }
+
+      }
     }
     .nav-social {
       order: 1;
@@ -232,6 +243,19 @@
             @include font-size(2);
           }
         }
+      }
+      #site-social {
+        #site-social-items {
+          position: absolute;
+          left: -9999em;
+        }
+        &.toggled {
+          #site-social-items {
+            position: static;
+            left: 0;
+          }
+        }
+
       }
     }
     .primary-menu-wrapper {

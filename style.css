@@ -3778,6 +3778,14 @@ a:hover, a:active {
   padding: 16px;
   padding: 1rem;
 }
+.site-header .navigation-items-inner .nav-search .search-form-wrapper {
+  position: absolute;
+  left: -9999em;
+}
+.site-header .navigation-items-inner .nav-search.toggled .search-form-wrapper {
+  position: static;
+  left: 0;
+}
 .site-header .navigation-items-inner .nav-social {
   -webkit-order: 1;
       -ms-flex-order: 1;
@@ -3817,6 +3825,14 @@ a:hover, a:active {
     font-size: 32px;
     font-size: 2rem;
   }
+}
+.site-header .navigation-items-inner .nav-social #site-social #site-social-items {
+  position: absolute;
+  left: -9999em;
+}
+.site-header .navigation-items-inner .nav-social #site-social.toggled #site-social-items {
+  position: static;
+  left: 0;
 }
 @media only screen and (min-width: 800px) {
   .site-header .navigation-items-inner .primary-menu-wrapper {

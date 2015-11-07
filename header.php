@@ -95,12 +95,12 @@
 				</div>
 			</div>
 
-			<div class="site-navigation-items flex-bar">
+			<div class="site-navigation-items">
 				<nav class="navigation-items-inner flexbox col-row" role="navigation">
 
 					<div class="navigation-item nav-menu">
 						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
-						<div id="primary-menu-wrapper" class="primary-menu-wrapper toggled">
+						<div id="primary-menu-wrapper" class="primary-menu-wrapper">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</div>
 						<a class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">
@@ -108,7 +108,7 @@
 						</a>
 					</div>
 
-					<div class="navigation-item nav-search">
+					<div id="nav-search" class="navigation-item nav-search">
 						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Search', '_djh' ); ?></span>
 						<div id="primary-search" class="search-form-wrapper"><?php get_search_form(); ?></div>
 					</div>
@@ -123,7 +123,7 @@
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
 					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
-					<p>Healthy ideas. Wealthy results. Happy humans.</p>
+					<p>Good Ideas. Great Results. Better World.</p>
 					<a href="">Let's get started.</a>
 					<a href=""><i class="fa fa-angle-double-down"></i></a>
 				</div><!-- .hero-bar-inner -->
