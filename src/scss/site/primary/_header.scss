@@ -126,15 +126,37 @@
 
   .navigation-items-inner {        // flexbox
     flex-wrap: wrap;
+    .navigation-item {
+
+    }
     .nav-menu {
-      width: 50%;
+      order: 3;
+      @include media(tablet, general) {
+        order: 2;
+      }
     }
     .nav-search {
-      width: 100%;
+      order: 1;
+      @include media(tablet, general) {
+        order: 3;
+        width: 100%;
+      }
+      #search-input {
+        width: 100%;
+        box-sizing: inherit;
+      }
     }
     .nav-social {
-      width: 50%;
-      order: -1;
+      order: 2;
+      @include media(tablet, general) {
+        order: 1;
+        flex-grow: 1;
+      }
+    }
+    .primary-menu-wrapper {
+      @include media(tablet, general) {
+        display: inline-block;
+      }
     }
 
   }
