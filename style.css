@@ -3884,14 +3884,18 @@ a:hover, a:active {
 }
 .site-header .hero-bar-inner .hero-bar {
   display: block;
+  font-size: 64px;
+  font-size: 4rem;
 }
 .site-header .hero-bar-inner .design {
   font-family: 'Kaushan Script', serif;
 }
-.site-header .hero-bar-inner .dev {
+.site-header .hero-bar-inner .dev,
+.site-header .hero-bar-inner .tagline {
   font-family: 'Source Code Pro', sans-serif;
 }
-.site-header .hero-bar-inner .creatives {
+.site-header .hero-bar-inner .creatives,
+.site-header .hero-bar-inner .start {
   font-family: 'Playfair Display', sans-serif;
 }
 .site-header .promo-bar-inner {

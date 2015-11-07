@@ -295,16 +295,21 @@
     }
     .hero-bar {
       display: block;
+      @include font-size(4);
 
     }
     .design {
       font-family: 'Kaushan Script', serif;
     }
-    .dev {
+    .dev,
+    .tagline {
       font-family: 'Source Code Pro', sans-serif;
     }
-    .creatives {
+    .creatives,
+    .start {
       font-family: 'Playfair Display', sans-serif;
+    }
+    .tagline {
     }
   }
   .promo-bar-inner {             // flexbox
