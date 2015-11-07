@@ -95,7 +95,7 @@
 				</div>
 			</div>
 
-			<div class="site-navigation-items flex-bar">
+			<div class="site-navigation-items">
 				<nav class="navigation-items-inner flexbox col-row" role="navigation">
 
 					<div class="navigation-item nav-menu">
