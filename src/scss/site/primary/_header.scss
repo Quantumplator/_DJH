@@ -241,7 +241,7 @@
     }
     .search-form-wrapper {
       @include media(tablet, general) {
-        @include margin-top(.375); // 6px to account for 2px border-bottom of .menu items
+        @include margin-ends(.375); // 6px to account for 2px border-bottom of .menu items
       }
     }
 
