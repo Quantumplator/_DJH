@@ -10,8 +10,14 @@
 /* Search Toggle */
 .search-toggle {
 	display: none;
+	border-bottom: 2px solid transparent;
 	@include media(tablet, general) {
 		display: inline-block;
+	}
+	&:hover {
+		@include media(tablet, general) {
+			border-bottom: 2px solid $color__white;
+		}
 	}
 }
 
@@ -48,12 +54,21 @@
 /* Main Navigation Hovers*/
 #primary-menu,
 #site-social-items {
-	li {
-		margin-right: 0; // This fixes right margin from general social menu
-		@include media(tablet, general) {
+	@include media(mobile, general) {
+		li {
+			margin-right: 0;
+		}
+
+	}
+	@include media(tablet, general) {
+		li {
 			border-bottom: 2px solid transparent;
 			@include margin-right(1);
 		}
+
+	}
+	li {
+		background: $color__heidi;
 		&:hover, &:active, &:focus {
 			@include media(mobile, general) {
 				background: $color__white;
@@ -62,13 +77,10 @@
 				border-bottom: 2px solid $color__white;
 			}
 		}
-		@include media(tablet, general) {
-			// display: inline-block;
-		}
 	}
 }
 /* Main Navigation */
-.primary-menu-wrapper {
+#primary-menu-wrapper {
 	div {
 		@include media(mobile, general) {
 			position: absolute;
@@ -81,7 +93,29 @@
 			left: 0;
 		}	
 	}
+	li > ul {
+		position: relative;
+		margin-left: 0;
+		padding-left: 0;
+		li:hover {
+			background: $color__cream;
+		}
+		li a {
+			@include padding-left(2);
+		}
+		@include media(tablet, general) {
+			position: absolute;
+			left: -999em;
+			z-index: 99999;
+		}
+	}
+	li:hover > ul {
+		@include media(tablet, general) {
+			left: 0;
+		}
+	}
 }
+
 
 
 /* Social menus. */

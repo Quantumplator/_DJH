@@ -100,7 +100,7 @@
 
 					<div class="navigation-item nav-menu">
 						<span class="screen-reader-text" aria-hidden="false"><?php esc_html_e( 'Primary Menu', '_djh' ); ?></span>
-						<div class="primary-menu-wrapper">
+						<div id="primary-menu-wrapper" class="primary-menu-wrapper toggled">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</div>
 						<a class="search-toggle" aria-controls="primary-search" aria-expanded="false" aria-hidden="true">

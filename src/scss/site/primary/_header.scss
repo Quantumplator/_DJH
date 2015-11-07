@@ -137,13 +137,13 @@
 
   .navigation-bar-inner {
     .site-connect {
-      order: 2;
+      order: 3;
     }
     .site-menu {
       order: 1;
     }
     .site-search {
-      order: 3;
+      order: 2;
     }
   }
 
@@ -182,8 +182,11 @@
           @include margin-right(1);
         }
         a {
-          display: block;
+          display: inline-block;
           @include padding(1);
+          @include media(mobile, general) {
+            min-width: 50%;
+          }
           @include media(tablet, general) {
             display: inline;
             padding: 0;
@@ -219,10 +222,6 @@
         }
       }
       li {
-        @include media(tablet, general) {
-          // display: inline-block;
-          // @include margin-right(1);
-        }
         a {
           @include media(mobile, general) {
             display: block;
@@ -241,6 +240,7 @@
       }
     }
     .search-form-wrapper {
+      @include margin-bottom(.375);
       @include media(tablet, general) {
         @include margin-ends(.375); // 6px to account for 2px border-bottom of .menu items
       }
