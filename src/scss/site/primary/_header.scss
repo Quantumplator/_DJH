@@ -35,11 +35,12 @@
   background-image: url('img/ready.JPG');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center -50px;
   min-height: 500px;
   min-height: 88vh;
   .site-branding {               // flexbox column
     background: rgba(255,255,255,0.7);
+    background: rgba(166,211,160, 0.7);
     height: 100%;
     min-height: 88vh;
 
