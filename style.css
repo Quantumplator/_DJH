@@ -3149,11 +3149,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0C6291;
+  color: #19381F;
   text-decoration: none;
 }
 a:visited {
-  color: #0C6291;
+  color: #19381F;
 }
 a:hover, a:focus, a:active {
   color: #152614;
@@ -3311,7 +3311,7 @@ a:hover, a:active {
 .social-menu a::before {
   vertical-align: top;
   font-family: 'Fontawesome';
-  color: #0C6291;
+  color: #19381F;
   -webkit-font-smoothing: antialiased;
   content: '\f0c0';
 }
