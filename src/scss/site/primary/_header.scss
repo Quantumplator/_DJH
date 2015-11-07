@@ -25,29 +25,27 @@
   }
 }
 
-
-
 // Header Styles
 .site-content {
-  background: rgba(255,255,255,0.7);
+  // background: rgba(255,255,255,0.7);
 }
 .site-header {
   background-image: url('img/ready.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -50px;
-  min-height: 500px;
   min-height: 88vh;
-  a {
-    color: $color__text-main;
+  color: $color__white;
+  text-shadow: none;
+  a, i, span {
+    color: $color__white;
     &:hover, &:active, &:focus {
       color: $color__cream;
     }
   }
   .site-branding {               // flexbox column
-    background: rgba(255,255,255,0.7);
-    background: rgba(166,211,160, 0.7);
-    height: 100%;
+    background: rgba(25,56,31,0.8);
+    height: 88vh;
     min-height: 88vh;
 
   }
@@ -219,6 +217,8 @@
         width: 100%;
         box-sizing: inherit;
         border-radius: 0;
+        border: 0;
+        background: rgba(0,0,0,0.1);
         -webkit-appearance: none;
         @include padding(1);
       }
@@ -256,6 +256,9 @@
             @include height(4);
             @include padding-top(.5);
             @include font-size(2);
+          }
+          &::before {
+            color: $color__cream;
           }
         }
       }

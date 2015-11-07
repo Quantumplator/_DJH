@@ -49,7 +49,7 @@
 						<a href="mailto:admin@dylanjharris.net">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-envelope"></i>
-								Email
+								<span>Email</span>
 							</button>
 							<span class="contact-point">admin@dylanjharris.net</span>
 						</a>
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 
-			<div class="site-navigation-items">
+			<div class="site-navigation-items flex-bar">
 				<nav class="navigation-items-inner flexbox col-row" role="navigation">
 
 					<div class="navigation-item nav-menu">
@@ -123,7 +123,7 @@
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
 					<h2><span class="design">Design, </span><span class="dev">Development, </span><span class="creatives">Creative Services.</span></h2>
-					<p>Good Ideas. Great Results. Better World.</p>
+					<p>Bigger ideas. Better results, Happier people :)</p>
 					<a href="">Let's get started.</a>
 					<a href="" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 				</div><!-- .hero-bar-inner -->

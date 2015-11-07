@@ -16,7 +16,7 @@
 	}
 	&:hover {
 		@include media(tablet, general) {
-			border-bottom: 2px solid $color__link;
+			border-bottom: 2px solid $color__pine;
 		}
 	}
 }
@@ -75,7 +75,7 @@
 				background: $color__white;
 			}
 			@include media(tablet, general) {
-				border-bottom: 2px solid $color__link;
+				border-bottom: 2px solid $color__pine;
 			}
 		}
 	}
