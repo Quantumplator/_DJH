@@ -293,6 +293,19 @@
     .site-more {
       text-align: center;
     }
+    .hero-bar {
+      display: block;
+
+    }
+    .design {
+
+    }
+    .dev {
+
+    }
+    .creatives {
+
+    }
   }
   .promo-bar-inner {             // flexbox
     @include min-height(4);

@@ -3882,6 +3882,9 @@ a:hover, a:active {
 .site-header .hero-bar-inner .site-more {
   text-align: center;
 }
+.site-header .hero-bar-inner .hero-bar {
+  display: block;
+}
 .site-header .promo-bar-inner {
   min-height: 64px;
   min-height: 4rem;
