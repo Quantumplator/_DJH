@@ -26,9 +26,33 @@ jQuery(document).ready(function($){
 	  }
 	});
 
+	$('#site-search').on('click',function(){
+		if($(this).attr('data-click-state') == 1) {
+			$(this).attr('data-click-state', 0)
+			/*Change this to your own property / function - Click State 1*/
+			$('#nav-search').removeClass('toggled')
+			/*Click State 1 finish*/
+	  } else {
+	  	$(this).attr('data-click-state', 1)
+	  	/*Change this to your own property / function - Click State 2*/
+	  	$('#nav-search').addClass('toggled')
+	  /*Click State 2 finish*/
+	  }
+	});
 
-
-
+	$('#site-connect').on('click',function(){
+		if($(this).attr('data-click-state') == 1) {
+			$(this).attr('data-click-state', 0)
+			/*Change this to your own property / function - Click State 1*/
+			$('#site-social').removeClass('toggled')
+			/*Click State 1 finish*/
+	  } else {
+	  	$(this).attr('data-click-state', 1)
+	  	/*Change this to your own property / function - Click State 2*/
+	  	$('#site-social').addClass('toggled')
+	  /*Click State 2 finish*/
+	  }
+	});
 
 }); 
 
