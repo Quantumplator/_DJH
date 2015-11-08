@@ -16,7 +16,7 @@
 	}
 	&:hover {
 		@include media(tablet, general) {
-			border-bottom: 2px solid $color__pine;
+			border-bottom: 2px solid $color__cream;
 		}
 	}
 }
@@ -116,6 +116,17 @@
 	li:hover > ul {
 		@include media(tablet, general) {
 			left: 0;
+		}
+	}
+	li.current-menu-item {
+		@include media(mobile, general) {
+			a {
+				font-style: italic;
+			}
+			
+		}
+		@include media(tablet, general) {
+			border-bottom: 2px solid $color__cream;
 		}
 	}
 }

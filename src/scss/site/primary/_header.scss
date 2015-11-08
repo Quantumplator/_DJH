@@ -275,8 +275,10 @@
       }
       #site-social {
         #site-social-items {
-          position: absolute;
-          left: -9999em;
+          @include media(mobile, general) {
+            position: absolute;
+            left: -9999em;            
+          }
         }
         &.toggled {
           #site-social-items {

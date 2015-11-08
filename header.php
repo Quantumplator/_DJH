@@ -61,7 +61,7 @@
 								<i class="fa fa-phone"></i>
 								<span>Call</span>
 							</button>
-							<span class="contact-point">(509) 123&ndash;4567</span>
+							<span class="contact-point">(805) 540&ndash;0746</span>
 						</a>
 					</div>
 

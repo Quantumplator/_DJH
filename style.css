@@ -3190,7 +3190,7 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 800px) {
   .search-toggle:hover {
-    border-bottom: 2px solid #19381F;
+    border-bottom: 2px solid #FCFBE3;
   }
 }
 
@@ -3305,6 +3305,16 @@ a:hover, a:active {
 @media only screen and (min-width: 800px) {
   #primary-menu-wrapper li:hover > ul {
     left: 0;
+  }
+}
+@media only screen and (max-width: 799.9px) {
+  #primary-menu-wrapper li.current-menu-item a {
+    font-style: italic;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #primary-menu-wrapper li.current-menu-item {
+    border-bottom: 2px solid #FCFBE3;
   }
 }
 
@@ -3861,9 +3871,11 @@ a:hover, a:active {
 .site-header .navigation-items-inner .nav-social li a::before {
   color: #FCFBE3;
 }
-.site-header .navigation-items-inner .nav-social #site-social #site-social-items {
-  position: absolute;
-  left: -9999em;
+@media only screen and (max-width: 799.9px) {
+  .site-header .navigation-items-inner .nav-social #site-social #site-social-items {
+    position: absolute;
+    left: -9999em;
+  }
 }
 .site-header .navigation-items-inner .nav-social #site-social.toggled #site-social-items {
   position: static;
