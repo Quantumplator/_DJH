@@ -3519,7 +3519,7 @@ a:hover, a:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 88vh;
   color: #FCFBE3;
   text-shadow: none;
 }
@@ -3531,7 +3531,7 @@ a:hover, a:active {
 }
 .site-header .site-branding {
   background: rgba(25, 56, 31, 0.5);
-  min-height: 100vh;
+  min-height: 88vh;
 }
 .site-header .site-contact-bar,
 .site-header .site-navigation-bar,
