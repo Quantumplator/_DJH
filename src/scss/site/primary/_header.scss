@@ -318,22 +318,27 @@
     .creatives {
     }
     .design {
-      font-family: 'Kaushan Script', serif;
+      font-family: 'Lobster Two', serif;
       @include font-size(2.3);
       @include media(iphoneUp, general) {
         @include font-size(4);
       }
       @include media(tablet, general) {
+        transform: translateX(-0.85rem);
         @include font-size(5);
       }
     }
     .dev  {
       font-family: 'Source Code Pro', sans-serif;
+      font-weight: bold;
+      transform: translateX(0.4rem);
       @include font-size(2.4);
       @include media(iphoneUp, general) {
-        @include font-size(3);
+        transform: translateX(0.68rem);
+        @include font-size(4);
       }
       @include media(tablet, general) {
+        transform: translateX(0);
         @include font-size(5);
       }
     }
@@ -343,11 +348,14 @@
     }
     .creatives {
       font-family: 'Bangers';
+      transform: translateX(0.4rem);
       @include font-size(2.9);
       @include media(iphoneUp, general) {
-        @include font-size(4);
+        transform: translateX(0.76rem);
+        @include font-size(5);
       }
       @include media(tablet, general) {
+        transform: translateX(0.05rem);
         @include font-size(7);
       }  
     }

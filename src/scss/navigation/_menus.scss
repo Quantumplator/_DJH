@@ -72,10 +72,13 @@
 	li {
 		&:hover, &:active, &:focus {
 			@include media(mobile, general) {
-				background: $color__white;
+				background: $color__cream;
+				a, a::before {
+					color: $color__black;
+				}
 			}
 			@include media(tablet, general) {
-				border-bottom: 2px solid $color__pine;
+				border-bottom: 2px solid $color__cream;
 			}
 		}
 	}
