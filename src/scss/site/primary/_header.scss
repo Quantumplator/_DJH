@@ -48,6 +48,11 @@
     min-height: 88vh;
 
   }
+  .site-contact-bar,
+  .site-navigation-bar,
+  .site-navigation-items {
+    background: rgba(0,0,0,0.5);
+  }
   .site-contact-bar {              // flex item
     @include media(tablet, general) {
       @include padding(.5);
@@ -298,6 +303,7 @@
     @include padding-top(1);
     h2, p {
       margin: 0;
+      font-weight: normal;
     }
     .hero-bar {
       display: block;
@@ -309,22 +315,22 @@
     }
     .design {
       font-family: 'Kaushan Script', serif;
-      @include font-size(2);
+      @include font-size(2.3);
       @include media(iphoneUp, general) {
-        @include font-size(3);
+        @include font-size(4);
       }
       @include media(tablet, general) {
-        @include font-size(4);
+        @include font-size(5);
       }
     }
     .dev  {
       font-family: 'Source Code Pro', sans-serif;
-      @include font-size(1.8);
+      @include font-size(2.4);
       @include media(iphoneUp, general) {
         @include font-size(3);
       }
       @include media(tablet, general) {
-        @include font-size(4);
+        @include font-size(5);
       }
     }
     .creatives,
@@ -332,13 +338,13 @@
       font-family: 'Playfair Display', serif;
     }
     .creatives {
-      font-family: 'Pacifico';
-      @include font-size(2.1);
+      font-family: 'Bangers';
+      @include font-size(2.9);
       @include media(iphoneUp, general) {
         @include font-size(4);
       }
       @include media(tablet, general) {
-        @include font-size(6);
+        @include font-size(7);
       }  
     }
     .tagline {

@@ -3533,6 +3533,11 @@ a:hover, a:active {
   background: rgba(25, 56, 31, 0.5);
   min-height: 88vh;
 }
+.site-header .site-contact-bar,
+.site-header .site-navigation-bar,
+.site-header .site-navigation-items {
+  background: rgba(0, 0, 0, 0.5);
+}
 @media only screen and (min-width: 800px) {
   .site-header .site-contact-bar {
     padding: 8px;
@@ -3887,6 +3892,7 @@ a:hover, a:active {
 }
 .site-header .hero-bar-inner h2, .site-header .hero-bar-inner p {
   margin: 0;
+  font-weight: normal;
 }
 .site-header .hero-bar-inner .hero-bar {
   display: block;
@@ -3895,25 +3901,25 @@ a:hover, a:active {
 }
 .site-header .hero-bar-inner .design {
   font-family: 'Kaushan Script', serif;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 36.8px;
+  font-size: 2.3rem;
 }
 @media only screen and (min-width: 568.1px) {
   .site-header .hero-bar-inner .design {
-    font-size: 48px;
-    font-size: 3rem;
+    font-size: 64px;
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 800px) {
   .site-header .hero-bar-inner .design {
-    font-size: 64px;
-    font-size: 4rem;
+    font-size: 80px;
+    font-size: 5rem;
   }
 }
 .site-header .hero-bar-inner .dev {
   font-family: 'Source Code Pro', sans-serif;
-  font-size: 28.8px;
-  font-size: 1.8rem;
+  font-size: 38.4px;
+  font-size: 2.4rem;
 }
 @media only screen and (min-width: 568.1px) {
   .site-header .hero-bar-inner .dev {
@@ -3923,8 +3929,8 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 800px) {
   .site-header .hero-bar-inner .dev {
-    font-size: 64px;
-    font-size: 4rem;
+    font-size: 80px;
+    font-size: 5rem;
   }
 }
 .site-header .hero-bar-inner .creatives,
@@ -3932,9 +3938,9 @@ a:hover, a:active {
   font-family: 'Playfair Display', serif;
 }
 .site-header .hero-bar-inner .creatives {
-  font-family: 'Pacifico';
-  font-size: 33.6px;
-  font-size: 2.1rem;
+  font-family: 'Bangers';
+  font-size: 46.4px;
+  font-size: 2.9rem;
 }
 @media only screen and (min-width: 568.1px) {
   .site-header .hero-bar-inner .creatives {
@@ -3944,8 +3950,8 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 800px) {
   .site-header .hero-bar-inner .creatives {
-    font-size: 96px;
-    font-size: 6rem;
+    font-size: 112px;
+    font-size: 7rem;
   }
 }
 .site-header .hero-bar-inner .tagline {
