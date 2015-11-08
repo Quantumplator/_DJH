@@ -17,11 +17,13 @@ jQuery(document).ready(function($){
 		if($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0)
 			/*Change this to your own property / function - Click State 1*/
+			$(this).removeClass('toggled')
 			$('#primary-menu-wrapper').removeClass('toggled')
 			/*Click State 1 finish*/
 	  } else {
 	  	$(this).attr('data-click-state', 1)
 	  	/*Change this to your own property / function - Click State 2*/
+			$(this).addClass('toggled')
 	  	$('#primary-menu-wrapper').addClass('toggled')
 	  /*Click State 2 finish*/
 	  }
@@ -31,11 +33,13 @@ jQuery(document).ready(function($){
 		if($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0)
 			/*Change this to your own property / function - Click State 1*/
+			$(this).removeClass('toggled')
 			$('#nav-search').removeClass('toggled')
 			/*Click State 1 finish*/
 	  } else {
 	  	$(this).attr('data-click-state', 1)
 	  	/*Change this to your own property / function - Click State 2*/
+			$(this).addClass('toggled')
 	  	$('#nav-search').addClass('toggled')
 	  /*Click State 2 finish*/
 	  }
@@ -45,11 +49,13 @@ jQuery(document).ready(function($){
 		if($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0)
 			/*Change this to your own property / function - Click State 1*/
+			$(this).removeClass('toggled')
 			$('#nav-search').removeClass('toggled')
 			/*Click State 1 finish*/
 	  } else {
 	  	$(this).attr('data-click-state', 1)
 	  	/*Change this to your own property / function - Click State 2*/
+			$(this).addClass('toggled')
 	  	$('#nav-search').addClass('toggled')
 	  /*Click State 2 finish*/
 	  }
@@ -60,11 +66,13 @@ jQuery(document).ready(function($){
 		if($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0)
 			/*Change this to your own property / function - Click State 1*/
+			$(this).removeClass('toggled')
 			$('#site-social').removeClass('toggled')
 			/*Click State 1 finish*/
 	  } else {
 	  	$(this).attr('data-click-state', 1)
 	  	/*Change this to your own property / function - Click State 2*/
+			$(this).addClass('toggled')
 	  	$('#site-social').addClass('toggled')
 	  /*Click State 2 finish*/
 	  }

@@ -34,10 +34,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 93vh;
-  min-height: 400px;
   color: $color__cream;
   text-shadow: none;
+  min-height: 100vh;
   a, i, span {
     color: $color__cream;
     &:hover, &:active, &:focus {
@@ -46,14 +45,13 @@
   }
   .site-branding {               // flexbox column
     background: $color__overlay;
-    height: 93vh;
-    min-height: 400px;
-
+    // height: 90vh;
+    min-height: 100vh;
   }
   .site-contact-bar,
   .site-navigation-bar,
   .site-navigation-items {
-    background: rgba(0,0,0,0.5);
+    background: rgba(21,38,20,0.8);
   }
   .site-contact-bar {              // flex item
     @include media(tablet, general) {
@@ -104,9 +102,6 @@
     }
     .site-email,
     .site-phone {
-      @include media(tablet, general) {
-        @include padding-left(1);
-      }
       .contact-point::before {
         display: inline-block;
         font-family: "Fontawesome";
@@ -118,6 +113,9 @@
     }
     .site-phone .contact-point::before {
       content: '\f098';      
+      @include media(tablet, general) {
+        @include padding-left(4.4);
+      }
     }
 
     .nav-control {
@@ -219,7 +217,7 @@
       }
     }
     .nav-search {
-      order: 2;
+      order: 1;
       @include media(tablet, general) {
         order: 3;
         width: 100%;
@@ -246,7 +244,7 @@
       }
     }
     .nav-social {
-      order: 1;
+      order: 2;
       @include media(tablet, general) {
         order: 1;
         flex-grow: 1;
@@ -306,7 +304,8 @@
     margin: 0 auto;
     user-select: none;
     @include max-width(64);
-    @include padding-top(1);
+    @include padding-top(2);
+    @include padding-bottom(8);
     h2, p {
       margin: 0;
       font-weight: normal;
@@ -332,24 +331,23 @@
     }
     .dev  {
       font-family: 'Source Code Pro', sans-serif;
-      font-weight: bold;
       transform: translateX(0.4rem);
-      @include font-size(2.4);
+      font-weight: bold;
+      @include font-size(2.1);
       @include media(iphoneUp, general) {
         transform: translateX(0.68rem);
-        @include font-size(4);
+        @include font-size(3.5);
       }
       @include media(tablet, general) {
         transform: translateX(0);
         @include font-size(5);
       }
     }
-    .creatives,
     .ampersand {
       font-family: 'Playfair Display', serif;
     }
     .creatives {
-      font-family: 'Bangers';
+      font-family: 'Lobster Two';
       transform: translateX(0.4rem);
       @include font-size(2.9);
       @include media(iphoneUp, general) {

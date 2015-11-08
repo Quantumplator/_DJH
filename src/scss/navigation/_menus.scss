@@ -84,6 +84,17 @@
 	}
 }
 /* Main Navigation */
+#site-connect.toggled,
+#site-search.toggled,
+#site-menu.toggled {
+	background: $color__cream;
+	&, a, i, span {
+		color: $color__black;
+	}
+}
+#full-site-search.toggled {
+	border-bottom: 2px solid $color__cream;
+}
 #primary-menu-wrapper {
 	div {
 		@include media(mobile, general) {
