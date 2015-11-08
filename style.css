@@ -3514,28 +3514,24 @@ a:hover, a:active {
   }
 }
 
-.site-content {
-  background: rgba(25, 56, 31, 0.8);
-}
-
 .site-header {
   background-image: url("https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100vh;
-  color: #FBFEF9;
+  min-height: 88vh;
+  color: #FCFBE3;
   text-shadow: none;
 }
 .site-header a, .site-header i, .site-header span {
-  color: #FBFEF9;
-}
-.site-header a:hover, .site-header a:active, .site-header a:focus, .site-header i:hover, .site-header i:active, .site-header i:focus, .site-header span:hover, .site-header span:active, .site-header span:focus {
   color: #FCFBE3;
 }
+.site-header a:hover, .site-header a:active, .site-header a:focus, .site-header i:hover, .site-header i:active, .site-header i:focus, .site-header span:hover, .site-header span:active, .site-header span:focus {
+  color: #FBFEF9;
+}
 .site-header .site-branding {
-  background: rgba(25, 56, 31, 0.8);
-  min-height: 100vh;
+  background: rgba(25, 56, 31, 0.5);
+  min-height: 88vh;
 }
 @media only screen and (min-width: 800px) {
   .site-header .site-contact-bar {
@@ -3876,6 +3872,9 @@ a:hover, a:active {
   }
 }
 .site-header .hero-bar-inner {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3883,8 +3882,11 @@ a:hover, a:active {
           user-select: none;
   max-width: 1024px;
   max-width: 64rem;
-  padding-top: 48px;
-  padding-top: 3rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+}
+.site-header .hero-bar-inner h2, .site-header .hero-bar-inner p {
+  margin: 0;
 }
 .site-header .hero-bar-inner .hero-bar {
   display: block;
@@ -3930,6 +3932,7 @@ a:hover, a:active {
   font-family: 'Playfair Display', serif;
 }
 .site-header .hero-bar-inner .creatives {
+  font-family: 'Pacifico';
   font-size: 33.6px;
   font-size: 2.1rem;
 }
@@ -3941,20 +3944,36 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 800px) {
   .site-header .hero-bar-inner .creatives {
-    font-size: 80px;
-    font-size: 5rem;
+    font-size: 96px;
+    font-size: 6rem;
   }
 }
 .site-header .hero-bar-inner .tagline {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
-.site-header .hero-bar-inner .site-more {
-  display: block;
+@media only screen and (min-width: 568.1px) {
+  .site-header .hero-bar-inner .tagline {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .site-header .hero-bar-inner .tagline {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+.site-header .hero-bar-inner .start {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  text-align: center;
+}
+.site-header .hero-bar-inner .site-more {
+  display: block;
   text-align: center;
   font-size: 48px;
   font-size: 3rem;

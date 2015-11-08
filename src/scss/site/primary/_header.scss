@@ -27,25 +27,25 @@
 
 // Header Styles
 .site-content {
-  background: $color__overlay;
+  // background: $color__overlay;
 }
 .site-header {
   background-image: url('https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100vh;
-  color: $color__white;
+  min-height: 88vh;
+  color: $color__cream;
   text-shadow: none;
   a, i, span {
-    color: $color__white;
+    color: $color__cream;
     &:hover, &:active, &:focus {
-      color: $color__cream;
+      color: $color__white;
     }
   }
   .site-branding {               // flexbox column
     background: $color__overlay;
-    min-height: 100vh;
+    min-height: 88vh;
 
   }
   .site-contact-bar {              // flex item
@@ -291,10 +291,14 @@
     }
   }
   .hero-bar-inner {              // flexbox
+    justify-content: space-between;
     margin: 0 auto;
     user-select: none;
     @include max-width(64);
-    @include padding-top(3);
+    @include padding-top(1);
+    h2, p {
+      margin: 0;
+    }
     .hero-bar {
       display: block;
       @include font-size(2);
@@ -328,21 +332,32 @@
       font-family: 'Playfair Display', serif;
     }
     .creatives {
+      font-family: 'Pacifico';
       @include font-size(2.1);
       @include media(iphoneUp, general) {
         @include font-size(4);
       }
       @include media(tablet, general) {
-        @include font-size(5);
-      }      
+        @include font-size(6);
+      }  
     }
     .tagline {
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
-      @include font-size(2);
+      @include font-size(.75);
+      @include media(iphoneUp, general) {
+        @include font-size(1);
+      }
+      @include media(tablet, general) {
+        @include font-size(1.25);
+      }    
+    }
+    .start {
+      flex-grow: 1;
+      text-align: center;
     }
     .site-more {
       display: block;
-      flex-grow: 1;
       text-align: center;
       @include font-size(3);
     }
