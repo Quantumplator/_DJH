@@ -3519,7 +3519,8 @@ a:hover, a:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 88vh;
+  height: 93vh;
+  min-height: 400px;
   color: #FCFBE3;
   text-shadow: none;
 }
@@ -3527,11 +3528,12 @@ a:hover, a:active {
   color: #FCFBE3;
 }
 .site-header a:hover, .site-header a:active, .site-header a:focus, .site-header i:hover, .site-header i:active, .site-header i:focus, .site-header span:hover, .site-header span:active, .site-header span:focus {
-  color: #FBFEF9;
+  color: #FCFBE3;
 }
 .site-header .site-branding {
   background: rgba(25, 56, 31, 0.5);
-  min-height: 88vh;
+  height: 93vh;
+  min-height: 400px;
 }
 .site-header .site-contact-bar,
 .site-header .site-navigation-bar,
@@ -3984,6 +3986,7 @@ a:hover, a:active {
 .site-header .hero-bar-inner .site-more {
   display: block;
   text-align: center;
+  line-height: 1;
   font-size: 48px;
   font-size: 3rem;
 }

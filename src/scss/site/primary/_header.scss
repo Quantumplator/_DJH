@@ -34,18 +34,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 88vh;
+  height: 93vh;
+  min-height: 400px;
   color: $color__cream;
   text-shadow: none;
   a, i, span {
     color: $color__cream;
     &:hover, &:active, &:focus {
-      color: $color__white;
+      color: $color__cream;
     }
   }
   .site-branding {               // flexbox column
     background: $color__overlay;
-    min-height: 88vh;
+    height: 93vh;
+    min-height: 400px;
 
   }
   .site-contact-bar,
@@ -371,6 +373,7 @@
     .site-more {
       display: block;
       text-align: center;
+      line-height: 1;
       @include font-size(3);
     }
   }
