@@ -3519,7 +3519,7 @@ a:hover, a:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 88vh;
+  min-height: 100vh;
   color: #FCFBE3;
   text-shadow: none;
 }
@@ -3531,7 +3531,7 @@ a:hover, a:active {
 }
 .site-header .site-branding {
   background: rgba(25, 56, 31, 0.5);
-  min-height: 88vh;
+  min-height: 100vh;
 }
 .site-header .site-contact-bar,
 .site-header .site-navigation-bar,
@@ -3555,6 +3555,7 @@ a:hover, a:active {
   }
 }
 .site-header .site-hero-bar {
+  position: relative;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -3877,6 +3878,7 @@ a:hover, a:active {
   }
 }
 .site-header .hero-bar-inner {
+  width: 100%;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3973,10 +3975,11 @@ a:hover, a:active {
   }
 }
 .site-header .hero-bar-inner .start {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .site-header .hero-bar-inner .site-more {
   display: block;

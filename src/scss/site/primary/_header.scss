@@ -34,7 +34,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 88vh;
+  min-height: 100vh;
   color: $color__cream;
   text-shadow: none;
   a, i, span {
@@ -45,7 +45,7 @@
   }
   .site-branding {               // flexbox column
     background: $color__overlay;
-    min-height: 88vh;
+    min-height: 100vh;
 
   }
   .site-contact-bar,
@@ -67,6 +67,7 @@
     }
   }
   .site-hero-bar {                 // flex item
+    position: relative;
     flex-grow: 1;
     @include media(mobile, general) {
     }
@@ -296,6 +297,7 @@
     }
   }
   .hero-bar-inner {              // flexbox
+    width: 100%;
     justify-content: space-between;
     margin: 0 auto;
     user-select: none;
@@ -359,8 +361,12 @@
       }    
     }
     .start {
-      flex-grow: 1;
       text-align: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
     }
     .site-more {
       display: block;
