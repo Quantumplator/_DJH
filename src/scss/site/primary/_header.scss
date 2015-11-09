@@ -36,7 +36,7 @@
   background-position: center center;
   color: $color__cream;
   text-shadow: none;
-  min-height: 88vh;
+  min-height: 100vh;
   a, i, span {
     color: $color__cream;
     &:hover, &:active, &:focus {
@@ -46,7 +46,7 @@
   .site-branding {               // flexbox column
     background: $color__overlay;
     // height: 90vh;
-    min-height: 88vh;
+    min-height: 100vh;
   }
   .site-contact-bar,
   .site-navigation-bar,
@@ -304,8 +304,8 @@
     margin: 0 auto;
     user-select: none;
     @include max-width(64);
-    @include padding-top(1);
-    @include padding-bottom(5);
+    @include padding-top(2);
+    @include padding-bottom(4.2);
     h2, p {
       margin: 0;
       font-weight: normal;
@@ -321,10 +321,10 @@
     .design {
       font-family: 'Lobster Two', serif;
       @include font-size(2.3);
-      @include media(iphoneUp, general) {
+      @include media(iphoneUp, height) {
         @include font-size(4);
       }
-      @include media(tablet, general) {
+      @include media(tablet, height) {
         transform: translateX(-0.85rem);
         @include font-size(5);
       }
@@ -334,27 +334,28 @@
       transform: translateX(0.4rem);
       font-weight: bold;
       @include font-size(2.1);
-      @include media(iphoneUp, general) {
+      @include media(iphoneUp, height) {
         transform: translateX(0.68rem);
         @include font-size(3.5);
       }
-      @include media(tablet, general) {
+      @include media(tablet, height) {
         transform: translateX(0);
         @include font-size(5);
       }
     }
     .ampersand {
       font-family: 'Playfair Display', serif;
+      font-weight: 700;
     }
     .creatives {
       font-family: 'Lobster Two';
       transform: translateX(0.4rem);
       @include font-size(2.9);
-      @include media(iphoneUp, general) {
+      @include media(iphoneUp, height) {
         transform: translateX(0.76rem);
         @include font-size(5);
       }
-      @include media(tablet, general) {
+      @include media(tablet, height) {
         transform: translateX(0.05rem);
         @include font-size(7);
       }  
@@ -363,17 +364,17 @@
       font-family: 'Open Sans', sans-serif;
       margin: 0;
       @include font-size(.75);
-      @include media(iphoneUp, general) {
+      @include media(iphoneUp, height) {
         @include font-size(1);
       }
-      @include media(tablet, general) {
+      @include media(tablet, height) {
         @include font-size(1.25);
       }    
     }
     .start {
       text-align: center;
       position: absolute;
-      bottom: 0;
+      bottom: 16px;
       right: 0;
       left: 0;
 

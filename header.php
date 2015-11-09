@@ -126,7 +126,7 @@
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
 						<a href="">we make websites</a>
-						<a href="#main" class="site-more"><i class="fa fa-angle-double-down"></i></a>
+						<a href="#entry-title" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 					</p>
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->

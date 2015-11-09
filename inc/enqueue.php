@@ -6,7 +6,7 @@ function _djh_scripts() {
   wp_enqueue_style( '_djh-style', get_stylesheet_uri() );
 
   wp_enqueue_style( '_djh-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Source+Code+Pro|Lobster+Two' );
-  wp_enqueue_style( '_djh-ampersand', '//fonts.googleapis.com/css?family=Playfair+Display&text=&' );
+  wp_enqueue_style( '_djh-ampersand', '//fonts.googleapis.com/css?family=Playfair+Display:700&text=&' );
 
   wp_enqueue_script( '_djh-main', get_template_directory_uri() . '/js/main.min.js', array('jquery'), '20151101', true );
 
