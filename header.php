@@ -122,7 +122,7 @@
 			
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
-					<h2><span class="design hero-bar">Design , </span><span class="dev hero-bar">Development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar">Creative Branding</span></h2>
+					<h2><span class="design hero-bar">Design , </span><span class="dev hero-bar">Development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
 						<a href="">we make cool stuff</a>
