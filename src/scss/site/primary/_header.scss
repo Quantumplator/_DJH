@@ -36,7 +36,7 @@
   background-position: center center;
   color: $color__cream;
   text-shadow: none;
-  min-height: 90vh;
+  min-height: 88vh;
   a, i, span {
     color: $color__cream;
     &:hover, &:active, &:focus {
@@ -46,7 +46,7 @@
   .site-branding {               // flexbox column
     background: $color__overlay;
     // height: 90vh;
-    min-height: 90vh;
+    min-height: 88vh;
   }
   .site-contact-bar,
   .site-navigation-bar,

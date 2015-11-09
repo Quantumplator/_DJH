@@ -3,3 +3,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font__heading;
   font-weight: normal;
 }
+
+// for width 1024px - http://www.pearsonified.com/typography/
+
+h1 {
+  @include margin-ends(1);
+  @include font-size(2.6);
+}
