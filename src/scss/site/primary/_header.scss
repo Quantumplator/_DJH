@@ -32,11 +32,13 @@
 .site-header {
   background-image: url('https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
   color: $color__cream;
   text-shadow: none;
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
   a, i, span {
     color: $color__cream;
     &:hover, &:active, &:focus {
@@ -72,7 +74,7 @@
     @include media(mobile, general) {
     }
     @include media(tablet, general) {
-      @include padding-sides(.5);
+      // @include padding-sides(.5);
     }
   }
   .site-promo-bar {                // flex item
@@ -304,8 +306,8 @@
     margin: 0 auto;
     user-select: none;
     @include max-width(64);
-    @include padding-top(2);
-    @include padding-bottom(4.2);
+    @include padding-top(3);
+    @include padding-bottom(5.2);
     h2, p {
       margin: 0;
       font-weight: normal;
@@ -317,6 +319,8 @@
     .design,
     .dev,
     .creatives {
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     }
     .design {
       font-family: 'Lobster Two', serif;
@@ -325,21 +329,21 @@
         @include font-size(4);
       }
       @include media(tablet, height) {
-        transform: translateX(-0.85rem);
+        // transform: translateX(-0.85rem); // If left aligned this makes letter edges flush
         @include font-size(5);
       }
     }
     .dev  {
       font-family: 'Source Code Pro', sans-serif;
-      transform: translateX(0.4rem);
+      // transform: translateX(0.4rem);
       font-weight: bold;
       @include font-size(2.1);
       @include media(iphoneUp, height) {
-        transform: translateX(0.68rem);
+        // transform: translateX(0.68rem);
         @include font-size(3.5);
       }
       @include media(tablet, height) {
-        transform: translateX(0);
+        // transform: translateX(0);
         @include font-size(5);
       }
     }
@@ -349,14 +353,14 @@
     }
     .creatives {
       font-family: 'Lobster Two';
-      transform: translateX(0.4rem);
+      // transform: translateX(0.4rem);
       @include font-size(2.9);
       @include media(iphoneUp, height) {
-        transform: translateX(0.76rem);
+        // transform: translateX(0.76rem);
         @include font-size(5);
       }
       @include media(tablet, height) {
-        transform: translateX(0.05rem);
+        // transform: translateX(0.05rem);
         @include font-size(7);
       }  
     }
@@ -374,10 +378,12 @@
     .start {
       text-align: center;
       position: absolute;
-      bottom: 16px;
+      bottom: 32px;
       right: 0;
       left: 0;
-
+      @include media(iphone, general) {
+        bottom: 48px;
+      }
     }
     .site-more {
       display: block;

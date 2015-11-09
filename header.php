@@ -13,7 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, user-scalable=0, minimal-ui">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -125,7 +125,7 @@
 					<h2><span class="design hero-bar">Design , </span><span class="dev hero-bar">Development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
-						<a href="">we make websites</a>
+<!-- 						<a href="">we make websites</a> -->
 						<a href="#entry-title" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 					</p>
 				</div><!-- .hero-bar-inner -->
