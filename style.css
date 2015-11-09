@@ -2984,7 +2984,7 @@ pre {
 }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
