@@ -2951,7 +2951,8 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Julius Sans Pro", serif;
+  font-family: "Source Code Pro", serif;
+  font-weight: normal;
 }
 
 p {
