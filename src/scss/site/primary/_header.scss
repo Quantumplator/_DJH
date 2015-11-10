@@ -168,6 +168,7 @@
   }
 
   .navigation-bar-inner {
+    @include padding-bottom(.2);
     .site-connect {
       order: 3;
     }
@@ -302,9 +303,9 @@
       }
     }
     .search-form-wrapper {
-      @include margin-ends(.375);
+      @include margin-ends(.2);
       @include media(tablet, general) {
-        @include margin-ends(.375); // 6px to account for 2px border-bottom of .menu items
+        @include margin-ends(.2); // 6px to account for 2px border-bottom of .menu items
       }
     }
   }
