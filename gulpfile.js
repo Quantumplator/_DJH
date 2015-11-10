@@ -10,6 +10,7 @@ var gulp       = require('gulp'),
   jshint       = require('gulp-jshint'),
   minhtml      = require('gulp-minify-html'),
   rename       = require('gulp-rename'),
+  replace      = require('gulp-replace'),
   size         = require('gulp-size'),
   uglify       = require('gulp-uglify'),
   util         = require('gulp-util'),
@@ -106,6 +107,7 @@ gulp.task('compass', function() {
       sass: 'src/scss',
       image: 'img'
     }))
+    .pipe(gulpif(env==='production', replace('http://localhost:3000/djh/net/wp-content/themes/_djh/', 'https://dylanjharris.net/wp-content/themes/_djh/')))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest(dest.css))
     .pipe(size());
