@@ -346,10 +346,10 @@
         @include padding-top(3);
       }
       @include media(iphoneUp, general) {
-        @include padding-top(1);
+        @include padding-top(5);
       }
       @include media(tablet, general) {
-        @include padding-top(1);
+        @include padding-top(4);
       }
     }
     .dev  {
