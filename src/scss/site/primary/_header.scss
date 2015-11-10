@@ -40,7 +40,7 @@
   // background: $color__overlay;
 }
 .site-header {
-  background: url('http://localhost:3000/djh/net/wp-content/themes/_djh/notes/images/readybw1.png') no-repeat center center scroll;
+  background: url('https://dylanjharris.net/wp-content/themes/_djh/img/readybw.png') no-repeat center center scroll;
   background-size: cover;
   color: $color__cream;
   min-height: 100vh;
@@ -341,7 +341,13 @@
       }
     }
     .design {
-      @include media(mobile, general) {
+      @include media(iphone, general) {
+        @include padding-top(1);
+      }
+      @include media(tablet, general) {
+        @include padding-top(1);
+      }
+      @include media(tablet, general) {
         @include padding-top(1);
       }
     }
