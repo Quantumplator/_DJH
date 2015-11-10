@@ -2,12 +2,14 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
   font-family: $font__heading;
   font-weight: normal;
+  margin: 0;
   @include margin-bottom(1);
 }
 
 // for width 1024px - http://www.pearsonified.com/typography/
 
-h1 {
+h1,
+.entry-title {
   @include font-size(3.25); // 52px
 }
 h2 {
