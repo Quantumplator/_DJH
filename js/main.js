@@ -2,96 +2,44 @@
 /**
  * navigation.js
  *
- * Handles toggling the navigation menu for small screens and enables tab
+ * Handles toggling the navigation menu for all screens and enables tab
  * support for dropdown menus.
+ *
  */
 
-// $("button").click(function(){
-//     $("p").toggle();
+jQuery(document).ready(function($){
+  var $window = $(window).on('resize', function(){
+      if ($("#site-title").css("display") != "flex" && $("#primary-menu-wrapper").is(':visible'))
+      	$("#primary-menu-wrapper").css('display','inline-block')
+      if ($("#site-title").css("display") == "flex" && $("#primary-menu-wrapper").is(':visible'))
+      	$("#primary-menu-wrapper").css('display','block')
+  }).trigger('resize'); //on page load
+});
+
+
+
+// jQuery(window).resize(function() {
+
+// 	if ($("#primary-menu-wrapper").is(':visible') && $("#site-title").css("display") == "flex")
+//   	$("#primary-menu-wrapper").css('display','block');
 // });
 
 
 jQuery(document).ready(function($){
 
-	// $('#site-menu').on('click',function(){
-	// 	if($(this).attr('data-click-state') == 1) {
-	// 		$(this).attr('data-click-state', 0)
-	// 		/*Change this to your own property / function - Click State 1*/
-	// 		$(this).removeClass('toggled')
-	// 		$('#primary-menu-wrapper').removeClass('toggled')
-	// 		/*Click State 1 finish*/
-	//   } else {
-	//   	$(this).attr('data-click-state', 1)
-	//   	/*Change this to your own property / function - Click State 2*/
-	// 		$(this).addClass('toggled')
-	//   	$('#primary-menu-wrapper').addClass('toggled')
-	//   /*Click State 2 finish*/
-	//   }
-	// });
-
-	// $('#site-search').on('click',function(){
-	// 	if($(this).attr('data-click-state') == 1) {
-	// 		$(this).attr('data-click-state', 0)
-	// 		/*Change this to your own property / function - Click State 1*/
-	// 		$(this).removeClass('toggled')
-	// 		$('#nav-search').removeClass('toggled')
-	// 		/*Click State 1 finish*/
-	//   } else {
-	//   	$(this).attr('data-click-state', 1)
-	//   	/*Change this to your own property / function - Click State 2*/
-	// 		$(this).addClass('toggled')
-	//   	$('#nav-search').addClass('toggled')
-	//   /*Click State 2 finish*/
-	//   }
-	// });
-
-	// $('#full-site-search').on('click',function(){
-	// 	if($(this).attr('data-click-state') == 1) {
-	// 		$(this).attr('data-click-state', 0)
-	// 		/*Change this to your own property / function - Click State 1*/
-	// 		$(this).removeClass('toggled')
-	// 		$('#nav-search').removeClass('toggled')
-	// 		/*Click State 1 finish*/
-	//   } else {
-	//   	$(this).attr('data-click-state', 1)
-	//   	/*Change this to your own property / function - Click State 2*/
-	// 		$(this).addClass('toggled')
-	//   	$('#nav-search').addClass('toggled')
-	//   /*Click State 2 finish*/
-	//   }
-	// });
-
-	// $('#site-connect').on('click',function(){
-	// 	if($(this).attr('data-click-state') == 1) {
-	// 		$(this).attr('data-click-state', 0)
-	// 		/*Change this to your own property / function - Click State 1*/
-	// 		$(this).removeClass('toggled')
-	// 		$('#site-social').removeClass('toggled')
-	// 		/*Click State 1 finish*/
-	//   } else {
-	//   	$(this).attr('data-click-state', 1)
-	//   	/*Change this to your own property / function - Click State 2*/
-	// 		$(this).addClass('toggled')
-	//   	$('#site-social').addClass('toggled')
-	//   /*Click State 2 finish*/
-	//   }
-	// });
-
-
-
   $("#site-menu").click(function(){
       $("#primary-menu-wrapper").slideToggle("medium", function() {
-
-
-			// if ($(".sampleClass").css("float") == "none" ){
-   //    	// your code here
-   //  	}
-
-
+      	// The display flex check here could be any css that ONLY applies to @media(mobile, general)
     		if ($(this).is(':visible') && $("#site-title").css("display") != "flex")
-        $(this).css('display','inline-block');
+        	$(this).css('display','inline-block');
       });
   });
+
+
+  // $("#site-menu").click(function(){
+  //     $("#primary-menu-wrapper").slideToggle("medium");
+  // });
+
 
   $("#site-search").click(function(){
       $("#nav-search").slideToggle("medium");
