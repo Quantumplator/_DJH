@@ -40,14 +40,11 @@
   // background: $color__overlay;
 }
 .site-header {
-  background-image: url('https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg');
+  background: url('https://dylanjharris.net/wp-content/themes/_djh/img/ready.jpg') no-repeat center center scroll;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   color: $color__cream;
   min-height: 100vh;
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
   a, i, span {
     color: $color__cream;
     &:hover, &:active, &:focus {
@@ -58,6 +55,7 @@
     background: $color__overlay;
     // height: 90vh;
     min-height: 100vh;
+    max-width: 100%;
   }
   .site-contact-bar,
   .site-navigation-bar,
