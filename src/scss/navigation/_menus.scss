@@ -8,8 +8,9 @@
 }
 
 /* Search Toggle */
-.search-toggle {
+#full-site-search {
 	display: none;
+	user-select: none;
 	border-bottom: 2px solid transparent;
 	@include media(tablet, general) {
 		display: inline-block;
@@ -19,9 +20,6 @@
 			border-bottom: 2px solid $color__cream;
 		}
 	}
-}
-#full-site-search {
-	user-select: none;
 }
 
 .comment-navigation,

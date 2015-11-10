@@ -29,6 +29,12 @@
 
 jQuery(document).ready(function($){
 
+  // run css display tests on initial page load
+  checkState();
+  // run test on resize of the window
+  $(window).resize(checkState);
+
+  // Toggle switches
   $("#site-menu").click(function(){
       $("#primary-menu-wrapper").slideToggle("medium");
   });
@@ -45,23 +51,16 @@ jQuery(document).ready(function($){
       $("#site-social").slideToggle("medium");
   });
 
+	//Function to the css rule
+	function checkState(){
+    if ($("#full-site-search").css("display") == "inline-block" && $("#primary-menu-wrapper").css("display") != "inline-block"){
+    	$("#primary-menu-wrapper").css("display", "inline-block");
+    } else if ($("#full-site-search").css("display") == "none" && $("#primary-menu-wrapper").css("display") == "inline-block") {
+    	$("#primary-menu-wrapper").css("display", "none");
+    }
+	}
+
 }); 
-
-jQuery(document).ready(function($) {
-	var titleState = $("#site-title").css("display");
-	    menuState  = $("#primary-menu-wrapper").css("display");
-
-	$(window).resize(function() {
-		if($("site-title").css("display") == "flex") {
-			$("#site-search i").css("color", "blue");
-		}
-		console.log('updating');
-	});
-
-
-});
-
-
 
 
 

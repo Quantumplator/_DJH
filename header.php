@@ -34,7 +34,7 @@
 					<div class="site-title nav-control">
 						<a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<?php if ( is_front_page() ) : ?>
-							<h1 id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></h1>
+							<h1 id="site-title-h1"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></h1>
 							<?php else : ?>
 							<p id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></p>
 							<?php endif; ?>
@@ -120,7 +120,7 @@
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
 					<h2>
-						<span class="design hero-bar">Design,</span>
+						<span id="design" class="design hero-bar">Design,</span>
 						<span class="dev hero-bar">development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
