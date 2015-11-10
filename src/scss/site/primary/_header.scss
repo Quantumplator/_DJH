@@ -210,7 +210,7 @@
           display: inline-block;
           @include padding(1);
           @include media(mobile, general) {
-            min-width: 50%;
+            width: 100%;
           }
           @include media(tablet, general) {
             display: inline;
@@ -233,17 +233,6 @@
         background: rgba(0,0,0,0.1);
         -webkit-appearance: none;
         @include padding(1);
-      }
-      .search-form-wrapper {
-        // position: absolute;
-        // left: -9999em;
-      }
-      &.toggled {
-        .search-form-wrapper {
-          // position: static;
-          // left: 0;
-        }
-
       }
     }
     .nav-social {
@@ -271,23 +260,6 @@
           }
           &::before {
             color: $color__cream;
-          }
-        }
-      }
-      #site-social {
-        #site-social-items {
-          @include media(mobile, general) {
-            // position: absolute;
-            // left: -9999em;
-          }
-          @include media(tablet, general) {
-            // @include padding-bottom(1);
-          }
-        }
-        &.toggled {
-          #site-social-items {
-            // position: static;
-            // left: 0;
           }
         }
       }

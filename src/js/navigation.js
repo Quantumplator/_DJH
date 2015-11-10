@@ -34,12 +34,6 @@ jQuery(document).ready(function($){
       });
   });
 
-
-  // $("#site-menu").click(function(){
-  //     $("#primary-menu-wrapper").slideToggle("medium");
-  // });
-
-
   $("#site-search").click(function(){
       $("#nav-search").slideToggle("medium");
   });
