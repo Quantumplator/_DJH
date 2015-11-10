@@ -41,14 +41,17 @@ jQuery(document).ready(function($){
 
   $("#site-search").click(function(){
       $("#nav-search").slideToggle("fast");
+      $(this).toggleClass("toggled");
   });
 
   $("#full-site-search").click(function(){
       $("#nav-search").slideToggle("fast");
+      $(this).toggleClass("toggled");
   });
 
   $("#site-connect").click(function(){
       $("#site-social").slideToggle("fast");
+      $(this).toggleClass("toggled");
   });
 
 	//Function to the css rule

@@ -53,7 +53,7 @@
 					</div>
 
 					<div class="site-phone nav-control">
-						<a href="tel:+15091234567">
+						<a href="<?php echo esc_url( __( 'tel:+15091234567', '_djh' ) ); ?>">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-phone"></i>
 								<span>Call</span>
@@ -121,7 +121,7 @@
 				<div class="hero-bar-inner flexbox column">
 					<h2>
 						<span id="design" class="design hero-bar">Design,</span>
-						<span class="dev hero-bar">development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
+						<span class="dev hero-bar">development,</span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
 <!-- 						<a href="">we make websites</a> -->

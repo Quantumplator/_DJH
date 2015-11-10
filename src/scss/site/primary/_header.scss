@@ -233,9 +233,13 @@
         box-sizing: inherit;
         border-radius: 0;
         border: 0;
-        background: rgba(0,0,0,0.1);
+        background: rgba(252,251,227,0.5);// $color__cream;
+        text-align: right;
         -webkit-appearance: none;
         @include padding(1);
+      }
+      ::placeholder {
+        color: $color__darkbrown;
       }
       .search-form-wrapper {
         // position: absolute;
@@ -328,10 +332,10 @@
         @include padding-top(3);
       }
       @include media(iphoneUp, general) {
-        @include padding-top(5);
+        @include padding-top(3);
       }
       @include media(tablet, general) {
-        @include padding-top(4);
+        @include padding-top(3);
       }
     }
     .dev  {
@@ -341,18 +345,19 @@
       @include font-size(1.8);
       @include media(iphoneUp, height) {
         // transform: translateX(0.68rem);
-        @include font-size(3);
+        @include font-size(3.2);
       }
       @include media(tablet, height) {
         // transform: translateX(0);
-        @include font-size(4.5);
+        @include font-size(4.4);
       }
     }
-    .ampersand {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      line-height: 0;
-    }
+    // .ampersand {
+    //   font-family: 'Playfair Display', serif;
+    //   font-weight: 700;
+    //   line-height: 0;
+    //   display: none;
+    // }
     .creatives {
       @include padding-bottom(1);
     }
