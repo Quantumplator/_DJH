@@ -343,7 +343,7 @@
     }
     .design {
       @include media(iphone, general) {
-        @include padding-top(2);
+        @include padding-top(3);
       }
       @include media(iphoneUp, general) {
         @include padding-top(1);
