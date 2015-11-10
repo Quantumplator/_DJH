@@ -38,12 +38,12 @@
 							<?php else : ?>
 							<p id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></p>
 							<?php endif; ?>
-							<span>djh</span>
+							<span class="djh">d <span class="thej">j</span> h</span>
 						</a>
 					</div>
 
 					<div class="site-email nav-control">
-						<a href="<?php echo esc_url( __( 'mailto:admin@dylanjharris.net?subject=Website Inquiry', '_djh' ) ); ?>">
+						<a href="<?php echo esc_url( __( 'mailto:admin@dylanjharris.net?subject=Website Inquiry', '_djh' ) ); ?>" title="Click to email us">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-envelope"></i>
 								<span>Email</span>
@@ -53,7 +53,7 @@
 					</div>
 
 					<div class="site-phone nav-control">
-						<a href="<?php echo esc_url( __( 'tel:+18055400746', '_djh' ) ); ?>">
+						<a href="<?php echo esc_url( __( 'tel:+18055400746', '_djh' ) ); ?>" title="Click to call us">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-phone"></i>
 								<span>Call</span>

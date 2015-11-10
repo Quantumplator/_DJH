@@ -110,6 +110,14 @@
         h1 {
           margin: 0;
         }
+        span {}
+      }
+      .djh {
+        text-decoration: underline;
+      }
+      .thej {
+        display: inline-block;
+        transform: translateY(5px);
       }
     }
     .site-email,
@@ -126,7 +134,7 @@
     .site-phone .contact-point::before {
       content: '\f098';      
       @include media(tablet, general) {
-        @include padding-left(1.6);
+        @include padding-left(4.35);
       }
     }
 

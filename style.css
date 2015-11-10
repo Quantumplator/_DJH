@@ -3754,6 +3754,16 @@ a:hover, a:active {
 .site-header .navigation-bar-inner .site-title #site-title h1 {
   margin: 0;
 }
+.site-header .contact-bar-inner .site-title .djh,
+.site-header .navigation-bar-inner .site-title .djh {
+  text-decoration: underline;
+}
+.site-header .contact-bar-inner .site-title .thej,
+.site-header .navigation-bar-inner .site-title .thej {
+  display: inline-block;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
 .site-header .contact-bar-inner .site-email .contact-point::before,
 .site-header .contact-bar-inner .site-phone .contact-point::before,
 .site-header .navigation-bar-inner .site-email .contact-point::before,
@@ -3774,8 +3784,8 @@ a:hover, a:active {
 @media only screen and (min-width: 800px) {
   .site-header .contact-bar-inner .site-phone .contact-point::before,
   .site-header .navigation-bar-inner .site-phone .contact-point::before {
-    padding-left: 25.6px;
-    padding-left: 1.6rem;
+    padding-left: 69.6px;
+    padding-left: 4.35rem;
   }
 }
 .site-header .contact-bar-inner .nav-control,
