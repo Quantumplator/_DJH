@@ -345,8 +345,6 @@
     }
     .dev  {
       font-family: 'Source Code Pro', sans-serif;
-      // transform: translateX(0.4rem);
-      font-weight: bold;
       @include font-size(1.8);
       @include media(iphoneUp, height) {
         // transform: translateX(0.68rem);
@@ -357,12 +355,6 @@
         @include font-size(4.4);
       }
     }
-    // .ampersand {
-    //   font-family: 'Playfair Display', serif;
-    //   font-weight: 700;
-    //   line-height: 0;
-    //   display: none;
-    // }
     .creatives {
       @include padding-bottom(1);
     }
@@ -381,7 +373,7 @@
       text-align: center;
     }
     .site-more {
-      display: block;
+      display: inline-block;
       text-align: center;
       line-height: 1;
     }
