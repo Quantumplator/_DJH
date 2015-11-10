@@ -69,10 +69,15 @@
 
 	}
 	li {
+		&, & a, & a::before {
+			transition: all $trans__default;
+		}
 		&:hover, &:active, &:focus {
 			@include media(mobile, general) {
+				transition: background $trans__default;
 				background: $color__cream;
 				a, a::before {
+					transition: color $trans__default;
 					color: $color__black;
 				}
 			}
@@ -104,18 +109,6 @@
 	}
 }
 #primary-menu-wrapper {
-	div {
-		@include media(mobile, general) {
-			// position: absolute;
-			// left: -999em;
-		}
-	}
-	&.toggled div {
-		@include media(mobile, general) {
-			// position: static;
-			// left: 0;
-		}
-	}
 	li > ul {
 		position: relative;
 		margin-left: 0;
@@ -139,13 +132,10 @@
 	}
 	li.current-menu-item {
 		@include media(mobile, general) {
+			background: $color__cream;
 			a {
-				background: $color__cream;
 				color: $color__text-main;
-				// border-top-right-radius: 100%;
-				// border-bottom-right-radius: 50%;
 			}
-			
 		}
 		@include media(tablet, general) {
 			border-bottom: 2px solid $color__cream;
