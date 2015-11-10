@@ -23,7 +23,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_djh' ); ?></a>
-
   <!-- #masthead display flex column for branding/promo order swap -->
 	<header id="masthead" class="site-header" role="banner">
 
@@ -31,8 +30,6 @@
 
 			<div class="site-contact-bar flex-bar">
 				<div class="contact-bar-inner flexbox row">
-
-					<?php // printf( esc_html__( '%1$s', '_djh' ), 'html' ); ?>
 
 					<div class="site-title nav-control">
 						<a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -122,7 +119,9 @@
 			
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
-					<h2><span class="design hero-bar">Design , </span><span class="dev hero-bar">Development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
+					<h2>
+						<span class="design hero-bar">Design , </span>
+						<span class="dev hero-bar">development <span class="ampersand">&amp;</span></span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
 <!-- 						<a href="">we make websites</a> -->

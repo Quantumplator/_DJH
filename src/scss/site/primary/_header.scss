@@ -1,3 +1,13 @@
+  #bg { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    min-width: 100%;
+    z-index: -999;
+  }
+
+
 // Relocate these styles when finished
 
 .flexbox {
@@ -35,7 +45,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   color: $color__cream;
-  text-shadow: none;
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -306,8 +315,6 @@
     margin: 0 auto;
     user-select: none;
     @include max-width(64);
-    @include padding-top(3);
-    @include padding-bottom(5.2);
     h2, p {
       margin: 0;
       font-weight: normal;
@@ -319,50 +326,47 @@
     .design,
     .dev,
     .creatives {
+      line-height: 1.6;
       text-align: center;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     }
-    .design {
-      font-family: 'Lobster Two', serif;
-      @include font-size(2.3);
+    .design,
+    .creatives {
+      font-family: 'Lobster Two', serif;      
+      @include font-size(2.9);
       @include media(iphoneUp, height) {
-        @include font-size(4);
+        @include font-size(5);
       }
       @include media(tablet, height) {
-        // transform: translateX(-0.85rem); // If left aligned this makes letter edges flush
-        @include font-size(5);
+        @include font-size(7);
+      }
+    }
+    .design {
+      @include media(mobile, general) {
+        @include padding-top(1);
       }
     }
     .dev  {
       font-family: 'Source Code Pro', sans-serif;
       // transform: translateX(0.4rem);
       font-weight: bold;
-      @include font-size(2.1);
+      @include font-size(1.8);
       @include media(iphoneUp, height) {
         // transform: translateX(0.68rem);
-        @include font-size(3.5);
+        @include font-size(3);
       }
       @include media(tablet, height) {
         // transform: translateX(0);
-        @include font-size(5);
+        @include font-size(4.2);
       }
     }
     .ampersand {
       font-family: 'Playfair Display', serif;
       font-weight: 700;
+      line-height: 0;
     }
     .creatives {
-      font-family: 'Lobster Two';
-      // transform: translateX(0.4rem);
-      @include font-size(2.9);
-      @include media(iphoneUp, height) {
-        // transform: translateX(0.76rem);
-        @include font-size(5);
-      }
-      @include media(tablet, height) {
-        // transform: translateX(0.05rem);
-        @include font-size(7);
-      }  
+      @include padding-bottom(2);
     }
     .tagline {
       font-family: 'Open Sans', sans-serif;
@@ -377,13 +381,6 @@
     }
     .start {
       text-align: center;
-      position: absolute;
-      bottom: 32px;
-      right: 0;
-      left: 0;
-      @include media(iphone, general) {
-        bottom: 48px;
-      }
     }
     .site-more {
       display: block;
