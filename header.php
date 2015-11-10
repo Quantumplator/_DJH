@@ -38,12 +38,12 @@
 							<?php else : ?>
 							<p id="site-title"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></p>
 							<?php endif; ?>
-							<span class="djh">d <span class="thej">j</span> h</span>
+							<span class="djh">d<span class="thej">j</span>h</span>
 						</a>
 					</div>
 
 					<div class="site-email nav-control">
-						<a href="<?php echo esc_url( __( 'mailto:admin@dylanjharris.net?subject=Website Inquiry', '_djh' ) ); ?>" title="Click to email us">
+						<a href="<?php echo esc_url( __( 'mailto:admin@dylanjharris.net?subject=Website&nbsp;inquiry', '_djh' ) ); ?>" title="Click to email us">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-envelope"></i>
 								<span>Email</span>
@@ -122,10 +122,12 @@
 					<h2>
 						<span id="design" class="design hero-bar">Design,</span>
 						<span class="dev hero-bar">Development,</span>
-						<span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
-<!--  					<p class="tagline">we build websites.</p> -->
+						<span class="creatives hero-bar">
+							<span class="vest">Creative</span>
+							<span class="shirt">Branding</span>
+						</span>
+					</h2>
 					<p class="start">
-<!-- 						<a href="">we make websites</a> -->
 						<a href="#entry-title" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 					</p>
 				</div><!-- .hero-bar-inner -->

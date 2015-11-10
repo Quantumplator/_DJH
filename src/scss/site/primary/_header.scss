@@ -1,11 +1,3 @@
-  #bg { 
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
-    min-width: 100%;
-    z-index: -999;
-  }
 
 
 // Relocate these styles when finished
@@ -37,9 +29,6 @@
 
 
 // Header Styles
-.site-content {
-  // background: $color__overlay;
-}
 .site-header {
   background: url('https://dylanjharris.net/wp-content/themes/_djh/img/harris.png') no-repeat center center scroll;
   background-size: cover;
@@ -54,7 +43,7 @@
       color: $color__cream;
     }
   }
-  .site-branding {               // flexbox column
+  .site-branding {                 // flexbox column
     background: $color__overlay1;
     min-height: 100vh;
     max-width: 100%;
@@ -71,7 +60,7 @@
   }
   .site-navigation-bar {           // flex item
   }
-  .site-navigation-items {           // flex item
+  .site-navigation-items {         // flex item
     @include media(tablet, general) {
       @include padding-top(.5);
       @include padding-sides(.5);
@@ -103,6 +92,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          border: 1px solid $color__cream;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
         }
         @include media(tablet, general) {
           display: inline;
@@ -117,7 +110,7 @@
       }
       .thej {
         display: inline-block;
-        transform: translateY(5px);
+        transform: translateY(4px);
       }
     }
     .site-email,
@@ -319,20 +312,12 @@
     }
     .hero-bar {
       display: block;
-      @include font-size(2);
     }
     .design,
     .dev,
-    .creatives {
-      line-height: 1.6;
-      text-align: center;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    }
-    .design,
     .creatives,
-    .site-more,
-    .dev {
-      font-family: 'Lobster Two', serif;      
+    .site-more {
+      text-align: center;
       @include font-size(2.9);
       @include media(iphoneUp, height) {
         @include font-size(5);
@@ -341,49 +326,29 @@
         @include font-size(7);
       }
     }
-    // .design {
-    //   @include media(iphone, general) {
-    //     @include padding-top(2);
-    //   }
-    //   @include media(iphoneUp, general) {
-    //     @include padding-top(2);
-    //   }
-    //   @include media(tablet, general) {
-    //     @include padding-top(3);
-    //   }
-    // }
-    // .dev  {
-    //   font-family: 'Source Code Pro', sans-serif;
-    //   @include font-size(1.8);
-    //   @include media(iphoneUp, height) {
-    //     // transform: translateX(0.68rem);
-    //     @include font-size(3.2);
-    //   }
-    //   @include media(tablet, height) {
-    //     // transform: translateX(0);
-    //     @include font-size(4.4);
-    //   }
-    // }
+    .design,
+    .dev,
     .creatives {
-      @include padding-bottom(1);
+      line-height: 1.6;
+      font-family: 'Lobster Two', serif;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     }
-    .tagline {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      @include font-size(.75);
-      @include media(iphoneUp, height) {
-        @include font-size(1);
+    .design {
+      @include media(iphone, general) {
+        @include padding-top(1);
       }
-      @include media(tablet, height) {
-        @include font-size(1.25);
-      }    
+      @include media(iphoneUp, general) {
+        padding-top: 0;
+      }
+      @include media(tablet, general) {
+        padding-top: 0;
+      }
     }
     .start {
       text-align: center;
     }
     .site-more {
       display: inline-block;
-      text-align: center;
       line-height: 1;
     }
   }

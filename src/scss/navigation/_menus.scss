@@ -89,9 +89,11 @@
 #site-connect.toggled,
 #site-search.toggled,
 #site-menu.toggled {
-	background: $color__cream;
+	border: 1px solid $color__cream;
+	border-radius: 10px;
+	// background: $color__cream;
 	&, a, i, span {
-		color: $color__black;
+		// color: $color__black;
 	}
 }
 #full-site-search.toggled {
