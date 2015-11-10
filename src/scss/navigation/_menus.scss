@@ -100,13 +100,13 @@
 		@include media(mobile, general) {
 			position: absolute;
 			left: -999em;
-		}		
+		}
 	}
 	&.toggled div {
 		@include media(mobile, general) {
 			position: static;
 			left: 0;
-		}	
+		}
 	}
 	li > ul {
 		position: relative;
