@@ -6,19 +6,19 @@
 // https://coolors.co/app/755c3b-fcfbe3-fbfef9-0c6291-000004 < blue, black & paper white
 
 // Shades
-$color__black    : #152614; // Deep Green
-$color__white    : #FBFEF9; // Paper White
-$color__grey     : #808782; // Wet Cement
+$color__black    : #152614; // Deep Green // rgb(21,38,20)
+$color__white    : #FBFEF9; // Paper White // rgb(251,254,249)
+$color__grey     : #808782; // Wet Cement // rgb(128,135,130)
 $color__cream    : #FCFBE3; // Cream // rgb(252,251,227)
 // Browns
 $color__brown    : #755C3B; // Milk Chocolate // rgb(117,92,59)
 $color__darkbrown: #2F2504; // Dark Chocolate // rgb(47,37,4)
 // Greens
 $color__pine     : #19381F; // Deep Pine Forest // rgb(25,56,31)
-$color__plant    : #1C7C54; // Photosynthesis
-$color__heidi    : #A6D3A0; // Heidi Green
+$color__plant    : #1C7C54; // Photosynthesis // rgb(28,124,84)
+$color__heidi    : #A6D3A0; // Heidi Green // rgb(166,211,160)
 // Blues
-$color__blue     : #0C6291; // Great on cream
+$color__blue     : #0C6291; // Great on cream // rgb(12,98,145)
 
 // $color__vest     : #fd624b;
 // $color__shirt    : #32596d;
@@ -30,7 +30,11 @@ $color__blue     : #0C6291; // Great on cream
 //   color: $color__shirt !important;
 // }
 
-$color__overlay : rgba(25,56,31,0.5);
+$color__overlay2 : rgba(117,92,59,0.8); // Brown
+$color__overlay2 : rgba(47,37,4,0.9); // Dark Brown
+$color__overlay2 : rgba(12,98,145,0.9); // Blue
+$color__overlay1 : rgba(25,56,31,0.9); // Pine
+
 
 $color__text-main: $color__black;
 $color__text-screen: #2660A4;
