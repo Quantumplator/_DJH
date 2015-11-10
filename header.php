@@ -43,7 +43,7 @@
 					</div>
 
 					<div class="site-email nav-control">
-						<a href="<?php echo esc_url( __( 'mailto:admin@dylanjharris.net', '_djh' ) ); ?>">
+						<a href="<?php echo esc_url( __( 'mailto:admin@dylanjharris.net?subject=Website Inquiry', '_djh' ) ); ?>">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-envelope"></i>
 								<span>Email</span>
@@ -53,7 +53,7 @@
 					</div>
 
 					<div class="site-phone nav-control">
-						<a href="<?php echo esc_url( __( 'tel:+15091234567', '_djh' ) ); ?>">
+						<a href="<?php echo esc_url( __( 'tel:+18055400746', '_djh' ) ); ?>">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-phone"></i>
 								<span>Call</span>

@@ -1,1 +1,17 @@
 $trans__default : .2s ease-in-out;
+
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.site-more {
+  animation: pulse 1.2s ease-in-out infinite;
+}
