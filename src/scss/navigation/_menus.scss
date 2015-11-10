@@ -60,7 +60,6 @@
 		li {
 			margin-right: 0;
 		}
-
 	}
 	@include media(tablet, general) {
 		li {
@@ -94,6 +93,15 @@
 }
 #full-site-search.toggled {
 	border-bottom: 2px solid $color__cream;
+}
+#nav-search {
+	display: none;
+}
+#primary-menu-wrapper,
+#site-social {
+	@include media(mobile, general) {
+		display: none;
+	}
 }
 #primary-menu-wrapper {
 	div {
@@ -132,8 +140,10 @@
 	li.current-menu-item {
 		@include media(mobile, general) {
 			a {
-				font-style: italic;
-				text-decoration: underline;
+				background: $color__cream;
+				color: $color__text-main;
+				// border-top-right-radius: 100%;
+				// border-bottom-right-radius: 50%;
 			}
 			
 		}

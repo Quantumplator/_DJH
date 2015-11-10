@@ -28,60 +28,82 @@ jQuery(document).ready(function($){
 	//   }
 	// });
 
+	// $('#site-search').on('click',function(){
+	// 	if($(this).attr('data-click-state') == 1) {
+	// 		$(this).attr('data-click-state', 0)
+	// 		/*Change this to your own property / function - Click State 1*/
+	// 		$(this).removeClass('toggled')
+	// 		$('#nav-search').removeClass('toggled')
+	// 		/*Click State 1 finish*/
+	//   } else {
+	//   	$(this).attr('data-click-state', 1)
+	//   	/*Change this to your own property / function - Click State 2*/
+	// 		$(this).addClass('toggled')
+	//   	$('#nav-search').addClass('toggled')
+	//   /*Click State 2 finish*/
+	//   }
+	// });
+
+	// $('#full-site-search').on('click',function(){
+	// 	if($(this).attr('data-click-state') == 1) {
+	// 		$(this).attr('data-click-state', 0)
+	// 		/*Change this to your own property / function - Click State 1*/
+	// 		$(this).removeClass('toggled')
+	// 		$('#nav-search').removeClass('toggled')
+	// 		/*Click State 1 finish*/
+	//   } else {
+	//   	$(this).attr('data-click-state', 1)
+	//   	/*Change this to your own property / function - Click State 2*/
+	// 		$(this).addClass('toggled')
+	//   	$('#nav-search').addClass('toggled')
+	//   /*Click State 2 finish*/
+	//   }
+	// });
+
+	// $('#site-connect').on('click',function(){
+	// 	if($(this).attr('data-click-state') == 1) {
+	// 		$(this).attr('data-click-state', 0)
+	// 		/*Change this to your own property / function - Click State 1*/
+	// 		$(this).removeClass('toggled')
+	// 		$('#site-social').removeClass('toggled')
+	// 		/*Click State 1 finish*/
+	//   } else {
+	//   	$(this).attr('data-click-state', 1)
+	//   	/*Change this to your own property / function - Click State 2*/
+	// 		$(this).addClass('toggled')
+	//   	$('#site-social').addClass('toggled')
+	//   /*Click State 2 finish*/
+	//   }
+	// });
+
+
 
   $("#site-menu").click(function(){
-      $("#primary-menu-wrapper div").slideToggle("slow");
+      $("#primary-menu-wrapper").slideToggle("medium", function() {
+
+
+			// if ($(".sampleClass").css("float") == "none" ){
+   //    	// your code here
+   //  	}
+
+
+    		if ($(this).is(':visible') && $("#site-title").css("display") != "flex")
+        $(this).css('display','inline-block');
+      });
   });
 
+  $("#site-search").click(function(){
+      $("#nav-search").slideToggle("medium");
+  });
 
+  $("#full-site-search").click(function(){
+      $("#nav-search").slideToggle("medium");
+  });
 
-	$('#site-search').on('click',function(){
-		if($(this).attr('data-click-state') == 1) {
-			$(this).attr('data-click-state', 0)
-			/*Change this to your own property / function - Click State 1*/
-			$(this).removeClass('toggled')
-			$('#nav-search').removeClass('toggled')
-			/*Click State 1 finish*/
-	  } else {
-	  	$(this).attr('data-click-state', 1)
-	  	/*Change this to your own property / function - Click State 2*/
-			$(this).addClass('toggled')
-	  	$('#nav-search').addClass('toggled')
-	  /*Click State 2 finish*/
-	  }
-	});
+  $("#site-connect").click(function(){
+      $("#site-social").slideToggle("medium");
+  });
 
-	$('#full-site-search').on('click',function(){
-		if($(this).attr('data-click-state') == 1) {
-			$(this).attr('data-click-state', 0)
-			/*Change this to your own property / function - Click State 1*/
-			$(this).removeClass('toggled')
-			$('#nav-search').removeClass('toggled')
-			/*Click State 1 finish*/
-	  } else {
-	  	$(this).attr('data-click-state', 1)
-	  	/*Change this to your own property / function - Click State 2*/
-			$(this).addClass('toggled')
-	  	$('#nav-search').addClass('toggled')
-	  /*Click State 2 finish*/
-	  }
-	});
-
-	$('#site-connect').on('click',function(){
-		if($(this).attr('data-click-state') == 1) {
-			$(this).attr('data-click-state', 0)
-			/*Change this to your own property / function - Click State 1*/
-			$(this).removeClass('toggled')
-			$('#site-social').removeClass('toggled')
-			/*Click State 1 finish*/
-	  } else {
-	  	$(this).attr('data-click-state', 1)
-	  	/*Change this to your own property / function - Click State 2*/
-			$(this).addClass('toggled')
-	  	$('#site-social').addClass('toggled')
-	  /*Click State 2 finish*/
-	  }
-	});
 
 }); 
 
