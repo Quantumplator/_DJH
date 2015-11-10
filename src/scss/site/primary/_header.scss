@@ -330,7 +330,8 @@
     }
     .design,
     .creatives,
-    .site-more {
+    .site-more,
+    .dev {
       font-family: 'Lobster Two', serif;      
       @include font-size(2.9);
       @include media(iphoneUp, height) {
@@ -340,29 +341,29 @@
         @include font-size(7);
       }
     }
-    .design {
-      @include media(iphone, general) {
-        @include padding-top(3);
-      }
-      @include media(iphoneUp, general) {
-        @include padding-top(3);
-      }
-      @include media(tablet, general) {
-        @include padding-top(3);
-      }
-    }
-    .dev  {
-      font-family: 'Source Code Pro', sans-serif;
-      @include font-size(1.8);
-      @include media(iphoneUp, height) {
-        // transform: translateX(0.68rem);
-        @include font-size(3.2);
-      }
-      @include media(tablet, height) {
-        // transform: translateX(0);
-        @include font-size(4.4);
-      }
-    }
+    // .design {
+    //   @include media(iphone, general) {
+    //     @include padding-top(2);
+    //   }
+    //   @include media(iphoneUp, general) {
+    //     @include padding-top(2);
+    //   }
+    //   @include media(tablet, general) {
+    //     @include padding-top(3);
+    //   }
+    // }
+    // .dev  {
+    //   font-family: 'Source Code Pro', sans-serif;
+    //   @include font-size(1.8);
+    //   @include media(iphoneUp, height) {
+    //     // transform: translateX(0.68rem);
+    //     @include font-size(3.2);
+    //   }
+    //   @include media(tablet, height) {
+    //     // transform: translateX(0);
+    //     @include font-size(4.4);
+    //   }
+    // }
     .creatives {
       @include padding-bottom(1);
     }

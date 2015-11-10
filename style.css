@@ -2680,36 +2680,36 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @font-face {
   font-family: 'Lobster Two';
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot");
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.svg#lobster_tworegular") format("svg");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.svg#lobster_tworegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot");
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Italic';
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot");
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot");
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Code Pro';
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.eot");
-  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.svg#source_code_proregular") format("svg");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.eot");
+  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/sourcecodepro-regular-webfont.svg#source_code_proregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4056,7 +4056,8 @@ a:hover, a:active {
 }
 .site-header .hero-bar-inner .design,
 .site-header .hero-bar-inner .creatives,
-.site-header .hero-bar-inner .site-more {
+.site-header .hero-bar-inner .site-more,
+.site-header .hero-bar-inner .dev {
   font-family: 'Lobster Two', serif;
   font-size: 46.4px;
   font-size: 2.9rem;
@@ -4064,7 +4065,8 @@ a:hover, a:active {
 @media only screen and (min-width: 568.1px) and (min-height: 555px) {
   .site-header .hero-bar-inner .design,
   .site-header .hero-bar-inner .creatives,
-  .site-header .hero-bar-inner .site-more {
+  .site-header .hero-bar-inner .site-more,
+  .site-header .hero-bar-inner .dev {
     font-size: 80px;
     font-size: 5rem;
   }
@@ -4072,44 +4074,10 @@ a:hover, a:active {
 @media only screen and (min-width: 800px) and (min-height: 700px) {
   .site-header .hero-bar-inner .design,
   .site-header .hero-bar-inner .creatives,
-  .site-header .hero-bar-inner .site-more {
+  .site-header .hero-bar-inner .site-more,
+  .site-header .hero-bar-inner .dev {
     font-size: 112px;
     font-size: 7rem;
-  }
-}
-@media only screen and (max-width: 568px) {
-  .site-header .hero-bar-inner .design {
-    padding-top: 48px;
-    padding-top: 3rem;
-  }
-}
-@media only screen and (min-width: 568.1px) {
-  .site-header .hero-bar-inner .design {
-    padding-top: 48px;
-    padding-top: 3rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .site-header .hero-bar-inner .design {
-    padding-top: 48px;
-    padding-top: 3rem;
-  }
-}
-.site-header .hero-bar-inner .dev {
-  font-family: 'Source Code Pro', sans-serif;
-  font-size: 28.8px;
-  font-size: 1.8rem;
-}
-@media only screen and (min-width: 568.1px) and (min-height: 555px) {
-  .site-header .hero-bar-inner .dev {
-    font-size: 51.2px;
-    font-size: 3.2rem;
-  }
-}
-@media only screen and (min-width: 800px) and (min-height: 700px) {
-  .site-header .hero-bar-inner .dev {
-    font-size: 70.4px;
-    font-size: 4.4rem;
   }
 }
 .site-header .hero-bar-inner .creatives {

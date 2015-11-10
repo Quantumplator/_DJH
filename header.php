@@ -32,7 +32,7 @@
 				<div class="contact-bar-inner flexbox row">
 
 					<div class="site-title nav-control">
-						<a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="dylanjharris.net">
 							<?php if ( is_front_page() ) : ?>
 							<h1 id="site-title-h1"><span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span></h1>
 							<?php else : ?>
@@ -121,7 +121,8 @@
 				<div class="hero-bar-inner flexbox column">
 					<h2>
 						<span id="design" class="design hero-bar">Design,</span>
-						<span class="dev hero-bar">development,</span><span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
+						<span class="dev hero-bar">Development,</span>
+						<span class="creatives hero-bar"><span class="vest">Creative</span> <span class="shirt">Branding</span></span></h2>
 <!--  					<p class="tagline">we build websites.</p> -->
 					<p class="start">
 <!-- 						<a href="">we make websites</a> -->
