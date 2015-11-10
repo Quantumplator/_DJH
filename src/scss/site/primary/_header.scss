@@ -343,9 +343,9 @@
     }
     .design {
       @include media(iphone, general) {
-        @include padding-top(1);
+        @include padding-top(2);
       }
-      @include media(tablet, general) {
+      @include media(iphoneUp, general) {
         @include padding-top(1);
       }
       @include media(tablet, general) {
