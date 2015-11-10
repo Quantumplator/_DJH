@@ -123,7 +123,7 @@
     .site-phone .contact-point::before {
       content: '\f098';      
       @include media(tablet, general) {
-        @include padding-left(4.4);
+        @include padding-left(1.6);
       }
     }
 
@@ -362,7 +362,7 @@
       }
       @include media(tablet, height) {
         // transform: translateX(0);
-        @include font-size(4);
+        @include font-size(4.5);
       }
     }
     .ampersand {
