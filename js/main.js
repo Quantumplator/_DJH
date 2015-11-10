@@ -7,39 +7,31 @@
  *
  */
 
-jQuery(document).ready(function($){
-  var $window = $(window).on('resize', function(){
-      if ($("#site-title").css("display") != "flex" && $("#primary-menu-wrapper").is(':visible'))
-      	$("#primary-menu-wrapper").css('display','inline-block')
-      if ($("#site-title").css("display") == "flex" && $("#primary-menu-wrapper").is(':visible'))
-      	$("#primary-menu-wrapper").css('display','block')
-  }).trigger('resize'); //on page load
-});
+// jQuery(window).resize(function($) {
+//   var $window = $(window).on('resize', function(){
+//   	// If desktop
+//     if ($("#site-title").css("display") != "flex" && $("#primary-menu-wrapper").css("display") == "block")
+//     	$("#primary-menu-wrapper").css('display','inline-block')
+//     // If mobile
+//     if ($("#site-title").css("display") == "flex")
+//       $("#primary-menu-wrapper").css('display','none')
+//   }).trigger('resize'); //on page load
+// });
 
 
 
-// jQuery(window).resize(function() {
-
-// 	if ($("#primary-menu-wrapper").is(':visible') && $("#site-title").css("display") == "flex")
-//   	$("#primary-menu-wrapper").css('display','block');
+// jQuery(window).resize(function($) {
+// 	// If desktop
+// 	if (($("#site-title").css("display") != "flex") && ($("#primary-menu-wrapper").css("display") == "block"))
+// 		$("#primary-menu-wrapper").css('display','inline-block')
 // });
 
 
 jQuery(document).ready(function($){
 
   $("#site-menu").click(function(){
-      $("#primary-menu-wrapper").slideToggle("medium", function() {
-      	// The display flex check here could be any css that ONLY applies to @media(mobile, general)
-    		if ($(this).is(':visible') && $("#site-title").css("display") != "flex")
-        	$(this).css('display','inline-block');
-      });
+      $("#primary-menu-wrapper").slideToggle("medium");
   });
-
-
-  // $("#site-menu").click(function(){
-  //     $("#primary-menu-wrapper").slideToggle("medium");
-  // });
-
 
   $("#site-search").click(function(){
       $("#nav-search").slideToggle("medium");
@@ -53,8 +45,23 @@ jQuery(document).ready(function($){
       $("#site-social").slideToggle("medium");
   });
 
-
 }); 
+
+jQuery(document).ready(function($) {
+	var titleState = $("#site-title").css("display");
+	    menuState  = $("#primary-menu-wrapper").css("display");
+
+	$(window).resize(function() {
+		if($("site-title").css("display") == "flex") {
+			$("#site-search i").css("color", "blue");
+		}
+		console.log('updating');
+	});
+
+
+});
+
+
 
 
 

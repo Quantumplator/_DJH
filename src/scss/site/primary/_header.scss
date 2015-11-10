@@ -234,6 +234,17 @@
         -webkit-appearance: none;
         @include padding(1);
       }
+      .search-form-wrapper {
+        // position: absolute;
+        // left: -9999em;
+      }
+      &.toggled {
+        .search-form-wrapper {
+          // position: static;
+          // left: 0;
+        }
+
+      }
     }
     .nav-social {
       order: 1;
