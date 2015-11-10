@@ -70,7 +70,7 @@
 
 					<div id="site-connect" class="site-connect nav-control">
 						<button id="menu-button" class="menu-toggle" aria-controls="primary-social" aria-expanded="false" aria-hidden="true">
-							<i class="fa fa-thumbs-o-up"></i>
+							<i class="fa fa-share-alt"></i>
 							<span>Connect</span>
 						</button>
 					</div>
