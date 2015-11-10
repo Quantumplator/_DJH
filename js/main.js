@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 
 
   $("#site-menu").click(function(){
-      $("#primary-menu-wrapper").slideToggle("slow");
+      $("#primary-menu-wrapper div").slideToggle("slow");
   });
 
 

@@ -98,14 +98,14 @@
 #primary-menu-wrapper {
 	div {
 		@include media(mobile, general) {
-			position: absolute;
-			left: -999em;
+			// position: absolute;
+			// left: -999em;
 		}
 	}
 	&.toggled div {
 		@include media(mobile, general) {
-			position: static;
-			left: 0;
+			// position: static;
+			// left: 0;
 		}
 	}
 	li > ul {
@@ -133,6 +133,7 @@
 		@include media(mobile, general) {
 			a {
 				font-style: italic;
+				text-decoration: underline;
 			}
 			
 		}
