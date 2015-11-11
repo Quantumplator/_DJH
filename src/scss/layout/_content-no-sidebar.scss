@@ -2,3 +2,13 @@
   margin: 0 auto;
   @include max-width(64);
 }
+
+
+#contact {
+  background: $color__darkbrown;
+  color: $color__cream;
+  .sidebar-contact {
+    margin: 0 auto;
+    @include max-width(64);
+  }  
+}

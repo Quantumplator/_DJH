@@ -4146,6 +4146,16 @@ a:hover, a:active {
   max-width: 64rem;
 }
 
+#contact {
+  background: #2F2504;
+  color: #FCFBE3;
+}
+#contact .sidebar-contact {
+  margin: 0 auto;
+  max-width: 1024px;
+  max-width: 64rem;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
