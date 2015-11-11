@@ -43,3 +43,20 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+em, .em,
+dfn {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Open Sans Italic', 'Open Sans', sans-serif;
+}
+
+strong, .strong,
+optgroup, b, dt {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Open Sans Bold', 'Open Sans', sans-serif;
+}
+
+
+

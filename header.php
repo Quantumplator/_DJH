@@ -138,16 +138,20 @@
 
 				<?php elseif ( is_home() ) : ?>
 
-					<p id="blog-page-title" class="page-title"><span>The Blog</span></p>
+					<header class="entry-header">
+						<p id="blog-page-title" class="page-title"><span>The Blog</span></p>
+					</header><!-- .entry-header -->
 
 				<?php else : ?>
 
-					<h1 id="page-title" class="page-title">
-						<?php 
-							$postid = get_the_ID();
-							echo get_the_title( $postid );
-						?>
-					</h1>
+					<header class="entry-header">
+						<h1 id="page-title" class="page-title">
+							<?php 
+								$postid = get_the_ID();
+								echo get_the_title( $postid );
+							?>
+						</h1>
+					</header><!-- .entry-header -->
 
 				<?php endif; ?>
 
