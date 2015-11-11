@@ -3658,7 +3658,6 @@ a:hover, a:active {
   overflow: hidden;
   min-height: 33vh;
   max-width: 100%;
-  height: 33vh;
 }
 .site-header a, .site-header i, .site-header span {
   color: #FCFBE3;
@@ -4057,7 +4056,6 @@ body.home .site-header {
   background-size: cover;
   min-height: 100vh;
   max-width: 100%;
-  height: 100vh;
 }
 body.home .site-header .site-branding {
   min-height: 100vh;

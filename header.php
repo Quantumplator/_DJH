@@ -53,12 +53,12 @@
 					</div>
 
 					<div class="site-phone nav-control">
-						<a href="<?php echo esc_url( __( 'tel:+18055400746', '_djh' ) ); ?>" title="Click to call us">
+						<a href="<?php echo esc_url( __( 'tel:+15093169055', '_djh' ) ); ?>" title="Click to call us">
 							<button class="menu-toggle" aria-hidden="true">
 								<i class="fa fa-phone"></i>
 								<span>Call</span>
 							</button>
-							<span class="contact-point">(805) 540&ndash;0746</span>
+							<span class="contact-point">(509) 316&ndash;9055</span>
 						</a>
 					</div>
 
