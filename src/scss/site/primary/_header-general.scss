@@ -280,47 +280,6 @@
       margin: 0;
       font-weight: normal;
     }
-    .hero-bar {
-      display: block;
-    }
-    .design,
-    .dev,
-    .creatives,
-    .site-more {
-      text-align: center;
-      @include font-size(2.9);
-      @include media(iphoneUp, height) {
-        @include font-size(5);
-      }
-      @include media(tablet, height) {
-        @include font-size(7);
-      }
-    }
-    .design,
-    .dev,
-    .creatives {
-      line-height: 1.6;
-      font-family: 'Lobster Two', serif;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    }
-    .design {
-      @include media(iphone, general) {
-        @include padding-top(1);
-      }
-      @include media(iphoneUp, general) {
-        padding-top: 0;
-      }
-      @include media(tablet, general) {
-        padding-top: 0;
-      }
-    }
-    .start {
-      text-align: center;
-    }
-    .site-more {
-      display: inline-block;
-      line-height: 1;
-    }
   }
   .promo-bar-inner {             // flexbox
     @include min-height(4);

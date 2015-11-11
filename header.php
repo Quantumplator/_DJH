@@ -116,13 +116,13 @@
 
 				</nav><!-- .navigation-bar-inner  -->
 			</div><!-- .site-navigation-bar -->
-			
-			
-			<!-- Conditional Header Content -->
-			<?php if ( is_front_page() ) : ?>
+
 
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
+
+				<!-- Conditional Header Content -->
+				<?php if ( is_front_page() ) : ?>
 					<h2>
 						<span id="design" class="design hero-bar">Design,</span>
 						<span class="dev hero-bar">Development,</span>
@@ -134,16 +134,20 @@
 					<p class="start">
 						<a href="#entry-title" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 					</p>
+
+				<?php else : ?>
+
+					<p>Test</p>
+
+				<?php endif; ?>
+
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->
 
-			<?php else : ?>
+			
 
-			<div class="site-hero-bar flex-bar">
-				<p>Test</p>
-			</div>
+					
 
-			<?php endif; ?>
 
 
 
