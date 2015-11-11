@@ -144,13 +144,6 @@
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->
 
-			
-
-					
-
-
-
-
 			<!-- PROMO -->
 			<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>
 			<aside class="site-promo-bar flex-bar">

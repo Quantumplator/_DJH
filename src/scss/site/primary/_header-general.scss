@@ -62,10 +62,6 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 1px solid $color__cream;
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
-          border-bottom-left-radius: 10px;
         }
         @include media(tablet, general) {
           display: inline;
@@ -73,14 +69,16 @@
         h1 {
           margin: 0;
         }
-        span {}
+        span {
+          font-family: 'Lobster Two', 'Open Sans', sans-serif;
+        }
       }
       .djh {
         text-decoration: underline;
       }
       .thej {
         display: inline-block;
-        transform: translateY(4px);
+        transform: translateY(3px);
       }
     }
     .site-email,

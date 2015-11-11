@@ -3742,10 +3742,6 @@ a:hover, a:active {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 1px solid #FCFBE3;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -3758,6 +3754,10 @@ a:hover, a:active {
 .site-header .navigation-bar-inner .site-title #site-title h1 {
   margin: 0;
 }
+.site-header .contact-bar-inner .site-title #site-title span,
+.site-header .navigation-bar-inner .site-title #site-title span {
+  font-family: 'Lobster Two', 'Open Sans', sans-serif;
+}
 .site-header .contact-bar-inner .site-title .djh,
 .site-header .navigation-bar-inner .site-title .djh {
   text-decoration: underline;
@@ -3765,8 +3765,8 @@ a:hover, a:active {
 .site-header .contact-bar-inner .site-title .thej,
 .site-header .navigation-bar-inner .site-title .thej {
   display: inline-block;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 .site-header .contact-bar-inner .site-email .contact-point::before,
 .site-header .contact-bar-inner .site-phone .contact-point::before,
@@ -4119,6 +4119,11 @@ body.home .site-header .hero-bar-inner .start {
 body.home .site-header .hero-bar-inner .site-more {
   display: inline-block;
   line-height: 1;
+}
+
+body.page-id-1832 .site-header {
+  background: url("https://dylanjharris.net/wp-content/themes/_djh/img/harrises-small.png") no-repeat center center scroll;
+  background-size: cover;
 }
 
 /*--------------------------------------------------------------
