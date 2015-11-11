@@ -123,6 +123,7 @@
 
 				<!-- Conditional Header Content -->
 				<?php if ( is_front_page() ) : ?>
+
 					<h2>
 						<span id="design" class="design hero-bar">Design,</span>
 						<span class="dev hero-bar">Development,</span>
@@ -135,9 +136,18 @@
 						<a href="#entry-title" class="site-more"><i class="fa fa-angle-double-down"></i></a>
 					</p>
 
+				<?php elseif ( is_home() ) : ?>
+
+					<p id="blog-page-title" class="page-title"><span>The Blog</span></p>
+
 				<?php else : ?>
 
-					<h1><?php echo get_the_title( 1832 ); ?></h1>
+					<h1 id="page-title" class="page-title">
+						<?php 
+							$postid = get_the_ID();
+							echo get_the_title( $postid );
+						?>
+					</h1>
 
 				<?php endif; ?>
 

@@ -29,7 +29,6 @@ body.home .site-header {
     .dev,
     .creatives {
       line-height: 1.6;
-      font-family: 'Lobster Two', serif;
       text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     }
     .design {
@@ -54,6 +53,20 @@ body.home .site-header {
 }
 
 body:not(.home) .site-header {
-  background: url('https://dylanjharris.net/wp-content/themes/_djh/img/harrises-small.png') no-repeat center center scroll;
+  background: url('https://dylanjharris.net/wp-content/themes/_djh/img/harris-small.png') no-repeat center center scroll;
   background-size: cover;
+  .page-title {
+    line-height: 1.6; // Same as styles for design/dev/creatives, consolidate
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-align: center;
+    font-family: 'Lobster Two', 'Open Sans', cursive;
+    @include margin-bottom(1);
+    @include font-size(2.9);
+    @include media(iphoneUp, height) {
+      @include font-size(5);
+    }
+    @include media(tablet, height) {
+      @include font-size(7);
+    }
+  }
 }
