@@ -117,6 +117,10 @@
 				</nav><!-- .navigation-bar-inner  -->
 			</div><!-- .site-navigation-bar -->
 			
+			
+			<!-- Conditional Header Content -->
+			<?php if ( is_front_page() ) : ?>
+
 			<div class="site-hero-bar flex-bar">
 				<div class="hero-bar-inner flexbox column">
 					<h2>
@@ -132,6 +136,16 @@
 					</p>
 				</div><!-- .hero-bar-inner -->
 			</div><!-- .site-hero-bar -->
+
+			<?php else : ?>
+
+			<div class="site-hero-bar flex-bar">
+				<p>Test</p>
+			</div>
+
+			<?php endif; ?>
+
+
 
 			<!-- PROMO -->
 			<?php if ( is_active_sidebar( 'sidebar-promo' ) ) { ?>

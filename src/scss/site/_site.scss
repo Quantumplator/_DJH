@@ -7,9 +7,10 @@
 @import "../layout/sidebar-content";
 
 /*--------------------------------------------------------------
-## Header
+## Headers
 --------------------------------------------------------------*/
-@import "primary/header";
+@import "primary/header-general";
+@import "primary/header-specific";
 
 /*--------------------------------------------------------------
 ## Posts and pages
