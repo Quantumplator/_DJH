@@ -137,7 +137,7 @@
 
 				<?php else : ?>
 
-					<p>Test</p>
+					<h1><?php echo get_the_title( 1832 ); ?></h1>
 
 				<?php endif; ?>
 

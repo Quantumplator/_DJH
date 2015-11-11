@@ -53,7 +53,7 @@ body.home .site-header {
   }
 }
 
-body.page-id-1832 .site-header {
+body:not(.home) .site-header {
   background: url('https://dylanjharris.net/wp-content/themes/_djh/img/harrises-small.png') no-repeat center center scroll;
   background-size: cover;
 }
