@@ -3580,7 +3580,7 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Header
+## Layout
 --------------------------------------------------------------*/
 .flexbox {
   display: -webkit-flex;
@@ -3626,6 +3626,29 @@ a:hover, a:active {
   }
 }
 
+.edit-link {
+  display: none;
+}
+
+.site-main {
+  margin: 0 auto;
+  max-width: 1024px;
+  max-width: 64rem;
+}
+
+#contact {
+  background: #2F2504;
+  color: #FCFBE3;
+}
+#contact .sidebar-contact {
+  margin: 0 auto;
+  max-width: 1024px;
+  max-width: 64rem;
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
 .site-header {
   background: url("https://dylanjharris.net/wp-content/themes/_djh/img/harris.png") no-repeat center center scroll;
   background-size: cover;
@@ -4135,29 +4158,6 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block;
-}
-
-/*--------------------------------------------------------------
-## Layout
---------------------------------------------------------------*/
-.edit-link {
-  display: none;
-}
-
-.site-main {
-  margin: 0 auto;
-  max-width: 1024px;
-  max-width: 64rem;
-}
-
-#contact {
-  background: #2F2504;
-  color: #FCFBE3;
-}
-#contact .sidebar-contact {
-  margin: 0 auto;
-  max-width: 1024px;
-  max-width: 64rem;
 }
 
 /*--------------------------------------------------------------

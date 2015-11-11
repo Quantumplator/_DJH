@@ -1,33 +1,5 @@
 
 
-// Relocate these styles when finished
-
-.flexbox {
-  display: flex;
-}
-.row {
-  flex-direction: row;
-  margin: 0 auto;
-  @include max-width(64);
-}
-.column {
-  flex-direction: column;
-}
-.col-row {
-  flex-direction: column;
-  @include media(tablet, general) {
-    flex-direction: row;
-    margin: 0 auto;
-    @include max-width(64);
-  }
-}
-.flex-bar {
-  @include media(mobile, general) {
-    @include min-height(4);    
-  }
-}
-
-
 // Header Styles
 .site-header {
   background: url('https://dylanjharris.net/wp-content/themes/_djh/img/harris.png') no-repeat center center scroll;

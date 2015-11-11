@@ -1,0 +1,27 @@
+// These used to be directly tied to header.scss, 
+// DOUBLE CHECK HOME PAGE WHEN CHANGING!
+
+.flexbox {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+  margin: 0 auto;
+  @include max-width(64);
+}
+.column {
+  flex-direction: column;
+}
+.col-row {
+  flex-direction: column;
+  @include media(tablet, general) {
+    flex-direction: row;
+    margin: 0 auto;
+    @include max-width(64);
+  }
+}
+.flex-bar {
+  @include media(mobile, general) {
+    @include min-height(4);    
+  }
+}
