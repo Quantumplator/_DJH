@@ -3,6 +3,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
+input[type="tel"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
@@ -17,11 +18,73 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"] {
+input[type="search"],
+input[type="tel"] {
 	padding: 3px;
 }
 
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+
+.required {
+  color: $color__red;
+}
+
+.quoteform,
+.formbottom {
+  label {
+    font-family: 'Open Sans Bold';
+    @include font-size(1);
+  }
+}
+
+.formbottom p {
+  margin: 0;
+}
+
+
+.quoteform {
+  h2 {
+    @include padding-top(1);
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .quotename {
+    float: left;
+    width: 48%;
+  }
+  .quotename,
+  .quotesite {
+    @include margin-bottom(1);
+  }
+  .firstname {
+    margin-right: 4%;
+  }
+  input[type="text"], 
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  select {
+    width: 100%;
+  }
+  span.wpcf7-list-item {
+    display: block;
+  }
+}
+
+
+@include media(tablet, general) {
+  .quoteform {
+    display: flex;
+  }
+  .formleftside,
+  .formrightside {
+    width: 48%;
+  }
+  .formleftside {
+    margin-right: 4%;
+  }
 }
