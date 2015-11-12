@@ -1,3 +1,9 @@
+.widget-area {
+  @include media(mobile, general) {
+    @include padding(1);
+  }
+}
+
 .widget {
 	margin: 0;
 
