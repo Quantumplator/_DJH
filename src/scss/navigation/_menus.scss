@@ -153,6 +153,9 @@
 		li {
 			display: inline-block;
 			@include margin-right(1);
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
   a::before {

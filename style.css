@@ -2680,29 +2680,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @font-face {
   font-family: 'Lobster Two';
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot");
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.svg#lobster_tworegular") format("svg");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/lobstertwo-regular-webfont.svg#lobster_tworegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot");
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Italic';
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot");
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot");
-  src: url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff2") format("woff2"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff") format("woff"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.ttf") format("truetype"), url("https://dylanjharris.net/wp-content/themes/_djh/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot");
+  src: url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff2") format("woff2"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.woff") format("woff"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.ttf") format("truetype"), url("http://localhost:3000/djh/net/wp-content/themes/_djh/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3496,6 +3496,9 @@ a:hover, a:active {
   margin-right: 16px;
   margin-right: 1rem;
 }
+.social-menu ul li:last-child {
+  margin-right: 0;
+}
 .social-menu a::before {
   vertical-align: top;
   font-family: 'Fontawesome';
@@ -3778,6 +3781,24 @@ a:hover, a:active {
       -ms-flex-order: -1;
           order: -1;
   background: rgba(117, 92, 59, 0.6);
+  background: #A6D3A0;
+  color: #152614;
+}
+.site-header .site-promo-bar a {
+  color: #152614;
+  text-decoration: underline;
+}
+.site-header .site-promo-bar .promo-bar-inner {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-size: 0.75rem;
+  min-height: 16px;
+  min-height: 1rem;
 }
 .site-header .contact-bar-inner,
 .site-header .navigation-bar-inner {
@@ -4109,8 +4130,8 @@ a:hover, a:active {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: distribute;
-      -webkit-align-content: space-around;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
           align-content: space-around;
   margin: 0 auto;
   -webkit-user-select: none;
@@ -4124,24 +4145,13 @@ a:hover, a:active {
   margin: 0;
   font-weight: normal;
 }
-.site-header .promo-bar-inner {
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-  font-size: 1rem;
-  min-height: 48px;
-  min-height: 3rem;
-}
 
 body.home .site-header {
   background: url("https://dylanjharris.net/wp-content/themes/_djh/img/harris.png") no-repeat center center scroll;
   background-size: cover;
   min-height: 100vh;
   max-width: 100%;
+  height: 100vh;
 }
 body.home .site-header .site-branding {
   min-height: 100vh;
@@ -4155,8 +4165,8 @@ body.home .site-header .hero-bar-inner .dev,
 body.home .site-header .hero-bar-inner .creatives,
 body.home .site-header .hero-bar-inner .site-more {
   text-align: center;
-  font-size: 46.4px;
-  font-size: 2.9rem;
+  font-size: 44.8px;
+  font-size: 2.8rem;
 }
 @media only screen and (min-width: 568.1px) and (min-height: 555px) {
   body.home .site-header .hero-bar-inner .design,

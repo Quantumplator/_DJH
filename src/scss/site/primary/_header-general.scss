@@ -43,6 +43,19 @@
   .site-promo-bar {                // flex item
     order: -1;
     background: rgba(117,92,59,0.6);
+    background: $color__heidi;
+    color: $color__text-main;
+    a {
+      color: $color__text-main;
+      text-decoration: underline;
+    }
+    .promo-bar-inner {             // flexbox
+      justify-content: center;
+      align-items: center;
+      @include font-size(.75);
+      @include min-height(1);
+    }
+
   }
 
   .contact-bar-inner,
@@ -279,11 +292,4 @@
       font-weight: normal;
     }
   }
-  .promo-bar-inner {             // flexbox
-    justify-content: center;
-    align-items: center;
-    @include font-size(1);
-    @include min-height(3);
-  }
-
 }

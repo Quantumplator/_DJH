@@ -3,7 +3,7 @@ body.home .site-header {
   background-size: cover;
   min-height: 100vh;
   max-width: 100%;
-  // height: 100vh; // Play with this in the future. Maybe toggle with long menu?
+  height: 100vh; // Play with this in the future. Maybe toggle with long menu?
   .site-branding {
     min-height: 100vh;
     max-width: 100%;
@@ -17,7 +17,7 @@ body.home .site-header {
     .creatives,
     .site-more {
       text-align: center;
-      @include font-size(2.9);
+      @include font-size(2.8);
       @include media(iphoneUp, height) {
         @include font-size(5);
       }
