@@ -41,9 +41,9 @@
     flex-grow: 1;
   }
   .site-promo-bar {                // flex item
-    background: $color__brown;
-    background: rgba(117,92,59,0.5);
     order: -1;
+    background: $color__pine;
+    background: rgba(117,92,59,0.5);
   }
 
   .contact-bar-inner,
@@ -281,7 +281,10 @@
     }
   }
   .promo-bar-inner {             // flexbox
-    @include min-height(4);
+    justify-content: center;
+    align-items: center;
+    @include font-size(1);
+    @include min-height(3);
   }
 
 }

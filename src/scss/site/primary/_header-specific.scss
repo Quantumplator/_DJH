@@ -22,7 +22,7 @@ body.home .site-header {
         @include font-size(5);
       }
       @include media(tablet, height) {
-        @include font-size(7);
+        @include font-size(6);
       }
     }
     .design,

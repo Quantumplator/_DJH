@@ -3710,11 +3710,11 @@ a:hover, a:active {
           flex-grow: 1;
 }
 .site-header .site-promo-bar {
-  background: #755C3B;
-  background: rgba(117, 92, 59, 0.5);
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
+  background: #19381F;
+  background: rgba(117, 92, 59, 0.5);
 }
 .site-header .contact-bar-inner,
 .site-header .navigation-bar-inner {
@@ -4062,8 +4062,16 @@ a:hover, a:active {
   font-weight: normal;
 }
 .site-header .promo-bar-inner {
-  min-height: 64px;
-  min-height: 4rem;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-size: 1rem;
+  min-height: 48px;
+  min-height: 3rem;
 }
 
 body.home .site-header {
@@ -4101,8 +4109,8 @@ body.home .site-header .hero-bar-inner .site-more {
   body.home .site-header .hero-bar-inner .dev,
   body.home .site-header .hero-bar-inner .creatives,
   body.home .site-header .hero-bar-inner .site-more {
-    font-size: 112px;
-    font-size: 7rem;
+    font-size: 96px;
+    font-size: 6rem;
   }
 }
 body.home .site-header .hero-bar-inner .design,
