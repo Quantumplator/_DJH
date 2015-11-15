@@ -30,7 +30,7 @@
 }
 .entry-title {
   @include media(mobile, general) {
-    @include padding-left(1);
+    @include padding-sides(1);
     @include padding-top(1);
     @include font-size(2);
   }
