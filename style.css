@@ -4329,7 +4329,7 @@ body:not(.home) .site-header .page-title {
 }
 
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 
 .byline,
