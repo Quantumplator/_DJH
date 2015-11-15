@@ -3288,6 +3288,7 @@ textarea {
 }
 
 .quoteform h2 {
+  border-bottom: 2px solid #FCFBE3;
   padding-top: 16px;
   padding-top: 1rem;
 }
@@ -3307,6 +3308,9 @@ textarea {
 }
 .quoteform .firstname {
   margin-right: 4%;
+}
+.quoteform .quoteemail {
+  clear: both;
 }
 .quoteform input[type="text"],
 .quoteform input[type="email"],
@@ -3373,10 +3377,13 @@ textarea {
   padding-bottom: 1rem;
   margin-top: 16px;
   margin-top: 1rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
   font-size: 20px;
   font-size: 1.25rem;
+}
+@media only screen and (max-width: 799.9px) {
+  .formbottom input[type="submit"] {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 800px) {

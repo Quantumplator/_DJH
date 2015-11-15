@@ -48,6 +48,7 @@ textarea {
 
 .quoteform {
   h2 {
+    border-bottom: 2px solid $color__cream;
     @include padding-top(1);
   }
   p {
@@ -64,6 +65,9 @@ textarea {
   }
   .firstname {
     margin-right: 4%;
+  }
+  .quoteemail {
+    clear: both;
   }
   input[type="text"], 
   input[type="email"],
@@ -117,8 +121,11 @@ textarea {
     box-shadow: none;
     @include padding-sides(2);
     @include padding-ends(1);
-    @include margin-ends(1);
+    @include margin-top(1);
     @include font-size(1.25);
+    @include media(mobile, general) {
+      width: 100%;
+    }
   }
 }
 
