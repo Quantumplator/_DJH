@@ -22,12 +22,20 @@
 	margin: 0;
 }
 
-.entry-content,
-.entry-title {
+.entry-content {
   @include media(mobile, general) {
-    @include padding(1);
+    @include padding-sides(1);
+    @include padding-bottom(1);
   }
 }
+.entry-title {
+  @include media(mobile, general) {
+    @include padding-left(1);
+    @include padding-top(1);
+    @include font-size(2);
+  }
+}
+
 
 .page-links {
 	clear: both;
