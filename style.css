@@ -3304,6 +3304,27 @@ textarea {
 .quoteform span.wpcf7-list-item {
   display: block;
 }
+.quoteform input[type="checkbox"] {
+  display: none;
+}
+.quoteform input[type="checkbox"] + span {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.quoteform input[type="checkbox"] + span::before {
+  font-family: "Fontawesome";
+  content: "\f0c8";
+  display: inline-block;
+  margin-right: 16px;
+  margin-right: 1rem;
+}
+.quoteform input[type="checkbox"]:checked + span::before {
+  content: "\f14a";
+  content: "\f058";
+}
 
 @media only screen and (min-width: 800px) {
   .quoteform {
@@ -3321,6 +3342,11 @@ textarea {
     margin-right: 4%;
   }
 }
+body.home input,
+body.home textarea {
+  background: #FCFBE3;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -4158,8 +4184,8 @@ a:hover, a:active {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: distribute;
-      -webkit-align-content: space-around;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
           align-content: space-around;
   margin: 0 auto;
   -webkit-user-select: none;

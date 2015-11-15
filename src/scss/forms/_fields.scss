@@ -72,6 +72,24 @@ textarea {
   }
   span.wpcf7-list-item {
     display: block;
+    // @include margin-bottom(0.25);
+  }
+  input[type="checkbox"] {
+    display: none;
+    & + span {
+      display: inline-block;
+      user-select: none;
+      &::before {
+        font-family: "Fontawesome";
+        content: "\f0c8";
+        display: inline-block;
+        @include margin-right(1);
+      }
+    }
+    &:checked + span::before {
+      content: "\f14a";
+      content: "\f058";
+    }
   }
 }
 
@@ -86,5 +104,12 @@ textarea {
   }
   .formleftside {
     margin-right: 4%;
+  }
+}
+
+body.home {
+  input,
+  textarea {
+    background: $color__cream;
   }
 }
