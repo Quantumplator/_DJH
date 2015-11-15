@@ -22,7 +22,8 @@
 	margin: 0;
 }
 
-.entry-content {
+.entry-content,
+.entry-title {
   @include media(mobile, general) {
     @include padding(1);
   }
