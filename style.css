@@ -4206,7 +4206,7 @@ a:hover, a:active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-line-pack: distribute;
-      -webkit-align-content: space-around;
+          -webkit-align-content: space-around;
           align-content: space-around;
   margin: 0 auto;
   -webkit-user-select: none;
