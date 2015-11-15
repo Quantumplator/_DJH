@@ -152,13 +152,13 @@
   .navigation-bar-inner {
     @include padding-bottom(.2);
     .site-connect {
-      order: 3;
+      order: 2;
     }
     .site-menu {
       order: 1;
     }
     .site-search {
-      order: 2;
+      order: 3;
     }
   }
 
