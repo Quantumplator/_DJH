@@ -40,8 +40,9 @@ textarea {
   }
 }
 
-.formbottom p {
-  margin: 0;
+.formleftside,
+.formrightside {
+  @include margin-bottom(1);
 }
 
 
@@ -97,6 +98,8 @@ textarea {
     box-shadow: none;
     background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevrondown.png) 96% / 5% no-repeat #fff;
     background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevron21.svg) 96% / 5% no-repeat #fff;
+    line-height: 2;
+    @include font-size(1);
     @include padding(0.1875);
   }
   select::-ms-expand { /* for IE 11 */
@@ -105,6 +108,21 @@ textarea {
 }
 
 
+.formbottom {
+  p {
+    margin: 0;
+  }
+  input[type="submit"] {
+    border: 0;
+    box-shadow: none;
+    @include padding-sides(2);
+    @include padding-ends(1);
+    @include margin-ends(1);
+    @include font-size(1.25);
+  }
+}
+
+// Tablet-up quote form
 @include media(tablet, general) {
   .quoteform {
     display: flex;
@@ -118,6 +136,8 @@ textarea {
   }
 }
 
+
+// Home specific quoteform
 body.home {
   input,
   textarea,
@@ -128,4 +148,17 @@ body.home {
     background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevrondown.png) 96% / 5% no-repeat $color__cream;
     background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevron21.svg) 96% / 5% no-repeat $color__cream;
   }
+}
+
+// Contact Form 7 Error messages
+div.wpcf7-response-output {
+    margin: 0;
+    @include padding(1);
+}
+div[role="form"] {
+  @include padding-bottom(2);
+}
+span[role="alert"] {
+  color: $color__red;
+  @include font-size(1);
 }
