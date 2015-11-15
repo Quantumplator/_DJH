@@ -3331,6 +3331,9 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   border-radius: 3px;
+  box-shadow: none;
+  background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevrondown.png) 96%/5% no-repeat #fff;
+  background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevron21.svg) 96%/5% no-repeat #fff;
   padding: 3px;
   padding: 0.1875rem;
 }
@@ -3359,6 +3362,10 @@ body.home input,
 body.home textarea,
 body.home select {
   background: #FCFBE3;
+}
+body.home select {
+  background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevrondown.png) 96%/5% no-repeat #FCFBE3;
+  background: url(http://localhost:3000/djh/net/wp-content/themes/_djh/img/chevron21.svg) 96%/5% no-repeat #FCFBE3;
 }
 
 /*--------------------------------------------------------------
