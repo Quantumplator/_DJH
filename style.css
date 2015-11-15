@@ -4158,8 +4158,8 @@ a:hover, a:active {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-align-content: space-around;
-      -ms-flex-line-pack: distribute;
+  -ms-flex-line-pack: distribute;
+      -webkit-align-content: space-around;
           align-content: space-around;
   margin: 0 auto;
   -webkit-user-select: none;
