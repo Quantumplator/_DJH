@@ -82,20 +82,18 @@ textarea {
       user-select: none;
       &::before {
         font-family: "Fontawesome";
-        content: "\f0c8";
+        content: "\f096";
         display: inline-block;
-        @include margin-right(1);
+        @include width(2);
       }
     }
     &:checked + span::before {
-      content: "\f14a";
-      content: "\f058";
+      content: "\f046";
     }
   }
   select {
     appearance: none;
     border-radius: 3px;
-    background: $color__cream;
     @include padding(0.1875);
   }
   select::-ms-expand { /* for IE 11 */
@@ -119,7 +117,8 @@ textarea {
 
 body.home {
   input,
-  textarea {
+  textarea,
+  select {
     background: $color__cream;
   }
 }

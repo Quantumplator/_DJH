@@ -3318,21 +3318,19 @@ textarea {
 }
 .quoteform input[type="checkbox"] + span::before {
   font-family: "Fontawesome";
-  content: "\f0c8";
+  content: "\f096";
   display: inline-block;
-  margin-right: 16px;
-  margin-right: 1rem;
+  width: 32px;
+  width: 2rem;
 }
 .quoteform input[type="checkbox"]:checked + span::before {
-  content: "\f14a";
-  content: "\f058";
+  content: "\f046";
 }
 .quoteform select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border-radius: 3px;
-  background: #FCFBE3;
   padding: 3px;
   padding: 0.1875rem;
 }
@@ -3358,7 +3356,8 @@ textarea {
   }
 }
 body.home input,
-body.home textarea {
+body.home textarea,
+body.home select {
   background: #FCFBE3;
 }
 
