@@ -113,12 +113,14 @@ textarea {
 
 
 .formbottom {
+  @include margin-bottom(1);
   p {
     margin: 0;
   }
   input[type="submit"] {
     border: 0;
     box-shadow: none;
+    text-transform: uppercase;
     @include padding-sides(2);
     @include padding-ends(1);
     @include margin-top(1);
