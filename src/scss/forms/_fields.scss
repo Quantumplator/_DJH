@@ -51,6 +51,7 @@ textarea {
   }
   p {
     margin-bottom: 0;
+    @include margin-top(1);
   }
   .quotename {
     float: left;
@@ -90,6 +91,15 @@ textarea {
       content: "\f14a";
       content: "\f058";
     }
+  }
+  select {
+    appearance: none;
+    border-radius: 3px;
+    background: $color__cream;
+    @include padding(0.1875);
+  }
+  select::-ms-expand { /* for IE 11 */
+    display: none;
   }
 }
 

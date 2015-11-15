@@ -3281,6 +3281,8 @@ textarea {
 }
 .quoteform p {
   margin-bottom: 0;
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 .quoteform .quotename {
   float: left;
@@ -3324,6 +3326,19 @@ textarea {
 .quoteform input[type="checkbox"]:checked + span::before {
   content: "\f14a";
   content: "\f058";
+}
+.quoteform select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 3px;
+  background: #FCFBE3;
+  padding: 3px;
+  padding: 0.1875rem;
+}
+.quoteform select::-ms-expand {
+  /* for IE 11 */
+  display: none;
 }
 
 @media only screen and (min-width: 800px) {
